@@ -1,0 +1,13 @@
+{
+    "question": "Assume the custom tag my:errorProne always throws a java.lang.RuntimeException with the",
+    "options": {
+        "A": "message \u201cFile not found.\u201dAn error page has been configured for this JSP page.Which option prevents the exception thrown by my:errorProne from invoking the error pagemechanism, and outputs the message \u201cFile not found\u201d in the response?",
+        "B": "<c:try catch=\u201dex\u201d> <my:errorProne /> </c:try> ${ex.message}",
+        "C": "<c:catch var=\u201dex\u201d> <my:errorProne /> </c:catch> ${ex.message}",
+        "D": "<c:try> <my:errorProne /> </c:try> <c:catch var=\u201dex\u201d /> ${ex.message}",
+        "E": "<c:try> <my:errorProne /> <c:catch var=\u201dex\u201d /> ${ex.message} </c:try>",
+        "F": "<my:errorProne> <c:catch var=\u201dex\u201d> ${ex.message} </c:catch> </my:errorProne>"
+    },
+    "answer": "B",
+    "multi": false
+}

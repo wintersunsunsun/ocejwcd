@@ -1,0 +1,15 @@
+{
+  "answer": "E",
+  "explanation": "${5 + 3 lt 6} ==> ${8 < 6}\nS(requestScope['foo'][0] ne 10 div0> ==> ${42 != 10/0}\n${10 div 0} ==> ${10/0}",
+  "question": "Given:\n\n1. <% int[] nums = {42,420,4200};\n2. request.setAttribute(\"foo\", nums); %>\n3. ${5 + 3 lt 6}\n4. S(requestScope['foo'][0] ne 10 div0>\n5. ${10 div 0}\n\nWhat is the result?",
+  "options": {
+    "A": "true true",
+    "C": "false true 0",
+    "B": "false true",
+    "E": "false true Infinity",
+    "D": "true true Infinity",
+    "G": "Compilation or translation fails",
+    "F": "An exception is thrown"
+  },
+  "multi": false
+}

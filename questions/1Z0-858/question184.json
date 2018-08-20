@@ -1,0 +1,14 @@
+{
+    "question": "Given a portion of a valid Java EE web application\u2019s directory structure:<br>MyApp<br>|\n|\u2013 Directory1\n| |\u2013 File1.html\n|\n|\u2013 META-INF\n| |\u2013 File2.html\n|\n|\u2013 WEB-INF\n|\u2013 File3.html\nYou want to know whether File1.html, File2.html, and/or File3.html is protected from direct access\nby your web client\u2019s browsers.\nWhat statement is true?",
+    "options": {
+        "A": "All three files are directly accessible.",
+        "B": "Only File1.html is directly accessible.",
+        "C": "Only File2.html is directly accessible.",
+        "D": "Only File3.html is directly accessible.",
+        "E": "Only File1.html and File2.html are directly accessible.",
+        "F": "Only File1.html and File3.html are directly accessible.",
+        "G": "Only File2.html and File3.html are directly accessible."
+    },
+    "answer": "B",
+    "multi": false
+}

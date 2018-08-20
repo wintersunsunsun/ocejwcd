@@ -1,0 +1,11 @@
+{
+    "question": "A web application uses the HttpSession mechanism to determine if a user is \u201clogged in.\u201d When a<br>user supplies a valid user name and password, an HttpSession is created for that user.<br>The user has access to the application for only 15 minutes after logging in. The code must\ndetermine how long the user has been logged in, and if this time is greater than 15 minutes, must\ndestroy the HttpSession.\nWhich method in HttpSession is used to accomplish this?",
+    "options": {
+        "A": "getCreationTime",
+        "B": "invalidateAfter",
+        "C": "getLastAccessedTime",
+        "D": "getMaxInactiveInterval"
+    },
+    "answer": "A",
+    "multi": false
+}

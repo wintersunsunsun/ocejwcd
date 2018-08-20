@@ -1,0 +1,13 @@
+{
+  "answer": "A",
+  "explanation": "",
+  "question": "You are creating a web form with this HTML:\n11. <form action=\"sendOrder.jsp\">\n12.  <input type=\"text\" name=\"creditCard\">\n13.  <input type=\"text\" name=\"expirationDate\">\n14.  <input type=\"submit\">\n15. </form>\n\nWhich HTTP method is used when sending this request from the browser?",
+  "options": {
+    "A": "GET",
+    "C": "POST",
+    "B": "PUT",
+    "E": "FORM",
+    "D": "SEND"
+  },
+  "multi": false
+}

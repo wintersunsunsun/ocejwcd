@@ -1,0 +1,12 @@
+{
+    "question": "Which two actions protect a resource file from direct HTTP access within a web application?<br>(Choose two.)",
+    "options": {
+        "A": "placing it in the /secure directory",
+        "B": "placing it in the /WEB-INF directory",
+        "C": "placing it in the /META-INF/secure directory",
+        "D": "creating a <web-resource> element within the deployment descriptor",
+        "E": "creating a <secure-resource> element within the deployment descriptor"
+    },
+    "answer": "BC",
+    "multi": true
+}

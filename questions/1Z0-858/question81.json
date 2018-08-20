@@ -1,0 +1,13 @@
+{
+    "question": "Which three are described in the standard web application deployment descriptor? (Choose<br>three.)",
+    "options": {
+        "A": "session configuration",
+        "B": "MIME type mappings",
+        "C": "context root for the application",
+        "D": "servlet instance pool configuration",
+        "E": "web container default port bindings",
+        "F": "ServletContext initialization parameters"
+    },
+    "answer": "A",
+    "multi": false
+}

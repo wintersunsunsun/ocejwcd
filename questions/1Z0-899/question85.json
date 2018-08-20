@@ -1,0 +1,14 @@
+{
+  "answer": "ADE",
+  "explanation": "",
+  "question": "A session-scoped attribute is stored by a servlet, and then servlet forwards to a JSP page. Which three jsp:useBean attributes must be used to access this attribute in the JSP page? (Choose three.)",
+  "options": {
+    "A": "id",
+    "C": "bean",
+    "B": "name",
+    "E": "scope",
+    "D": "type",
+    "F": "beanName"
+  },
+  "multi": true
+}

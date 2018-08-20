@@ -1,0 +1,13 @@
+{
+  "answer": "B",
+  "explanation": "",
+  "question": "Servlet A forwarded a request to servlet B using the forward method of RequestDispatcher.\nWhat attribute in B's request object contains the URI of the original request received by servlet A?",
+  "options": {
+    "A": "REQUEST_URI",
+    "C": "javax.servlet.forward.REQUEST_URI",
+    "B": "javax.servlet.forward.request_uri",
+    "E": "javax.servlet.request_dispatcher.REQUEST_URI",
+    "D": "javax.servlet.request_dispatcher.request_uri"
+  },
+  "multi": false
+}

@@ -1,0 +1,12 @@
+{
+    "question": "A developer is designing a multi-tier web application and discovers a need to hide the details of<br>establishing and maintaining remote communications from the client. In addition, because the<br>business and resource tiers are distributed, the application needs to minimize the inter-tier network\ntraffic related to servicing client requests. Which design patterns, working together, address these\nissues?",
+    "options": {
+        "A": "Front Controller and Transfer Object",
+        "B": "Front Controller and Service Locator",
+        "C": "Business Delegate and Transfer Object",
+        "D": "Business Delegate and Intercepting Filter",
+        "E": "Model-View-Controller and Intercepting Filter"
+    },
+    "answer": "C",
+    "multi": false
+}

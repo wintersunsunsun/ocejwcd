@@ -1,0 +1,13 @@
+{
+  "answer": "C",
+  "explanation": "",
+  "question": "Which element of a web application deployment descriptor <web-resource-collection> element is used to specify a HTTP method to which the corresponding <security-constraint> will not apply?",
+  "options": {
+    "A": "<exclude-http-method>",
+    "C": "<http-method-omission>",
+    "B": "<neglect-http-method>",
+    "E": "<exceptional-http-method>",
+    "D": "<http-method-excluded>"
+  },
+  "multi": false
+}

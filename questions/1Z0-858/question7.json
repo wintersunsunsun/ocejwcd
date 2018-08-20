@@ -1,0 +1,13 @@
+{
+    "question": "You have created a JSP that includes instance variables and a great deal of scriptlet code.<br>Unfortunately, after extensive load testing, you have discovered several race conditions in your<br>JSP scriptlet code. To fix these problems would require significant recoding, but you are already",
+    "options": {
+        "A": "behind schedule. Which JSP code snippet can you use to resolve these concurrency problems?",
+        "B": "<%@ page isThreadSafe=\u2019false\u2019 %>",
+        "C": "<%@ implements SingleThreadModel %>",
+        "D": "<%! implements SingleThreadModel %>",
+        "E": "<%@ page useSingleThreadModel=\u2019true\u2019 %>",
+        "F": "<%@ page implements=\u2019SingleThreadModel\u2019 %>"
+    },
+    "answer": "A",
+    "multi": false
+}

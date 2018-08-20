@@ -1,0 +1,12 @@
+{
+  "answer": "AD",
+  "explanation": "",
+  "question": "The Squeaky Beans Inc. shopping application was initially developed for a non-distributed environment. The company recently purchased the Acme Application Server, which supports distributed HttpSession objects.\nWhen deploying the application to the server, the doployer marks it as distributable in the web application deployment descriptor to take advantage of this feature. Given this scenario, which two must be true? (Choose two)",
+  "options": {
+    "A": "The J2EE web container must support migration of objects that implement serializable.",
+    "C": "As per the specification, the J2EE web container ensures that distributed Httpsassion objects will be stored in a database.",
+    "B": "The J2EE web container must use the native JVM Serialization mechanism for distributing HttpSesaion objects.",
+    "D": "Storing references to Enterprise JavaBeans components in the HttpSession object might NOT supported by J2EE web contain."
+  },
+  "multi": true
+}

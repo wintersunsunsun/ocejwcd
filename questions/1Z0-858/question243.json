@@ -1,0 +1,14 @@
+{
+    "question": "Given that a web application consists of two HttpServlet classes, ServletA and ServletB, and the<br>ServletA.service method:<br>20. String key = \u201ccom.example.data\u201d;\n21. session.setAttribute(key, \u201cHello\u201d);\n22. Object value = session.getAttribute(key);\n23.\nAssume session is an HttpSession, and is not referenced anywhere else in ServletA.\nWhich two changes, taken together, ensure that value is equal to \u201cHello\u201d on line 23? (Choose\ntwo.)",
+    "options": {
+        "A": "ensure that the Servlet",
+        "B": "service method is synchronized",
+        "C": "ensure that the Servlet",
+        "D": "service method is synchronized",
+        "E": "ensure that ServletB synchronizes on the session object when setting session attributes",
+        "F": "enclose lines 21-22 in a synchronized block: synchronized(this) { session.setAttribute(key, \u201cHello\u201d); value = session.getAttribute(key); }",
+        "G": "enclose lines 21-22 in a synchronized block: synchronized(session) { session.setAttribute(key, \u201cHello\u201d); value = session.getAttribute(key); }"
+    },
+    "answer": "CE",
+    "multi": true
+}

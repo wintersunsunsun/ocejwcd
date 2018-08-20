@@ -1,0 +1,11 @@
+{
+    "question": "Squeaky Beans Inc. hired an outside consultant to develop their web application. To finish the job<br>quickly, the consultant created several dozen JSP pages that directly communicate with the<br>database. The Squeaky business team has since purchased a set of business objects to model\ntheir system, and the Squeaky developer charged with maintaining the web application must now\nrefactor all the JSPs to work with the new system. Which pattern can the developer use to solve\nthis problem?",
+    "options": {
+        "A": "Transfer Object",
+        "B": "Service Locator",
+        "C": "Intercepting Filter",
+        "D": "Business Delegate"
+    },
+    "answer": "D",
+    "multi": false
+}

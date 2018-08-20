@@ -1,0 +1,14 @@
+{
+    "question": "Users of your web application have requested that they should be able to set the duration of their<br>sessions. So for example, one user might want a webapp to stay connected for an hour rather",
+    "options": {
+        "A": "than the webapp\u2019s default of fifteen minutes; another user might want to stay connected for awhole day.Furthermore, you have a special login servlet that performs user authentication and retrieves theUser object from the database. You want to augment this code to set up the user\u2019s specifiedsession duration.Which code snippet in the login servlet will accomplish this goal?",
+        "B": "User user = // retrieve the User object from the database session.setDurationInterval(user.getSessionDuration());",
+        "C": "User user = // retrieve the User object from the database session.setMaxDuration(user.getSessionDuration());",
+        "D": "User user = // retrieve the User object from the database session.setInactiveInterval(user.getSessionDuration());",
+        "E": "User user = // retrieve the User object from the database session.setDuration(user.getSessionDuration());",
+        "F": "User user = // retrieve the User object from the database session.setMaxInactiveInterval(user.getSessionDuration());",
+        "G": "User user = // retrieve the User object from the database session.setMaxDurationInterval(user.getSessionDuration());"
+    },
+    "answer": "E",
+    "multi": false
+}

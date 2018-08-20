@@ -1,0 +1,13 @@
+{
+    "question": "A developer is designing the presentation tier for a web application that relies on a complex<br>session bean. The session bean is still being developed and the APIs for it are NOT finalized. Any<br>changes to the session bean API directly impacts the development of the presentation tier. Which\ndesign pattern provides a means to manage the uncertainty in the API?",
+    "options": {
+        "A": "View Helper",
+        "B": "Front Controller",
+        "C": "Composite View",
+        "D": "Intercepting Filter",
+        "E": "Business Delegate",
+        "F": "Chain of Responsibility"
+    },
+    "answer": "E",
+    "multi": false
+}

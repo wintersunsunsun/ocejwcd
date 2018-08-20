@@ -1,0 +1,12 @@
+{
+  "answer": "A",
+  "explanation": "",
+  "question": "A web application for business expense reporting allows uploading expense receipts. Multiple receipts can be uploaded single step using one HTTP request. The servlet that processes the request has been marked with the @MultipartConfig annotation.\nWhich method should the servlet use to access the uploaded files?",
+  "options": {
+    "A": "HttpServletRequest.getParts()",
+    "C": "servletRequest.getParts()",
+    "B": "HttpServletRequest.getData()",
+    "D": "servletRequest.getAllParts()"
+  },
+  "multi": false
+}

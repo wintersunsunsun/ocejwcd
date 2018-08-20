@@ -1,0 +1,12 @@
+{
+  "multi": false,
+  "answer": "A",
+  "explanation": "",
+  "question": "For manage ability purposes, you have been told to add a \"count\" instance variable to a critical JSP Document so that a JMX MBean can track how frequent this JSP is being invoked.\nWhich JSP code snippet must you use to declare this instance variable in the JSP Document?",
+  "options": {
+    "A": "<jsp:declaration>\n  int count = 0;\n  <jsp:declaration>",
+    "C": "<jsp:declaration.instance>\n  int count = 0;\n  <jsp:declaration.instance>",
+    "B": "<%! int count = 0; %>",
+    "D": "<jsp:scriptlet.declaration>\n  int count = 0;\n  <jsp:scriptlet.declaration>"
+  }
+}

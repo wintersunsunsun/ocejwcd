@@ -1,0 +1,11 @@
+{
+    "question": "You are building a Front Controller using a JSP page and you need to determine if the user\u2019s<br>session has NOT been created yet and perform some special processing for this case. Which<br>scriptlet code snippet will perform this test?",
+    "options": {
+        "A": "<% if ( request.getSession(false) == null ) { // special processing } %>",
+        "B": "<% if ( request.getHttpSession(false) == null ) { // special processing } %>",
+        "C": "<% if ( requestObject.getSession(false) == null ) { // special processing } %>",
+        "D": "<% if ( requestObject.getHttpSession(false) == null ) { // special processing } %>"
+    },
+    "answer": "A",
+    "multi": false
+}

@@ -1,0 +1,15 @@
+{
+  "answer": "F",
+  "explanation": "",
+  "question": "Given an HttpServletRequest request and HttpResponse response, which sets a cookie \"username\" with the value \"joe\" in a servlet?",
+  "options": {
+    "A": "request.addCookie(\"username\", \"joe\")",
+    "C": "response.addCookie(\"username\", \"joe\")",
+    "B": "request.setCookie(\"username\", \"joe\")",
+    "E": "request.addCookie(new Cookie(\"username\", \"joe\"))",
+    "D": "request.addHeader(new Cookie(\"username\", \"joe\"))",
+    "G": "response.addHeader(new Cookie(\"username\", \"joe\"))",
+    "F": "response.addCookie(new Cookie(\"username\", \"joe\"))"
+  },
+  "multi": false
+}

@@ -1,0 +1,13 @@
+{
+    "question": "You want to create a valid directory structure for your Java EE web application, and your<br>application uses tag files and a JAR file. Which three must be located directly in your WEB-INF<br>directory (NOT in a subdirectory of WEB-INF)? (Choose three.)",
+    "options": {
+        "A": "The JAR file",
+        "B": "A directory called lib",
+        "C": "A directory called tags",
+        "D": "A directory called TLDs",
+        "E": "A directory called classes",
+        "F": "A directory called META-INF"
+    },
+    "answer": "BCE",
+    "multi": true
+}

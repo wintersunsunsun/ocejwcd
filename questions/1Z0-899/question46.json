@@ -1,0 +1,13 @@
+{
+  "answer": "D",
+  "explanation": "",
+  "question": "Which code snippet specifies the metadata for a servlet with:\n(i) url mapping \"/mytest\"\n(ii) Initial parameter with name \"debug\" and value \"10\"\n(iii) Support asynchronous operation?",
+  "options": {
+    "A": "@WebServlet(\"/mytest\")\n  @InitParam(name-\"debug\" va1ue=\"10\")\n  @Asynchronous\n  public class TestServlet extends HttpServlet {}",
+    "C": "@WebServlet(urlPatterns = {/\"mytest\"}, Initparams = {@InitParam(name=\"debug\", value=\"10\") }, supportAsync = true) \n  public class TestServlet extends HttpServlet {}",
+    "B": "@WebServlet(\"/myset\") \n  @WebParam(name=\"debug\" value=\"10\") \n  Public class testServlet {}",
+    "E": "@WebServlet (urlPatterns = {/\"mytest\"}, Initparam = @WebInitParam(name=\"debug\", value=\"10\"), supportAsync = true) \n  public class testServlet {}",
+    "D": "@WebServlet(urlPatterns = {/\"mytest\"}, Initparams = {@InitParam(name=\"debug\", value=\"10\") }, asyncSupported = true) \n  public class TestServlet extends HttpServlet {}"
+  },
+  "multi": false
+}

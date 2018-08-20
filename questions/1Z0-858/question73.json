@@ -1,0 +1,11 @@
+{
+    "question": "You need to retrieve the username cookie from an HTTP request. If this cookie does NOT exist,<br>then the c variable will be null. Which code snippet must be used to retrieve this cookie object?",
+    "options": {
+        "A": "10. Cookie c = request.getCookie(\u201cusername\u201d);",
+        "B": "10. Cookie c = null; 11. for ( Iterator i = request.getCookies(); 12. i.hasNext(); ) { 13. Cookie o = (Cookie) i.next(); 14. if ( o.getName().equals(\u201cusername\u201d) ) { 15. c = o; 16. break; 17. } 18. }",
+        "C": "10. Cookie c = null; 11. for ( Enumeration e = request.getCookies(); 12. e.hasMoreElements(); ) { 13. Cookie o = (Cookie) e.nextElement(); 14. if ( o.getName().equals(\u201cusername\u201d) ) { 15. c = o; 16. break; 17. } 18. }",
+        "D": "10. Cookie c = null; 11. Cookie[] cookies = request.getCookies(); 12. for ( int i = 0; i < cookies.length; i++ ) { 13. if ( cookies[i].getName().equals(\u201cusername\u201d) ) { 14. c = cookies[i]; 15. break; 16. } 17. }"
+    },
+    "answer": "D",
+    "multi": false
+}

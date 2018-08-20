@@ -1,0 +1,11 @@
+{
+    "question": "Click the Exhibit button.<br>Assume the product attribute does NOT yet exist in any scope.<br>Which two create an instance of com.example.Product and initialize the name and price properties\nto the name and price request parameters? (Choose two.)\n<a href=\"//cdn.briefmenow.org/wp-content/uploads/1z0-858/34.jpg\"><img alt=\"\" class=\"aligncenter size-full\" src=\"//cdn.briefmenow.org/wp-content/uploads/1z0-858/34.jpg\"/></a>",
+    "options": {
+        "A": "<jsp:useBean id=\u201dproduct\u201d class=\u201dcom.example.Product\u201d /> <jsp:setProperty name=\u201dproduct\u201d property=\u201d*\u201d />",
+        "B": "<jsp:useBean id=\u201dproduct\u201d class=\u201dcom.example.Product\u201d /> <% product.setName( request.getParameter( \u201cname\u201d ) ); %> <% product.setPrice( request.getParameter( \u201cprice\u201d ) ); %>",
+        "C": "<jsp:useBean id=\u201dproduct\u201d class=\u201dcom.example.Product\u201d /> <jsp:setProperty name=\u201dproduct\u201d property=\u201dname\u201d value=\u201d${param.name}\u201d /> <jsp:setProperty name=\u201dproduct\u201d property=\u201dprice\u201d value=\u201d${param.price}\u201d />",
+        "D": "<jsp:useBean id=\u201dproduct\u201d class=\u201dcom.example.Product\u201d> <jsp:setProperty name=\u201dproduct\u201d property=\u201dname\u201d value=\u201d${name}\u201d /> <jsp:setProperty name=\u201dproduct\u201d property=\u201dprice\u201d value=\u201d${price}\u201d /> </jsp:useBean>"
+    },
+    "answer": "A",
+    "multi": false
+}

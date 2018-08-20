@@ -1,0 +1,13 @@
+{
+    "question": "Which JSTL code snippet can be used to import content from another web resource?",
+    "options": {
+        "A": "<c:import url=\u201dfoo.jsp\u201d/>",
+        "B": "<c:import page=\u201dfoo.jsp\u201d/>",
+        "C": "<c:include url=\u201dfoo.jsp\u201d/>",
+        "D": "<c:include page=\u201dfoo.jsp\u201d/>",
+        "E": "Importing cannot be done in JST",
+        "F": "A standard action must be used instead."
+    },
+    "answer": "A",
+    "multi": false
+}

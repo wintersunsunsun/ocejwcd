@@ -1,0 +1,12 @@
+{
+  "answer": "C",
+  "explanation": "",
+  "question": "Given the element from the web application deployment descriptor:\n\n<jsp-property-group>\n<url-pattern>/main/page1.jsp</url-pattern>\n<scripting\u2013invalid>true</scripting\u2013invalid>\n</jsp--property--group>\n\nAnd given that /main/page1.jsp contains:\n\n<% int i = 12; %>\n<b><%=i %></b>\n\nWhat is the result?",
+  "options": {
+    "A": "<b><b>",
+    "C": "The JSP fails to execute.",
+    "B": "<b>l2</b>",
+    "D": "<% int i = 12 %>\n  <b><%= i % >< b>"
+  },
+  "multi": false
+}

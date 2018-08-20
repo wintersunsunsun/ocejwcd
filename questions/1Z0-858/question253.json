@@ -1,0 +1,11 @@
+{
+    "question": "You are building a web application with a scheduling component. On the JSP, you need to show<br>the current date, the date of the previous week, and the date of the next week. To help you<br>present this information, you have created the following EL functions in the \u2018d\u2019 namespace:\nname: curDate; signature: java.util.Date currentDate()\nname: addWeek; signature: java.util.Date addWeek(java.util.Date, int)\nname: dateString; signature: java.util.String getDateString(java.util.Date)\nWhich EL code snippet will generate the string for the previous week?",
+    "options": {
+        "A": "${d:dateString(addWeek(curDate(), -1))}",
+        "B": "${d:dateString[addWeek[curDate[], -1]]}",
+        "C": "${d:dateString[d:addWeek[d:curDate[], -1]]}",
+        "D": "${d:dateString(d:addWeek(d:curDate(), -1))}"
+    },
+    "answer": "D",
+    "multi": false
+}

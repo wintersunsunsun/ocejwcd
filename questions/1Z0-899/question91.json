@@ -1,0 +1,12 @@
+{
+  "answer": "D",
+  "explanation": "",
+  "question": "Given the definition of Myobject and that an instance of Myobject is bound as a session attribute:\n\n8.  package com.example;\n9.  public class Myobject implements\n10.  javax.servlet.http.HttpSessionBindingListener {\n11.  // class body code here\n12.  }\n\nWhich is true?",
+  "options": {
+    "A": "Only a single instance of Myobject may exist within a session",
+    "C": "The com.example.MyObject must be declared as a servlet event listener in the web application deployment descriptor",
+    "B": "The unbound method of the Myobject instance is called when the session to which it is bound times out",
+    "D": "The valueUnbound method of the Myobject instance is called when the session to which it is bound times out"
+  },
+  "multi": false
+}

@@ -1,0 +1,13 @@
+{
+    "question": "A developer is designing a web application that makes many fine-grained remote data requests for<br>each client request. During testing, the developer discovers that the volume of remote requests<br>significantly degrades performance of the application. Which design pattern provides a solution for\nthis problem?",
+    "options": {
+        "A": "Flyweight",
+        "B": "Transfer Object",
+        "C": "Service Locator",
+        "D": "Dispatcher View",
+        "E": "Business Delegate",
+        "F": "Model-View-Controller"
+    },
+    "answer": "B",
+    "multi": false
+}

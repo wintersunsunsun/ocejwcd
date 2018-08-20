@@ -1,0 +1,11 @@
+{
+    "question": "Your IT department is building a lightweight Front Controller servlet that invokes an application<br>logic object with the interface:<br>public interface ApplicationController {\npublic String invoke(HttpServletRequest request)\n}\nThe return value of this method indicates a symbolic name of the next view. From this name, the\nFront Controller servlet looks up the JSP URL in a configuration table. This URL might be an\nabsolute path or a path relative to the current request. Next, the Front Controller servlet must send\nthe request to this JSP to generate the view. Assume that the servlet variable request is assigned\nthe current HttpServletRequest object and the variable context is assigned the webapp\u2019s\nServletContext.\nWhich code snippet of the Front Controller servlet accomplishes this goal?",
+    "options": {
+        "A": "Dispatcher view = context.getDispatcher(viewURL); view.forwardRequest(request, response);",
+        "B": "Dispatcher view = request.getDispatcher(viewURL); view.forwardRequest(request, response);",
+        "C": "RequestDispatcher view = context.getRequestDispatcher(viewURL); view.forward(request, response);",
+        "D": "RequestDispatcher view = request.getRequestDispatcher(viewURL); view.forward(request, response);"
+    },
+    "answer": "D",
+    "multi": false
+}

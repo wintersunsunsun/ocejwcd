@@ -1,0 +1,12 @@
+{
+  "answer": "C",
+  "explanation": "http://www.ibm.com/developerworks/java/library/j-jstl0318/ (topic: exception handling)",
+  "question": "You are implementing a model component. You realize that an IOException might arise if you lose connection to the database. How should you address this?",
+  "options": {
+    "A": "Implement multipathing to provide redundant connectivity to the database, thereby avoiding that risk of connection failure.",
+    "C": "Use the JSTL <c:catch> tag to take control if the exception arises.",
+    "B": "Provide an error handler page, and use the page directive in the invoking JSP to redirect to that page if the error arises.",
+    "D": "Surround the problem area with a try/catch block and implement appropriate recovery or fallback behavior."
+  },
+  "multi": false
+}

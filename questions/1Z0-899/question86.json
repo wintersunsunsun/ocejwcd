@@ -1,0 +1,15 @@
+{
+  "answer": "BDE",
+  "explanation": "",
+  "question": "View the Exhibit.\n\n 1. paackage com.example;\n 2.\n 3. public class Product {\n 4.   private String name;\n 5.   private double price;\n 6.\n 7.   public Product() {\n 8.     this(\"Default\", 0.0);\n 9.   }\n10.\n11.   public Product(String name, double price) {\n12.     this.name = name;\n13.     this.price = price;\n14.   }\n15.\n16.   public String getName() {\n17.     return name;\n18.   }\n19.\n20.   public void setName(String name) {\n21.     this.name = name;\n22.   }\n23.\n24.   public double getPrice() {\n25.     return price;\n26.   }\n27.\n28.   public void setPrice(double price) {\n29.     this.price = price;\n30.   }\n31. }\n\nGiven:\n10. <form action='create_product.jsp'>\n11. Product Name: <input type='text' name='productName'/><br/>\n12. Product Price: <input type='text' name='productPrice'/><br/>\n13. </form>\n\nFor a given product instance, which three jsp:setProperty attributes must be used to initialize its\nproperties from the HTML form? (Choose three.)",
+  "options": {
+    "A": "id",
+    "C": "type",
+    "B": "name",
+    "E": "property",
+    "D": "param",
+    "G": "attribute",
+    "F": "reqParam"
+  },
+  "multi": true
+}

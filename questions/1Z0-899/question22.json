@@ -1,0 +1,13 @@
+{
+  "answer": "A",
+  "explanation": "",
+  "question": "Given the JavaBean class:\npublic class MyBean {\n  private Boolean roasted = false;\n  public MyBean() {}\n  public Boolean isRoasted() { returned roasted }\n  public void setRoasted(Boolean roasted) { this.roasted = roasted; ]\n}\nAssume a controller has created an instance of this bean, called setRoasted(true), and inserted the bean into the application scope using the name \"myBean\".\nA JSP contains these two tags:\n<jsp:useBean id=\"aBean\" class=\"MyBean\" scope=\"page\" \\/>\n<jsp:getProprty name=\"aBean\" property=\"roasted\" \\/>\nWhich is true?",
+  "options": {
+    "A": "the page will include the output false",
+    "C": "the page will report that the property roasted does not exist",
+    "B": "the page will include the output",
+    "E": "the page will report that the syntax of the getProperty tag ls incorrect",
+    "D": "the page will report that the syntax of the useBean tag is incorrect"
+  },
+  "multi": false
+}

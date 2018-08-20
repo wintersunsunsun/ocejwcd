@@ -1,0 +1,12 @@
+{
+    "question": "You are building a web application that will be used throughout the European Union; therefore, it<br>has significant internationalization requirements. You have been tasked to create a custom tag<br>that generates a message using the java.text.MessageFormat class. The tag will take the\nresourceKey attribute and a variable number of argument attributes with the format, arg<N>. Here\nis an example use of this tag and its output:\n<t:message resourceKey=\u2019diskFileMsg\u2019 arg0=\u2019MyDisk\u2019 arg1=\u20191247\u2032 />\ngenerates:\nThe disk \u201cMyDisk\u201d contains 1247 file(s).\nWhich Simple tag class definition accomplishes this goal of handling a variable number of tag\nattributes?",
+    "options": {
+        "A": "public class MessageTag extends SimpleTagSupport implements VariableAttributes { private Map attributes = new HashMap(); public void setVariableAttribute(String uri, String name, Object value) { this.attributes.put(name, value); } // more tag handler methods }",
+        "B": "The Simple tag model does NOT support a variable number of attributes.",
+        "C": "public class MessageTag extends SimpleTagSupport implements DynamicAttributes { private Map attributes = new HashMap(); public void putAttribute(String name, Object value) { this.attributes.put(name, value); } // more tag handler methods }",
+        "D": "public class MessageTag extends SimpleTagSupport implements VariableAttributes { private Map attributes = new HashMap(); public void putAttribute(String name, Object value) { this.attributes.put(name, value); } // more tag handler methods }",
+        "E": "public class MessageTag extends SimpleTagSupport implements DynamicAttributes { private Map attributes = new HashMap(); public void setDynamicAttribute(String uri, String name, Object value) { this.attributes.put(name, value); } // more tag handler methods }"
+    },
+    "answer": "E",
+    "multi": false
+}

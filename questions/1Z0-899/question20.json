@@ -1,0 +1,12 @@
+{
+  "answer": "C",
+  "explanation": "",
+  "question": "Click the Exhibit button. \n\nGiven the HTML form:\n1. <html>\n2.  <body>\n3.   <form action=\"submit.jsp\">\n4.    Name: <input type=\"text\" name=\"i1\"><br>\n5.    Price: <input type=\"text\" name=\"i2\"><br>\n6.    <input type=\"submit\">\n7.   </form>\n8.  </body>\n9. </html>\n\nAssume the product attribute does NOT yet exist in any scope.\n\nWhich code snippet, in submit.jsp, instantiates an instance of com.example.Product that contains the results of the form submission?",
+  "options": {
+    "A": "<jsp:useBean id=\"com.example.Product\" />\n  <jsp:setProperty name=\"product\" property=\"*\" />",
+    "C": "<jsp:useBean id=\"product\" class=\"com.example.Product\"> \n    <jsp:setProperty name=\"product\" property=\"name\" param=\"i1\" /> \n    <jsp:setProperty name=\"product\" property=\"price\" param=\"i2\" /> \n  </jsp:useBean>",
+    "B": "<jsp:useBean id=\"product\" class=\"com.example.Product\" />\n  ${product.name = param.i1}\n  ${product.price = param.i2}",
+    "D": "<jsp:useBean id=\"product\" type=\"com.example.Product\">\n  <jsp:setProperty name=\"product\" property=\"name\" value=\"<%=request.getParameter(\"i1\") %>\" /> \n  <jsp:setProperty name=\"product\" property=\"price\" value=\"<%=request.getParameter( \"i2\" ) %>\" /> \n  </jsp:useBean>"
+  },
+  "multi": false
+}

@@ -1,0 +1,12 @@
+{
+  "answer": "B",
+  "explanation": "",
+  "question": "Which annotation enables a servlet to efficiently process requests of typo multipart/form-data that involve large files being uploaded by the client?",
+  "options": {
+    "A": "@AcceptMultipart",
+    "C": "@MultiPartFormData",
+    "B": "@MultiPartConfig",
+    "D": "@WebServlet(multipart=true)"
+  },
+  "multi": false
+}

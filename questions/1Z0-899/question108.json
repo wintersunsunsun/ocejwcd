@@ -1,0 +1,14 @@
+{
+  "answer": "CD",
+  "explanation": "@WebListener\nThe main task of the listener is to listen the particular events and process your own task on that event. For example, if you want to initialize a database connection before your application starts, ServletContextListener will be implemented to do that. Another good example is -when you want to do some task on the creation and destruction of a session. For this purpose you need to implement HttpSessionListener.",
+  "question": "When using the @WebListener annotation, the class on which the annotation is applied to must also implement at least one o the following interfaces (Choose two):",
+  "options": {
+    "A": "RequestListener",
+    "C": "ServletContextListener",
+    "B": "AttributeListener",
+    "E": "SessionAttributeListener",
+    "D": "HttpSessionListener",
+    "F": "AsyncListener"
+  },
+  "multi": true
+}

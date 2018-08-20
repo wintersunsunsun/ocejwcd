@@ -1,0 +1,11 @@
+{
+    "question": "Which two security mechanisms can be directed through a sub-element of the <user-dataconstraint> element in a web application deployment descriptor? (Choose two.)",
+    "options": {
+        "A": "authorization",
+        "B": "data integrity",
+        "C": "confidentiality",
+        "D": "authentication"
+    },
+    "answer": "BC",
+    "multi": true
+}

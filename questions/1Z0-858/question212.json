@@ -1,0 +1,13 @@
+{
+    "question": "You have built your own light-weight templating mechanism. Your servlets, which handle each<br>request, dispatch the request to one of a small set of template JSP pages. Each template JSP<br>controls the layout of the view by inserting the header, body, and footer elements into specific\nlocations within the template page. The URLs for these three elements are stored in requestscoped variables called, headerURL, bodyURL, and footerURL, respectively. These attribute\nnames are never used for other purposes. Which JSP code snippet should be used in the\ntemplate JSP to insert the JSP content for the body of the page?",
+    "options": {
+        "A": "<jsp:insert page=\u2019${bodyURL}\u2019 />",
+        "B": "<jsp:insert file=\u2019${bodyURL}\u2019 />",
+        "C": "<jsp:include page=\u2019${bodyURL}\u2019 />",
+        "D": "<jsp:include file=\u2019${bodyURL}\u2019 />",
+        "E": "<jsp:insert page='<%= bodyURL %>\u2019 />",
+        "F": "<jsp:include page='<%= bodyURL %>\u2019 />"
+    },
+    "answer": "C",
+    "multi": false
+}

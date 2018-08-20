@@ -1,0 +1,12 @@
+{
+  "answer": "A",
+  "explanation": "When HTTPOnly flag is assigned to a cookie, the browser will restrict the access to such Cookie from Java Script code hence the cookie would only be sent to the subsequent request to server but cannot be accessed using client side script. In such a case even if website is vulnerable to Cross Site Scripting (XSS) attacks, still the browser would safeguard the data stored into cookies flagged as HTTPOnly.\n\nIncorrect:\nNot cookie.setSecure(true): If Secure flag is set for Cookie then it may only be transmitted over secure channel(SSL/HTTPS) ensuring that data is always encrypted while transmitting from client to server.",
+  "question": "A web application uses a cookies to track a client as it navigates through the pages that constitutes the application. Which code snippet can be used by the web application to reduce the chance of a cross-site scripting attack by setting some property of the cookie before returning it to the client?",
+  "options": {
+    "A": "cookie.setHttpOnly(true)",
+    "C": "cookie.setPath(\"/\")",
+    "B": "cookie.setMaxAge(3600)",
+    "D": "cookie.setSecure(true)"
+  },
+  "multi": false
+}

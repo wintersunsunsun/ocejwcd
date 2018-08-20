@@ -1,0 +1,13 @@
+{
+    "question": "For which three events can web application event listeners be registered? (Choose three.)",
+    "options": {
+        "A": "when a session is created",
+        "B": "after a servlet is destroyed",
+        "C": "when a session has timed out",
+        "D": "when a cookie has been created",
+        "E": "when a servlet has forwarded a request",
+        "F": "when a session attribute value is changed"
+    },
+    "answer": "A",
+    "multi": false
+}

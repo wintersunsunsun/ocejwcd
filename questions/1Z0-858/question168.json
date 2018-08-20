@@ -1,0 +1,12 @@
+{
+    "question": "Click the Exhibit button.<br>Assuming the tag library in the exhibit is imported with the prefix forum, which custom tag<br>invocation produces a translation error in a JSP page?\n<a href=\"//cdn.briefmenow.org/wp-content/uploads/1z0-858/29.jpg\"><img alt=\"\" class=\"aligncenter size-full\" src=\"//cdn.briefmenow.org/wp-content/uploads/1z0-858/29.jpg\"/></a>",
+    "options": {
+        "A": "<forum:message from=\u201dMy Name\u201d subject=\u201dMy Subject\u201d />",
+        "B": "<forum:message subject=\u201dMy Subject\u201d> My message body. </forum:message>",
+        "C": "<forum:message from=\u201dMy Name\u201d subject=\u201d${param.subject}\u201d> ${param.body} </forum:message>",
+        "D": "<forum:message from=\u201dMy Name\u201d subject=\u201dMy Subject\u201d> <%= request.getParameter( \u201cbody\u201d ) %> </forum:message>",
+        "E": "<forum:message from=\u201dMy Name\u201d subject=\u201d<%= request.getParameter( \u201csubject\u201d ) %>\u201d> My message body. </forum:message>"
+    },
+    "answer": "D",
+    "multi": false
+}

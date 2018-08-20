@@ -1,0 +1,12 @@
+{
+    "question": "Which JSTL code snippet produces the output \u201cbig number\u201d when X is greater than 42, but<br>outputs \u201csmall number\u201d in all other cases?",
+    "options": {
+        "A": "<c:if test='<%= (X > 42) %>\u2019> <c:then>big number</c:then> <c:else>small number</c:else> </c:if>",
+        "B": "<c:if> <c:then test='<%= (X > 42) %>\u2019>big number</c:then> <c:else>small number</c:else> </c:if>",
+        "C": "<c:choose test='<%= (X > 42) %>\u2019> <c:then>big number</c:when> <c:else>small number</c:otherwise> </c:choose>",
+        "D": "<c:choose test='<%= (X > 42) %>\u2019> <c:when>big number</c:when> <c:otherwise>small number</c:otherwise> </c:choose>",
+        "E": "<c:choose> <c:when test='<%= (X > 42) %>\u2019>big number</c:when> <c:otherwise>small number</c:otherwise> </c:choose>"
+    },
+    "answer": "E",
+    "multi": false
+}

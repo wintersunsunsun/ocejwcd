@@ -1,0 +1,12 @@
+{
+  "answer": "C",
+  "explanation": "",
+  "question": "A web application wants to register a new servlet at runtime using one of the servletContext.addServlet methods.\nIn the implementation of which method is it legal to perform this operation?",
+  "options": {
+    "A": "AsyncListner.oncomplete",
+    "C": "ServletContextListener.contextInitialize",
+    "B": "Servlet.init",
+    "D": "ServletrequestListener.contextInitialize"
+  },
+  "multi": false
+}

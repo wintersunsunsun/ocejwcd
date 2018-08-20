@@ -1,0 +1,13 @@
+{
+    "question": "Your web application views all have the same header, which includes the <title> tag in the <head><br>element of the rendered HTML. You have decided to remove this redundant HTML code from your<br>JSPs and put it into a single JSP called /WEB-INF/jsp/header.jsp. However, the title of each page\nis unique, so you have decided to use a variable called pageTitle to parameterize this in the\nheader JSP, like this:\n10. <title>${param.pageTitle}<title>\nWhich JSP code snippet should you use in your main view JSPs to insert the header and pass the",
+    "options": {
+        "A": "pageTitle variable?",
+        "B": "<jsp:insert page=\u2019/WEB-INF/jsp/header.jsp\u2019> ${pageTitle=\u2019Welcome Page\u2019} </jsp:insert>",
+        "C": "<jsp:include page=\u2019/WEB-INF/jsp/header.jsp\u2019> ${pageTitle=\u2019Welcome Page\u2019} </jsp:include>",
+        "D": "<jsp:include file=\u2019/WEB-INF/jsp/header.jsp\u2019> ${pageTitle=\u2019Welcome Page\u2019} </jsp:include>",
+        "E": "<jsp:insert page=\u2019/WEB-INF/jsp/header.jsp\u2019> <jsp:param name=\u2019pageTitle\u2019 value=\u2019Welcome Page\u2019 /> </jsp:insert>",
+        "F": "<jsp:include page=\u2019/WEB-INF/jsp/header.jsp\u2019> <jsp:param name=\u2019pageTitle\u2019 value=\u2019Welcome Page\u2019 /> </jsp:include>"
+    },
+    "answer": "E",
+    "multi": false
+}

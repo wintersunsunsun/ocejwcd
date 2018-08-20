@@ -1,0 +1,14 @@
+{
+  "answer": "B",
+  "explanation": "<jsp:useBean id=\"\" class=\"\">\nscope\u9ed8\u8ba4\u503c\u662fpage",
+  "question": "You need to create a JavaBean object that is used only within the current JSP page.\nIt must NOT be accessible to any other page including those that this page might import.\nWhich JSP standard action can accomplish this goal?",
+  "options": {
+    "A": "<jsp:useBean id='pageBean' type='com.example.MyBean' />",
+    "C": "<jsp:makeBean id='pageBean' type='com.example.MyBean' />",
+    "B": "<jsp:useBean id='pageBean' class='com.example.MyBean' />",
+    "E": "<jsp:useBean name='pageBean' class='com.example.MyBean' />",
+    "D": "<jsp:makeBean id='pageBean' class='com.example.MyBean' />",
+    "F": "<jsp:makeBean id='pageBean' class='com.example.MyBean' />"
+  },
+  "multi": false
+}

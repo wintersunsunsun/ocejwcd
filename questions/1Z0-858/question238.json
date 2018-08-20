@@ -1,0 +1,11 @@
+{
+    "question": "All of your JSPs need to have a link that permits users to email the web master. This web<br>application is licensed to many small businesses, each of which have a different email address for<br>the web master. You have decided to use a context parameter that you specify in the deployment\ndescriptor, like this:\n42. <context-param>\n43. <param-name>webmasterEmail</param-name>\n44. <param-value>master@example.com</param-value>\n45. </context-param>\nWhich JSP code snippet creates this email link?",
+    "options": {
+        "A": "<a href=\u2019mailto:${contextParam.webmasterEmail}\u2019>contact us</a>",
+        "B": "<a href=\u2019mailto:${applicationScope.webmasterEmail}\u2019>contact us</a>",
+        "C": "<a href=\u2019mailto:${contextInitParam.webmasterEmail}\u2019>contact us</a>",
+        "D": "<a href=\u2019mailto:${initParam.webmasterEmail}\u2019>contact us</a>"
+    },
+    "answer": "D",
+    "multi": false
+}

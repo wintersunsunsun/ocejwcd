@@ -1,0 +1,13 @@
+{
+  "multi": true,
+  "answer": "AC",
+  "explanation": "",
+  "question": "Which two are true about the JSTL core iteration custom tags? (Choose two.)",
+  "options": {
+    "A": "It may iterate over arrays, collections, maps, and strings.",
+    "C": "When looping over collections, a loop status object may be used in the tag body.",
+    "B": "The body of the tag may contain EL code, but not scripting code.",
+    "E": "When looping over integers(for example begin='1' end='10'), a loop status object may not be used in the tag body.",
+    "D": "It may iterate over map, but only the key of the mapping may be used in the tag body."
+  }
+}

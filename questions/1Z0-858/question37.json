@@ -1,0 +1,12 @@
+{
+    "question": "What is true about Java EE authentication mechanisms?",
+    "options": {
+        "A": "If your deployment descriptor correctly declares an authentication type of CLIENT_CERT, your users must have a certificate from an official source before they can use your application.",
+        "B": "If your deployment descriptor correctly declares an authentication type of BASIC, the container automatically requests a user name and password whenever a user starts a new session.",
+        "C": "If you want your web application to support the widest possible array of browsers, and you want to perform authentication, the best choice of Java EE authentication mechanisms is DIGES",
+        "D": "",
+        "E": "To use Java EE FORM authentication, you must declare two HTML files in your deployment descriptor, and you must use a predefined action in the HTML file that handles your user\u2019s login."
+    },
+    "answer": "D",
+    "multi": false
+}

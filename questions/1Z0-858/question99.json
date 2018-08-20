@@ -1,0 +1,12 @@
+{
+    "question": "In your web application, you need to execute a block of code whenever the session object is first<br>created. Which design will accomplish this goal?",
+    "options": {
+        "A": "Create an HttpSessionListener class and implement the sessionInitialized method with that block of code.",
+        "B": "Create an HttpSessionActivationListener class and implement the sessionCreated method with that block of code.",
+        "C": "Create a Filter class, call the getSession(false) method, and if the result was null, then execute that block of code.",
+        "D": "Create an HttpSessionListener class and implement the sessionCreated method with that block of code.",
+        "E": "Create a Filter class, call the getSession(true) method, and if the result was NOT null, then execute that block of code."
+    },
+    "answer": "D",
+    "multi": false
+}

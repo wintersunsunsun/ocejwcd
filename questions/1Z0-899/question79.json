@@ -1,0 +1,13 @@
+{
+  "answer": "AB",
+  "explanation": "",
+  "question": "View the Exhibit.\n\nhttps://cdn.briefmenow.org/wp-content/uploads/1z0-899-v1/8.jpg\n\nWhich two technologies would be suitable for use as Front Controller elements? (Choose two)",
+  "options": {
+    "A": "JSP",
+    "C": "Filter",
+    "B": "Servlet",
+    "E": "Custom Tag",
+    "D": "POJO"
+  },
+  "multi": true
+}

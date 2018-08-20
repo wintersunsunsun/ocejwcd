@@ -1,0 +1,12 @@
+{
+  "answer": "C",
+  "explanation": "",
+  "question": "Given the fragment from Java EE deployment descriptor:\n341.  <error-page>\n342.  <exception-type>java.lang.Throwable</exception-type>\n343.  <location>/mainError.jsp</location>\n344.  </error-page>\n345.  <error-page>\n346.  <exception-type>java.lang.ClassCastException</exception-type>\n347.  <location>/castError.jsp</location>\n348.  </error-page>\n\nIf the web application associated with the fragment above throws a ClassCastException.\nWhich statement is true?",
+  "options": {
+    "A": "The deployment descriptor is invalid.",
+    "C": "The container invokes castError.jsp",
+    "B": "The container invokes mainError.jsp",
+    "D": "Neither mainError.jsp nor castError.jsp is invoked."
+  },
+  "multi": false
+}

@@ -1,0 +1,12 @@
+{
+  "answer": "AC",
+  "explanation": "",
+  "question": "View the Exhibit.\n\n 1. paackage com.example;\n 2.\n 3. public class Product {\n 4.   private String name;\n 5.   private double price;\n 6.\n 7.   public Product() {\n 8.     this(\"Default\", 0.0);\n 9.   }\n10.\n11.   public Product(String name, double price) {\n12.     this.name = name;\n13.     this.price = price;\n14.   }\n15.\n16.   public String getName() {\n17.     return name;\n18.   }\n19.\n20.   public void setName(String name) {\n21.     this.name = name;\n22.   }\n23.\n24.   public double getPrice() {\n25.     return price;\n26.   }\n27.\n28.   public void setPrice(double price) {\n29.     this.price = price;\n30.   }\n31. }\n\nAssume the product attribute does NOT yet exist in any scope.\nWhich two create an instance of com.example.Product and initialize the name and price properties\nto the name and price request parameters? (Choose two)",
+  "options": {
+    "A": "<jsp:useBean id=\"product\" class=\"com.example.Product\" />\n  <jsp:setProperty name=\"product\" property=\"*\" />",
+    "C": "<jsp:useBean id=\"product\" class=\"com.example.Product\" />\n  <jsp:setProperty name=\"product\" property=\"name\" value=\"${param.name}\" />\n  <jsp:setProperty name=\"product\" property=\"price\" value=\"${param.price}\" />",
+    "B": "<jsp:useBean id=\"product\" class=\"com.example.Product\" />\n  <% product.setName(request.getParameter(\"name\")); %>\n  <% product.setPrice(request.getParameter(\"price\")); %>",
+    "D": "<jsp:useBean id=\"product\" class=\"com.example.Product\">\n  <jsp:setProperty name=\"product\" property=\"name\" value=\"${name}\" />\n  <jsp:setProperty name=\"product\" property=\"price\" value=\"${price}\" />\n  </jsp:useBean>"
+  },
+  "multi": true
+}

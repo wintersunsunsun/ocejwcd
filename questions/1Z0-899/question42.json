@@ -1,0 +1,12 @@
+{
+  "answer": "CD",
+  "explanation": "",
+  "question": "In which two locations can library dependencies be defined for a web application? (Choose two)",
+  "options": {
+    "A": "the web application deployment descriptor",
+    "C": "the /META-INF/MANIFEST.MF manifest file",
+    "B": "the /META-INF/dependencies.xml file",
+    "D": "the /META-INF/MANIFEST.MF manifest of a JAR in the web application classpath"
+  },
+  "multi": true
+}

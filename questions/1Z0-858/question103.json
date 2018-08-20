@@ -1,0 +1,12 @@
+{
+    "question": "Which two classes or interfaces provide a getSession method? (Choose two.)",
+    "options": {
+        "A": "javax.servlet.http.HttpServletRequest",
+        "B": "javax.servlet.http.HttpSessionContext",
+        "C": "javax.servlet.http.HttpServletResponse",
+        "D": "javax.servlet.http.HttpSessionBindingEvent",
+        "E": "javax.servlet.http.HttpSessionAttributeEvent"
+    },
+    "answer": "A",
+    "multi": false
+}

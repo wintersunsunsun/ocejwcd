@@ -1,0 +1,12 @@
+{
+    "question": "After a merger with another small business, your company has inherited a legacy WAR file but the<br>original source files were lost. After reading the documentation of that web application, you<br>discover that the WAR file contains a useful tag library that you want to reuse in your own webapp\npackaged as a WAR file.",
+    "options": {
+        "A": "What do you need to do to reuse this tag library?",
+        "B": "Simply rename the legacy WAR file as a JAR file and place it in your webapp\u2019s library directory.",
+        "C": "Unpack the legacy WAR file, move the TLD file to the META-INF directory, repackage the whole thing as a JAR file, and place that JAR file in your webapp\u2019s library directory.",
+        "D": "Unpack the legacy WAR file, move the TLD file to the META-INF directory, move the class files to the top-level directory, repackage the whole thing as a JAR file, and place that JAR file in your webapp\u2019s library directory.",
+        "E": "Unpack the legacy WAR file, move the TLD file to the META-INF directory, move the class files to the top-level directory, repackage the WAR, and place that WAR file in your webapp\u2019s WEB-INF directory."
+    },
+    "answer": "C",
+    "multi": false
+}

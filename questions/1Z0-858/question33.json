@@ -1,0 +1,12 @@
+{
+    "question": "Which two JSTL URL-related tags perform URL rewriting? (Choose two.)",
+    "options": {
+        "A": "url",
+        "B": "link",
+        "C": "param",
+        "D": "import",
+        "E": "redirect"
+    },
+    "answer": "A",
+    "multi": false
+}

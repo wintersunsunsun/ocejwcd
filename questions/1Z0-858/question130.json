@@ -1,0 +1,11 @@
+{
+    "question": "Your web application uses a simple architecture in which servlets handle requests and then<br>forward to a JSP using a request dispatcher. You need to pass information calculated by the<br>servlet to the JSP; furthermore, that JSP uses a custom tag and must also process this\ninformation. This information must NOT be accessible to any other servlet, JSP or session in the\nwebapp. How can you accomplish this goal?",
+    "options": {
+        "A": "Store the data in a public instance variable in the servlet.",
+        "B": "Add an attribute to the request object before using the request dispatcher.",
+        "C": "Add an attribute to the context object before using the request dispatcher.",
+        "D": "This CANNOT be done as the tag handler has no means to extract this data."
+    },
+    "answer": "B",
+    "multi": false
+}

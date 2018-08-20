@@ -1,0 +1,14 @@
+{
+    "question": "You are creating a servlet that generates stock market graphs. You want to provide the web",
+    "options": {
+        "A": "browser with precise information about the amount of data being sent in the response stream.Which two HttpServletResponse methods will you use to provide this information? (Choose two.)",
+        "B": "response.setLength(numberOfBytes);",
+        "C": "response.setContentLength(numberOfBytes);",
+        "D": "response.setHeader(\u201cLength\u201d, numberOfBytes);",
+        "E": "response.setIntHeader(\u201cLength\u201d, numberOfBytes);",
+        "F": "response.setHeader(\u201cContent-Length\u201d, numberOfBytes);",
+        "G": "response.setIntHeader(\u201cContent-Length\u201d, numberOfBytes);"
+    },
+    "answer": "BF",
+    "multi": true
+}

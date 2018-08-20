@@ -1,0 +1,13 @@
+{
+    "question": "Given:<br>3. public class MyTagHandler extends TagSupport {<br>4. public int doStartTag() {\n5. // insert code here\n6. // return an int\n7. }\n8. // more code here\n\u2026\n18. }",
+    "options": {
+        "A": "There is a single attribute foo in the session scope.Which three code fragments, inserted independently at line 5, return the value of the attribute?(Choose three.)",
+        "B": "Object o = pageContext.getAttribute(\u201cfoo\u201d);",
+        "C": "Object o = pageContext.findAttribute(\u201cfoo\u201d);",
+        "D": "Object o = pageContext.getAttribute(\u201cfoo\u201d, PageContext.SESSION_SCOPE);",
+        "E": "HttpSession s = pageContext.getSession(); Object o = s.getAttribute(\u201cfoo\u201d);",
+        "F": "HttpServletRequest r = pageContext.getRequest(); Object o = r.getAttribute(\u201cfoo\u201d);"
+    },
+    "answer": "BCD",
+    "multi": true
+}

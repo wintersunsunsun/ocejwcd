@@ -1,0 +1,11 @@
+{
+    "question": "Which method must be used to encode a URL passed as an argument to<br>HttpServletResponse.sendRedirect when using URL rewriting for session tracking?",
+    "options": {
+        "A": "ServletResponse.encodeURL",
+        "B": "HttpServletResponse.encodeURL",
+        "C": "ServletResponse.encodeRedirectURL",
+        "D": "HttpServletResponse.encodeRedirectURL"
+    },
+    "answer": "D",
+    "multi": false
+}

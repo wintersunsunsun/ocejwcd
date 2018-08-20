@@ -1,0 +1,13 @@
+{
+  "answer": "C",
+  "explanation": "A servlet may throw either a ServletException or an UnavailableException\nduring the service of a request. A ServletException signals that some error occurred\nduring the processing of the request and that the container should take appropriate measures\nto clean up the request. An UnavailableException signals that the servlet is unable to\nhandle requests either temporarily or permanently.",
+  "question": "A method call inside your servlet has thrown an IOException resulting from a lost network connection to a necessary resource. The servlet has determined that it will be unable to operate successfully fen few minutes, but expects to be able to resume operation after that period. How should this situation handled?",
+  "options": {
+    "A": "The servlet should re-throw the exception to the web container.",
+    "C": "The servlet should throw an unavailableException to the web container.",
+    "B": "The servlet should throw a servletException to the web container.",
+    "E": "The servlet should retry the request until the method returns successfully.",
+    "D": "The servlet should redirect to an error page that reports the exception message."
+  },
+  "multi": false
+}

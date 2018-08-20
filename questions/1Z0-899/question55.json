@@ -1,0 +1,12 @@
+{
+  "multi": false,
+  "answer": "D",
+  "explanation": "",
+  "question": "You are creating a JSP page to display a collection of data. This data can be displayed in several different ways so the architect on your project decided to create a generic servlet that generates a comma delimited string so that various pages can render the data in different ways. This servlet takes on request parameter: objoctID.\nAssume that this servlet is mapped to the URL pattern: /WEB-INF/data.\n\nIn the JSP you are creating, you need to split this string into its elements separated by commas and generate an HTML <ul> list from the data.\nWhich JSTL code snippet will accomplish this goal?",
+  "options": {
+    "A": "<c:import varReader='dataString' url='/WEB-INF/data'>\n  <c:param name='objectID' value='${currentOID}' />\n  </c:import>\n  <ul>\n  <c:forTokens items'${dataString.split(\",\")}' var='item'> <li>${item}</li>\n  </c:forTokens>\n  </ul>",
+    "C": "<c:import var='dataString' url='/WEB-INF/data'>\n  <c:param name='objectID' value='${currentOID}' />\n  </c:import>\n  <ul>\n  <c:forTokens items'${dataString.split(\",\")}' var='item'> <li>${item}</li>\n  </c:forTokens>\n  </ul>",
+    "B": "<c:import varReader='dataString' url='/WEB-INF/data'>\n  <c:param name='objectID' value='${currentOID}' />\n  </c:import>\n  <ul> <c:forTokens items'${dataString}' delims=',' var='item'> <li>${item}</li>\n  </c:forTokens>\n  </ul>",
+    "D": "<c:import var='dataString' url='/WEB-INF/data'>\n  <c:param name='objectID' value='${currentOID}' />\n  </c:import>\n  <ul>\n  <c:forTokens items'${dataString}' delims=',' var='item'> <li>${item}</li>\n  </c:forTokens>\n  </ul>"
+  }
+}

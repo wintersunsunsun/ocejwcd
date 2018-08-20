@@ -1,0 +1,12 @@
+{
+  "answer": "B",
+  "explanation": "",
+  "question": "Which describes a trigger that causes a call to an AsyncListener?",
+  "options": {
+    "A": "Completion of processing",
+    "C": "Addition of a new filter to the processing stream for this request",
+    "B": "Receipt of a new request from the same client",
+    "D": "Completion of each timer interval"
+  },
+  "multi": false
+}

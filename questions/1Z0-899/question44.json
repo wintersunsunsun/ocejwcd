@@ -1,0 +1,12 @@
+{
+  "answer": "C",
+  "explanation": "http://blogs.oracle.com/swchan/entry/servlet_3_0_web_fragment",
+  "question": "Given a jar file packaged with three web fragments with names X, Y and Z respectively.\nWhich of the following deployment descriptor, web.xml, snippets correspond to the web fragment processing orders of X, Y, Z?\n\n(i) <absolute-ordering>\n      <name>X</name>\n      <name>Y</name>\n      <name>Z</name>\n    </absolute-ordering>\n(ii) <absolute-ordering>\n      <name>X</name>\n      <name>Y</name>\n     </absolute-ordering>\n(iii) <absolute-ordering>\n        </others>\n        <name>Y</name>\n        <name>Z</name>\n      </absolute-ordering>\n(iv) <absolute-ordering>\n      <name>X</name>\n      </others>\n      <name>Z</name>\n     </absolute-ordering>\n(v) <absolute-ordering>\n      <name>X</name>\n      <name>Y</name>\n      </others>\n    </absolute-ordering>",
+  "options": {
+    "A": "(i) only",
+    "C": "(i) and (iv)",
+    "B": "(i) and (ii)",
+    "D": "(i), (iii), (iv) and (v)"
+  },
+  "multi": false
+}

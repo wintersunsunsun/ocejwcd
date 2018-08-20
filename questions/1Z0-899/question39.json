@@ -1,0 +1,12 @@
+{
+  "answer": "AC",
+  "explanation": "http://docs.oracle.com/javaee/6/api/javax/servlet/http/Cookie.html\nHttpOnly代表只允許伺服器存取，無法被用戶端讀取",
+  "question": "A cookie may be set to be an HttpOnly cookie. Setting a cookie to be HttpOnly results in (Choose two)",
+  "options": {
+    "A": "Client to not expose the cookie to client side scripting code",
+    "C": "prevent certain types of cross-site scripting attacks",
+    "B": "Does not work with https protocol",
+    "D": "There is no such thing as an HttpOnly cookie"
+  },
+  "multi": true
+}

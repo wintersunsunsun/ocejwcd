@@ -1,0 +1,12 @@
+{
+    "question": "Which two are characteristics of the Front Controller pattern? (Choose two.)",
+    "options": {
+        "A": "It simplifies remote interfaces to distributed objects.",
+        "B": "It promotes cleaner application partitioning and encourages reuse.",
+        "C": "It provides an initial point of contact for handling all related requests.",
+        "D": "It reduces maintainability due to the increased complexity of the design.",
+        "E": "It provides loosely coupled handlers that can be combined in various permutations."
+    },
+    "answer": "BC",
+    "multi": true
+}

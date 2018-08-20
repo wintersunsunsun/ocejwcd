@@ -1,0 +1,11 @@
+{
+    "question": "Which statement is true if the doStartTag method returns EVAL_BODY_BUFFERED ?",
+    "options": {
+        "A": "The tag handler must implement BodyTag.",
+        "B": "The doAfterBody method is NOT called.",
+        "C": "The setBodyContent method is called once.",
+        "D": "It is never legal to return EVAL_BODY_BUFFERED from doStartTag."
+    },
+    "answer": "C",
+    "multi": false
+}

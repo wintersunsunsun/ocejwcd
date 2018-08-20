@@ -1,0 +1,12 @@
+{
+    "question": "A developer is designing a multi-tier web application and discovers a need to hide the details of<br>establishing and maintaining remote communications from the client. In addition, the application<br>needs to find, in a transparent manner, the heterogeneous business components used to service\nthe client\u2019s requests. Which design patterns, working together, address these issues?",
+    "options": {
+        "A": "Business Delegate and Transfer Object",
+        "B": "Business Delegate and Service Locator",
+        "C": "Front Controller and Business Delegate",
+        "D": "Intercepting Filter and Transfer Object",
+        "E": "Model-View-Controller and Intercepting Filter"
+    },
+    "answer": "B",
+    "multi": false
+}

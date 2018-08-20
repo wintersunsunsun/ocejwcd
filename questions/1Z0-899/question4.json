@@ -1,0 +1,14 @@
+{
+  "answer": "ACE",
+  "explanation": "",
+  "question": "Given:\n11.<% java.util.Map map = new java.util.HashMap();\n12.   request.setAttribute(\"map\", map);\n13.   map.put(\"a\", \"b\");\n14.   map.put(\"b\", \"c\");\n15.   map.put(\"c\", \"d\");\n16.<%-- insert code here --%>\n\nWhich three EL expressions, inserted at line 16, are valid and evaluate to \"d\"? (Choose three)",
+  "options": {
+    "A": "${map.c}",
+    "C": "${map.[\"c\"]}",
+    "B": "${map.[c]}",
+    "E": "${map.[map.b]}",
+    "D": "${map.map.b}",
+    "F": "${map.(map.b)}"
+  },
+  "multi": true
+}

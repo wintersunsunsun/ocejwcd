@@ -1,0 +1,12 @@
+{
+  "answer": "D",
+  "explanation": "http://en.wikipedia.org/wiki/POST_(HTTP)",
+  "question": "A web application wants to expose to its clients an operation that results in a transaction being performed across several systems, for example the transfer of money from one bank account to another\nWhich HTTP method should it use?",
+  "options": {
+    "A": "GET",
+    "C": "OPTIONS",
+    "B": "HEAD",
+    "D": "POST"
+  },
+  "multi": false
+}

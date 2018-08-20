@@ -1,0 +1,11 @@
+{
+    "question": "Given:<br>6. <% int[] nums = {42, 420, 4200};<br>7. request.setAttribute(\u201cfoo\u201d, nums); %>\nWhich two successfully translate and result in a value of true? (Choose two.)",
+    "options": {
+        "A": "${true or false}",
+        "B": "${requestScope[foo][0] > 500}",
+        "C": "${requestScope[\u2018foo\u2019][1] = 420}",
+        "D": "${(requestScope[\u2018foo\u2019][0] lt 50) && (3 gt 2)}"
+    },
+    "answer": "A",
+    "multi": false
+}

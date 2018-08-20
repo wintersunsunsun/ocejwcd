@@ -1,0 +1,13 @@
+{
+    "question": "The Squeaky Bean company has decided to port their web application to a new J2EE 1.4<br>container. While reviewing the application, a developer realizes that in multiple places within the<br>current application, nearly duplicate code exists that finds enterprise beans. Which pattern should\nbe used to eliminate this duplicate code?",
+    "options": {
+        "A": "Transfer Object",
+        "B": "Front Controller",
+        "C": "Service Locator",
+        "D": "Intercepting Filter",
+        "E": "Business Delegate",
+        "F": "Model-View-Controller"
+    },
+    "answer": "C",
+    "multi": false
+}

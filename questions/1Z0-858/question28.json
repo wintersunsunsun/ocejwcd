@@ -1,0 +1,11 @@
+{
+    "question": "Which JSTL code snippet can be used to perform URL rewriting?",
+    "options": {
+        "A": "<a href='<c:url url=\u201dfoo.jsp\u201d/>\u2019 />",
+        "B": "<a href='<c:link url=\u201dfoo.jsp\u201d/>\u2019 />",
+        "C": "<a href='<c:url value=\u201dfoo.jsp\u201d/>\u2019 />",
+        "D": "<a href='<c:link value=\u201dfoo.jsp\u201d/>\u2019 />"
+    },
+    "answer": "C",
+    "multi": false
+}

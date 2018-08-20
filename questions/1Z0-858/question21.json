@@ -1,0 +1,13 @@
+{
+    "question": "You need to store a Java long primitive attribute, called customerOID, into the session scope.<br>Which two code snippets allow you to insert this value into the session? (Choose two.)",
+    "options": {
+        "A": "long customerOID = 47L; session.setAttribute(\u201ccustomerOID\u201d, new Long(customerOID));",
+        "B": "long customerOID = 47L; session.setLongAttribute(\u201ccustomerOID\u201d, new Long(customerOID));",
+        "C": "long customerOID = 47L; session.setAttribute(\u201ccustomerOID\u201d, customerOID);",
+        "D": "long customerOID = 47L; session.setNumericAttribute(\u201ccustomerOID\u201d, new Long(customerOID));",
+        "E": "long customerOID = 47L; session.setLongAttribute(\u201ccustomerOID\u201d, customerOID);",
+        "F": "long customerOID = 47L; session.setNumericAttribute(\u201ccustomerOID\u201d, customerOID);"
+    },
+    "answer": "A",
+    "multi": false
+}

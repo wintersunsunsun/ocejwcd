@@ -1,0 +1,17 @@
+{
+    "question": "One of the use cases in your web application uses many session-scoped attributes. At the end of<br>the use case, you want to clear out this set of attributes from the session object. Assume that this<br>static variable holds this set of attribute names:",
+    "options": {
+        "A": "201. private static final Set<String> USE_CASE_ATTRS;202. static {203. USE_CASE_ATTR",
+        "B": "add(\u201ccustomerOID\u201d);204. USE_CASE_ATTR",
+        "C": "add(\u201ccustMgrBean\u201d);205. USE_CASE_ATTR",
+        "D": "add(\u201corderOID\u201d);206. USE_CASE_ATTR",
+        "E": "add(\u201corderMgrBean\u201d);207. }Which code snippet deletes these attributes from the session object?",
+        "F": "session.removeAll(USE_CASE_ATTRS);",
+        "G": "for ( String attr : USE_CASE_ATTRS ) { session.remove(attr); }",
+        "H": "for ( String attr : USE_CASE_ATTRS ) { session.removeAttribute(attr); }",
+        "I": "for ( String attr : USE_CASE_ATTRS ) { session.deleteAttribute(attr); }",
+        "J": "session.deleteAllAttributes(USE_CASE_ATTRS);"
+    },
+    "answer": "C",
+    "multi": false
+}

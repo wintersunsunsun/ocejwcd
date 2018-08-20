@@ -1,0 +1,12 @@
+{
+    "question": "Which defines the welcome files in a web application deployment descriptor?",
+    "options": {
+        "A": "<welcome> <welcome-file>/welcome.jsp</welcome-file> </welcome> <welcome> <welcome-file>/index.html</welcome-file> </welcome>",
+        "B": "<welcome-file-list> <welcome-file>welcome.jsp</welcome-file> <welcome-file>index.html</welcome-file> </welcome-file-list>",
+        "C": "<welcome> <welcome-file>welcome.jsp</welcome-file> </welcome> <welcome> <welcome-file>index.html</welcome-file> </welcome>",
+        "D": "<welcome-file-list> <welcome-file>/welcome.jsp</welcome-file> <welcome-file>/index.html</welcome-file> </welcome-file-list>",
+        "E": "<welcome> <welcome-file> <welcome-name>Welcome</welcome-name> <location>welcome.jsp</location> </welcome-file> <welcome-file> <welcome-name>Index</welcome-name> <location>index.html</location> </welcome-file> </welcome>"
+    },
+    "answer": "B",
+    "multi": false
+}

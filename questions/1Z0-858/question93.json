@@ -1,0 +1,12 @@
+{
+    "question": "Click the Exhibit button.<br>Assuming the tag library in the exhibit is imported with the prefix stock, which custom tag<br>invocation outputs the contents of the variable exposed by the quote tag?\n<a href=\"//cdn.briefmenow.org/wp-content/uploads/1z0-858/17.jpg\"><img alt=\"\" class=\"aligncenter size-full\" src=\"//cdn.briefmenow.org/wp-content/uploads/1z0-858/17.jpg\"/></a>",
+    "options": {
+        "A": "<stock:quote symbol=\u201dSUNW\u201d /> ${var}",
+        "B": "${var} <stock:quote symbol=\u201dSUNW\u201d />",
+        "C": "<stock:quote symbol=\u201dSUNW\u201d> ${var} </stock:quote>",
+        "D": "<stock:quote symbol=\u201dSUNW\u201d var=\u201dquote\u201d /> ${quote}",
+        "E": "<stock:quote symbol=\u201dSUNW\u201d var=\u201dquote\u201d> <%= quote %> </stock:quote>"
+    },
+    "answer": "D",
+    "multi": false
+}

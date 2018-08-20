@@ -1,0 +1,13 @@
+{
+  "answer": "BD",
+  "explanation": "",
+  "question": "Refer to the Exhibit.\n 1. package com.example;\n 2.\n 3. public class Product {\n 4.     private String name;\n 5.     private double price;\n 6.\n 7.     public Product() {\n 8.         this(\"Default\", 0, 0);\n 9.     }\n10.\n11.    public Product(String name, double price) {\n12.        this.name = name;\n13.        this.price = price;\n14.    }\n15.\n16.    public String getName() {\n17.        return name;\n18.    }\n19.\n20.    public void setName() {\n21.        this.name = name;\n22.    }\n23.\n24.    public double getPrice() {\n25.        return price;\n26.    }\n27.\n28.    public void setPrice(double price) {\n29.        this.price = price;\n30.    }\n31. }\n\nA servlet sets a session-scoped attribute product with an instance of com.example.product an forward to a JSP.\nWhich two output the name of the product in the response? (Choose two)",
+  "options": {
+    "A": "<%=product.getName() %>",
+    "C": "<jsp:useBean id=\"com.example.Product\" scope=\"page\"> <%=product.getName() %></jsp:useBean>",
+    "B": "<jsp:useBean id=\"product\" class=\"com.example.Product\" /> <%=product.getName() %>",
+    "E": "<jsp:useBean id=\"product\" type=\"com.example.Product\"> <%=product.getName() %> </jsp:useBean>",
+    "D": "<jsp:useBean id=\"product\" type=\"com.example.Product\" scope=\"page\" /> <%=product.getName() %>"
+  },
+  "multi": true
+}

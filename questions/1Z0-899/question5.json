@@ -1,0 +1,13 @@
+{
+  "answer": "B",
+  "explanation": "",
+  "question": "You are building a dating service web site.\nPart of the form to submit a client's profile is a group of radio buttons for the person's hobbies:\n\n20. <input type='radio' name='hobbyEnum' value='HIKING'> Hiking <br>\n21. <input type='radio' name='hobbyEnum' value='SKING'> Sking <br>\n22. <input type='radio' name='hobbyEnum' value='SCUBA'> SCUBA <br>\n23. <! \u2013\u2013 and more options \u2013\u2013 >>\n\nAfter the user submits this form, a confirmation screen is displayed with these hobbies listed.\nAssume that an application-scoped hobbies, holds a map between the hobby enumerated type and the display name.\nWhich EL code snippet will display Nth element of the user's selected hobbles?",
+  "options": {
+    "A": "${hobbies[hobbyEnum[N]}",
+    "C": "${hobbies[paramValues@'hobbyEnum'@N]",
+    "B": "${hobbies[paramValues.hobbyEnum[N]]}",
+    "E": "${hobbies[paramValues.hobbyEnum.get(N)]}",
+    "D": "${hobbies.get(paramValues.hobbyEnum[N])}"
+  },
+  "multi": false
+}

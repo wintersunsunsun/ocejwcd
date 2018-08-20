@@ -1,0 +1,12 @@
+{
+  "answer": "D",
+  "explanation": "",
+  "question": "Which interface must a class implement so that instances of the class are notified after any object added to a session?",
+  "options": {
+    "A": "javax.servlet.http.HttpSessionListener",
+    "C": "javax.servlet.http.HttpSessionBindingListener",
+    "B": "javax.servlet.http.HttpSessionValueListener",
+    "D": "javax.servlet.http.HttpSessionAttributeListener"
+  },
+  "multi": false
+}

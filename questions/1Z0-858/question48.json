@@ -1,0 +1,11 @@
+{
+    "question": "Given this fragment from a Java EE deployment descriptor:<br>124. <welcome-file>beta.html</welcome-file><br>125. <welcome-file>alpha.html</welcome-file>\nAnd this request from a browser:\nhttp://www.sun.com/SCWCDtestApp/register\nWhich statement is correct, when the container receives this request?",
+    "options": {
+        "A": "This deployment descriptor is NOT valid.",
+        "B": "The container first looks in the register directory for beta.html.",
+        "C": "The container first looks in the register directory for alpha.html.",
+        "D": "The container first looks for a servlet mapping in the deployment descriptor."
+    },
+    "answer": "D",
+    "multi": false
+}

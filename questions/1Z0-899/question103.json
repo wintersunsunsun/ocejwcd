@@ -1,0 +1,13 @@
+{
+  "answer": "C",
+  "explanation": "* If you're dealing with web applications, /WEB-INF/lib is the portable place to put JARs. This is where web servers servlet containers expect to find an application's jar files.\n\n* The /WEB-INF/classes directory is on the ClassLoader\u2019s classpath. This is where .class files areloaded from when the web application is executing. Any JAR files placed in the /WEB-INF/libdirectory will also be placed on the ClassLoader's classpath.",
+  "question": "Given a web fragment jar file, where should we put the web fragment.xml inside the jar file?",
+  "options": {
+    "A": "WEB-INF",
+    "C": "WEB-INF/lib",
+    "B": "META-INF",
+    "E": "META-INF/services",
+    "D": "WEB-INF/classes"
+  },
+  "multi": false
+}

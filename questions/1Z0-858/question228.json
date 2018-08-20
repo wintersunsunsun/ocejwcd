@@ -1,0 +1,14 @@
+{
+    "question": "Given that a scoped attribute cart exists only in a user\u2019s session, which two, taken independently,<br>ensure the scoped attribute cart no longer exists? (Choose two.)",
+    "options": {
+        "A": "${cart = null}",
+        "B": "<c:remove var=\u201dcart\u201d />",
+        "C": "<c:remove var=\u201d${cart}\u201d />",
+        "D": "<c:remove var=\u201dcart\u201d scope=\u201dsession\u201d />",
+        "E": "<c:remove scope=\u201dsession\u201d>cart</c:remove>",
+        "F": "<c:remove var=\u201d${cart}\u201d scope=\u201dsession\u201d />",
+        "G": "<c:remove scope=\u201dsession\u201d>${cart}</c:remove>"
+    },
+    "answer": "BD",
+    "multi": true
+}

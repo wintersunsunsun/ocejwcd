@@ -1,0 +1,12 @@
+{
+    "question": "You want to create a valid directory structure for your Java EE web application, and you want to<br>put your web application into a WAR file called MyApp.war. Which two are true about the WAR<br>file? (Choose two.)",
+    "options": {
+        "A": "At deploy time, Java EE containers add a directory called META-INF directly into the MyApp directory.",
+        "B": "At deploy time, Java EE containers add a file called MANIFES",
+        "C": "MF directly into the MyApp directory.",
+        "D": "It can instruct your Java EE container to verify, at deploy time, whether you have properly configured your application\u2019s classes.",
+        "E": "At deploy time, Java EE containers add a directory call META-WAR directly into the MyApp directory."
+    },
+    "answer": "A",
+    "multi": false
+}

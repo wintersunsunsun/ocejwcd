@@ -1,0 +1,12 @@
+{
+    "question": "Given a Filter class definition with this method:<br>21. public void doFilter(ServletRequest request,<br>22. ServletResponse response,\n23. FilterChain chain)\n24. throws ServletException, IOException {",
+    "options": {
+        "A": "25. // insert code here26. }Which should you insert at line 25 to properly invoke the next filter in the chain, or the targetservlet if there are no more filters?",
+        "B": "chain.forward(request, response);",
+        "C": "chain.doFilter(request, response);",
+        "D": "request.forward(request, response);",
+        "E": "request.doFilter(request, response);"
+    },
+    "answer": "B",
+    "multi": false
+}

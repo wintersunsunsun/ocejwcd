@@ -1,0 +1,13 @@
+{
+  "answer": "AE",
+  "explanation": "",
+  "question": "A developer chooses to avoid using SingleThreadModel but wants to ensure that data is updated in a thread safe manner.\nWhich two can support this design goal? (Choose two)",
+  "options": {
+    "A": "Store the data in a local variable.",
+    "C": "Store the data in the Httpsession object.",
+    "B": "Store the data in an instance variable.",
+    "E": "Store the data in the ServletRequest object.",
+    "D": "Store the data in the sarvletContext object."
+  },
+  "multi": true
+}

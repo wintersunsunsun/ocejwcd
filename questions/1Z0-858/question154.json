@@ -1,0 +1,14 @@
+{
+    "question": "The tl:taskList and tl:task tags output a set of tasks to the response and are used as follows:<br>11. <tl:taskList><br>12. <tl:task name=\u201dMow the lawn\u201d />\n13. <tl:task name=\u201dFeed the dog\u201d />\n14. <tl:task name=\u201dDo the laundry\u201d />\n15. </tl:taskList>\nThe tl:task tag supplies information about a single task while the tl:taskList tag does the final\noutput. The tag handler for tl:taskList is TaskListTag. The tag handler for tl:task is TaskTag. Both\ntag handlers extend BodyTagSupport.\nWhich allows the tl:taskList tag to get the task names from its nested tl:task children?",
+    "options": {
+        "A": "It is impossible for a tag handler that extends BodyTagSupport to communicate with its parent and child tags.",
+        "B": "In the TaskListTag.doStartTag method, call super.getChildTags() and iterate through the results. Cast each result to a TaskTag and call getName().",
+        "C": "In the TaskListTag.doStartTag method, call getChildTags() on the PageContext and iterate through the results. Cast each result to a TaskTag and call getName().",
+        "D": "Create an addTaskName method in TaskListTag. Have the TaskListTag.doStartTag method, return BodyTag.EVAL_BODY_BUFFERE",
+        "E": "In the TaskTag.doStartTag method, call super.getParent(), cast it to a TaskListTag, and call addTaskName().",
+        "F": "Create an addTaskName method in TaskListTag. Have the TaskListTag.doStartTag method, return BodyTag.EVAL_BODY_BUFFERE",
+        "G": "In the TaskTag.doStartTag method, call findAncestorWithClass() on the PageContext, passing TaskListTag as the class to find. Cast the result to TaskListTag and call addTaskName()."
+    },
+    "answer": "D",
+    "multi": false
+}

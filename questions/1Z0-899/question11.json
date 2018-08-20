@@ -1,0 +1,13 @@
+{
+  "answer": "A",
+  "explanation": "",
+  "question": "APIs for dynamically registering servlets and filters can be called at:",
+  "options": {
+    "A": "Context initialization time",
+    "C": "There is no way to dynamically register servlets and filters",
+    "B": "Any time",
+    "E": "Injected into a servlet context",
+    "D": "Context destruction time"
+  },
+  "multi": false
+}

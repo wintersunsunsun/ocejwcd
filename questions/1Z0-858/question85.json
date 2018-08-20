@@ -1,0 +1,12 @@
+{
+    "question": "For debugging purposes, you need to record how many times a given JSP is invoked before the<br>user\u2019s session has been created. The JSP\u2019s destroy method stores this information to a database.<br>Which JSP code snippet keeps track of this count for the lifetime of the JSP page?",
+    "options": {
+        "A": "<%! int count = 0; %> <% if ( request.getSession(false) == null ) count++; %>",
+        "B": "<%@ int count = 0; %> <% if ( request.getSession(false) == null ) count++; %>",
+        "C": "<% int count = 0; if ( request.getSession(false) == null ) count++; %>",
+        "D": "<%@ int count = 0; if ( request.getSession(false) == null ) count++; %>",
+        "E": "<%! int count = 0; if ( request.getSession(false) == null ) count++; %>"
+    },
+    "answer": "A",
+    "multi": false
+}

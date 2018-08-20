@@ -1,0 +1,33 @@
+body {
+    line-height: 2.0;
+}
+
+.btn-arrow-left {
+    position:relative;
+    margin-bottom: 4px;
+    width:14px;
+    height:14px;
+    padding-left: 6px;
+    padding-right: 6px;
+    border-bottom:10px solid #09c;
+    border-left:10px solid #09c;
+    border-top-width: 0px;
+    border-right-width: 0px;
+    background-color: #ffffff00;
+    transform: rotate(45deg);
+}
+
+.btn-arrow-right {
+    position:relative;
+    margin-top: 4px;
+    width:14px;
+    height:14px;
+    padding-left: 6px;
+    padding-right: 6px;
+    border-bottom:10px solid #09c;
+    border-right:10px solid #09c;
+    border-top-width: 0px;
+    border-left-width: 0px;
+    background-color: #ffffff00;
+    transform: rotate(-45deg);
+}

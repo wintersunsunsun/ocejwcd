@@ -1,0 +1,14 @@
+{
+    "question": "A custom tag is defined to take three attributes. Which two correctly invoke the tag within a JSP<br>page? (Choose two.)",
+    "options": {
+        "A": "<prefix:myTag a=\u201dfoo\u201d b=\u201dbar\u201d c=\u201dbaz\u201d />",
+        "B": "<prefix:myTag attributes={\u201cfoo\u201d,\u201dbar\u201d,\u201dbaz\u201d} />",
+        "C": "<prefix:myTag jsp:attribute a=\u201dfoo\u201d b=\u201dbar\u201d c=\u201dbaz\u201d />",
+        "D": "<prefix:myTag> <jsp:attribute a:foo b:bar c:baz /> </prefix:myTag>",
+        "E": "<prefix:myTag> <jsp:attribute ${\u201cfoo\u201d, \u201cbar\u201d, \u201cbaz\u201d} /> </prefix:myTag>",
+        "F": "<prefix:myTag> <jsp:attribute a=\u201dfoo\u201d b=\u201dbar\u201d c=\u201dbaz\u201d/> </prefix:myTag>",
+        "G": "<prefix:myTag> <jsp:attribute name=\u201da\u201d>foo</jsp:attribute> <jsp:attribute name=\u201db\u201d>bar</jsp:attribute> <jsp:attribute name=\u201dc\u201d>baz</jsp:attribute> </prefix:myTag>"
+    },
+    "answer": "A",
+    "multi": false
+}

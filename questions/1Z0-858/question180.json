@@ -1,0 +1,12 @@
+{
+    "question": "Which two from the web application deployment descriptor are valid? (Choose two.)",
+    "options": {
+        "A": "<error-page> <exception-type>*</exception-type> <location>/error.html</location> </error-page>",
+        "B": "<error-page> <exception-type>java.lang.Error</exception-type> <location>/error.html</location> </error-page>",
+        "C": "<error-page> <exception-type>java.lang.Throwable</exception-type> <location>/error.html</location> </error-page>",
+        "D": "<error-page> <exception-type>java.io.IOException</exception-type> <location>/error.html</location> </error-page>",
+        "E": "<error-page> <exception-type>NullPointerException</exception-type> <location>/error.html</location> </error-page>"
+    },
+    "answer": "CD",
+    "multi": true
+}

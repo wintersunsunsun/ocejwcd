@@ -1,0 +1,11 @@
+{
+    "question": "The JSP developer wants a comment to be visible in the final output to the browser. Which<br>comment style needs to be used in a JSP page?",
+    "options": {
+        "A": "<!\u2013 this is a comment \u2013>",
+        "B": "<% // this is a comment %>",
+        "C": "<%\u2013 this is a comment \u2013%>",
+        "D": "<% /** this is a comment **/ %>"
+    },
+    "answer": "A",
+    "multi": false
+}

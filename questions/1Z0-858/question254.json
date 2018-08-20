@@ -1,0 +1,13 @@
+{
+    "question": "You are building a dating web site. The client\u2019s date of birth is collected along with lots of other<br>information. The Person class has a derived method, getAge():int, which returns the person\u2019s age<br>calculated from the date of birth and today\u2019s date. In one of your JSPs you need to print a special\nmessage to clients within the age group of 25 through 35. Which two EL code snippets will return\ntrue for this condition? (Choose two.)",
+    "options": {
+        "A": "${client.age in [25,35]}",
+        "B": "${client.age between [25,35]}",
+        "C": "${client.age between 25 and 35}",
+        "D": "${client.age <= 35 && client.age >= 25}",
+        "E": "${client.age le 35 and client.age ge 25}",
+        "F": "${not client.age > 35 && client.age < 25}"
+    },
+    "answer": "DE",
+    "multi": true
+}

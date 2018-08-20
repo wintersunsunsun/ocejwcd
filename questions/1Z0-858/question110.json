@@ -1,0 +1,14 @@
+{
+    "question": "Given:<br>11. <%<br>12. request.setAttribute(\u201cvals\u201d, new String[]{\u201c1\u2033,\u201d2\u2033,\u201d3\u2033,\u201d4\u201d});\n13. request.setAttribute(\u201cindex\u201d, \u201c2\u201d);\n14. %>\n15. <%\u2013 insert code here \u2013%>\nWhich three EL expressions, inserted at line 15, are valid and evaluate to \u201c3\u201d? (Choose three.)",
+    "options": {
+        "A": "${vals.2}",
+        "B": "${vals[\u201c2\u201d]}",
+        "C": "${vals.index}",
+        "D": "${vals[index]}",
+        "E": "${vals}[index]",
+        "F": "${vals.(vals.index)}",
+        "G": "${vals[vals[index-1]]}"
+    },
+    "answer": "BDG",
+    "multi": true
+}

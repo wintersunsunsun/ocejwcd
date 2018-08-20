@@ -1,0 +1,11 @@
+{
+    "question": "What is the purpose of session management?",
+    "options": {
+        "A": "To manage the user\u2019s login and logout activities.",
+        "B": "To store information on the client-side between HTTP requests.",
+        "C": "To store information on the server-side between HTTP requests.",
+        "D": "To tell the web container to keep the HTTP connection alive so it can make subsequent requests without the delay of making the TCP connection."
+    },
+    "answer": "C",
+    "multi": false
+}

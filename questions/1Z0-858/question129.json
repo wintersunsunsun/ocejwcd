@@ -1,0 +1,13 @@
+{
+    "question": "Given the web application deployment descriptor elements:",
+    "options": {
+        "A": "11. <filter>12. <filter-name>ParamAdder</filter-name>13. <filter-class>com.example.ParamAdder</filter-class>14. </filter>\u202624. <filter-mapping>25. <filter-name>ParamAdder</filter-name>26. <servlet-name>MyServlet</servlet-name>27. <!\u2013 insert element here \u2013>28. </filter-mapping>Which element, inserted at line 27, causes the ParamAdder filter to be applied when MyServlet isinvoked by another servlet using the RequestDispatcher.include method?",
+        "B": "<include/>",
+        "C": "<dispatcher>INCLUDE</dispatcher>",
+        "D": "<dispatcher>include</dispatcher>",
+        "E": "<filter-condition>INCLUDE</filter-condition>",
+        "F": "<filter-condition>include</filter-condition>"
+    },
+    "answer": "B",
+    "multi": false
+}

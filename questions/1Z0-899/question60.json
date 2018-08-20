@@ -1,0 +1,12 @@
+{
+  "multi": false,
+  "answer": "A",
+  "explanation": "The first version of the HTTP protocol had only one method, namely GET, which would request a page from a server. The response from the server was always an HTML page",
+  "question": "A Client wants to retrieve a representation of a resource, for example an HTML page, allowing a cached version to be returning by an intermediary such a proxy server.\nWhich HTTP method should it use?",
+  "options": {
+    "A": "GET",
+    "C": "POST",
+    "B": "PUT",
+    "D": "DELETE"
+  }
+}

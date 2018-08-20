@@ -1,0 +1,12 @@
+.settings/
+.vscode/
+.gradle/
+build/
+target/
+logs/
+bin/
+*META_INF/
+.classpath
+.project
+.pmd
+*.properties

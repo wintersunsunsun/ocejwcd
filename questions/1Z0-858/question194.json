@@ -1,0 +1,13 @@
+{
+    "question": "A developer has created a web application that includes a servlet for each use case in the<br>application. These servlets have become rather difficult to maintain because the request<br>processing methods have become very large. There is also common processing code in many\nservlets because these use cases are very similar. Which two design patterns can be used\ntogether to refactor and simplify this web application? (Choose two.)",
+    "options": {
+        "A": "Proxy",
+        "B": "View Helper",
+        "C": "Front Controller",
+        "D": "Session Facade",
+        "E": "Business Delegate",
+        "F": "Model-View-Controller"
+    },
+    "answer": "CF",
+    "multi": true
+}

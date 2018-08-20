@@ -1,0 +1,16 @@
+{
+    "question": "Given:<br>5. public class MyTagHandler extends TagSupport {<br>6. public int doStartTag() throws JspException {",
+    "options": {
+        "A": "7. try {8. // insert code here9. } catch(Exception ex) { /* handle exception */ }10. return super.doStartTag();11. }\u202642. }Which code snippet, inserted at line 8, causes the value foo to be output?",
+        "B": "JspWriter w = pageContext.getOut();",
+        "C": "print(\u201cfoo\u201d);",
+        "D": "JspWriter w = pageContext.getWriter();",
+        "E": "print(\u201cfoo\u201d);",
+        "F": "JspWriter w = new JspWriter(pageContext.getWriter());",
+        "G": "print(\u201cfoo\u201d);",
+        "H": "JspWriter w = new JspWriter(pageContext.getResponse());",
+        "I": "print(\u201cfoo\u201d);"
+    },
+    "answer": "A",
+    "multi": false
+}

@@ -1,0 +1,12 @@
+{
+  "answer": "C",
+  "explanation": "",
+  "question": "Which statement is true about web container session management?",
+  "options": {
+    "A": "Access to session-scoped attributes is guaranteed to be thread-safe by the web container.",
+    "C": "If the web application uses HTTPS, then the web container may use the data on the HTTPS request stream to identify the client.",
+    "B": "To activate URL rewriting, the developer must use the HttpServletResponse.setURLRewriting method.",
+    "D": "The JSESSIONID cookie is stored permanently on the client so that a user may return to the web application and the web container will rejoin that session."
+  },
+  "multi": false
+}

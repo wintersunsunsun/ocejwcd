@@ -1,0 +1,12 @@
+{
+    "question": "Which two directives are applicable only to tag files? (Choose two.)",
+    "options": {
+        "A": "tag",
+        "B": "page",
+        "C": "taglib",
+        "D": "include",
+        "E": "variable"
+    },
+    "answer": "A",
+    "multi": false
+}

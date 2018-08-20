@@ -1,0 +1,13 @@
+{
+    "question": "Given an EL function foo, in namespace func, that requires a long as a parameter and returns a<br>Map, which two are valid invocations of function foo? (Choose two.)",
+    "options": {
+        "A": "${func(1)}",
+        "B": "${foo:func(4)}",
+        "C": "${func:foo(2)}",
+        "D": "${foo(5):func}",
+        "E": "${func:foo(\u201ceasy\u201d)}",
+        "F": "${func:foo(\u201c3\u201d).name}"
+    },
+    "answer": "CF",
+    "multi": true
+}

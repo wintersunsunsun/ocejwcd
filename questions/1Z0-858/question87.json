@@ -1,0 +1,11 @@
+{
+    "question": "In a JSP-centric web application, you need to create a catalog browsing JSP page. The catalog is<br>stored as a List object in the catalog attribute of the webapp\u2019s ServletContext object. Which<br>scriptlet code snippet gives you access to the catalog object?",
+    "options": {
+        "A": "<% List catalog = config.getAttribute(\u201ccatalog\u201d); %>",
+        "B": "<% List catalog = context.getAttribute(\u201ccatalog\u201d); %>",
+        "C": "<% List catalog = application.getAttribute(\u201ccatalog\u201d); %>",
+        "D": "<% List catalog = servletContext.getAttribute(\u201ccatalog\u201d); %>"
+    },
+    "answer": "C",
+    "multi": false
+}

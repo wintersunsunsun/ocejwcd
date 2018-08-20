@@ -1,0 +1,11 @@
+{
+    "question": "You have built a collection of custom tags for your web application. The TLD file is located in the<br>file: /WEB-INF/myTags.xml. You refer to these tags in your JSPs using the symbolic name:<br>myTags. Which deployment descriptor element must you use to make this link between the\nsymbolic name and the TLD file name?",
+    "options": {
+        "A": "<taglib> <name>myTags</name> <location>/WEB-INF/myTags.xml</location> </taglib>",
+        "B": "<tags> <name>myTags</name> <location>/WEB-INF/myTags.xml</location> </tags>",
+        "C": "<tags> <tags-uri>myTags</taglib-uri> <tags-location>/WEB-INF/myTags.xml</tags-location> </tags>",
+        "D": "<taglib> <taglib-uri>myTags</taglib-uri> <taglib-location>/WEB-INF/myTags.xml</taglib-location> </taglib>"
+    },
+    "answer": "D",
+    "multi": false
+}

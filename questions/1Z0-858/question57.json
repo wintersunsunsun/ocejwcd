@@ -1,0 +1,11 @@
+{
+    "question": "Which two are characteristics of the Transfer Object design pattern? (Choose two.)",
+    "options": {
+        "A": "It reduces network traffic by collapsing multiple remote requests into one.",
+        "B": "It increases the complexity of the remote interface by removing coarse-grained methods.",
+        "C": "It increases the complexity of the design due to remote synchronization and version control issues.",
+        "D": "It increases network performance introducing multiple fine-grained remote requests which return very small amounts of data."
+    },
+    "answer": "A",
+    "multi": false
+}

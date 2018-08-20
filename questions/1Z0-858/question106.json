@@ -1,0 +1,11 @@
+{
+    "question": "Which mechanism requires the client to provide its public key certificate?",
+    "options": {
+        "A": "HTTP Basic Authentication",
+        "B": "Form Based Authentication",
+        "C": "HTTP Digest Authentication",
+        "D": "HTTPS Client Authentication"
+    },
+    "answer": "D",
+    "multi": false
+}

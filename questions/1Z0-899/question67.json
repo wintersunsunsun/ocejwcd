@@ -1,0 +1,13 @@
+{
+  "answer": "A",
+  "explanation": "Exception is a JSP implicit variable\n\nThe exception variable contains any Exception thrown on the previous JSP page with an errorPage directive that forwards to a page with an isErrorPage directive.\n\nExample:\nIf you had a JSP (index.jsp) which throws an exception (I have deliberately thrown a NumberFormatException by parsing a String, obviously you wouldn't write a page that does this, its just an example)\n\n<%@ page errorPage=\"error.jsp\" %>\n<% Integer.parseInt(\"foo\"); //throws an exception %>This will forward to error.jsp,\n\nIf error.jsp was\n\n<%@ page isErrorPage=\"true\"%>\n<body>\n<h2>Your application has generated an error</h2>\n<h3>Please check for the error given below</h3>\n<b>Exception:</b><br>\n<font color=\"red\"><%= exception.toString() %></font></body>\nBecause it has the\n\n<%@ page isErrorPage=\"true\"%>\npage directive, the implicit variable exception will contain the Exception thrown in the previous jsp\n\nSo when you request index.jsp, the Exception will be thrown, and forwarded to error.jsp which will output html like this\n\n<body>\n<h2>Your application has generated an error</h2>\n<h3>Please check for the error given below</h3>\n<b>Exception:</b><br>\n<font color=\"red\">java.lang.NumberFormatException: For input string: \"foo\"</font></body>\nAs @JB Nizet mentions exception is an instance of Throwable calling exception.getMessage() Forinput string: \"foo\" instead of java.lang.NumberFormatException: For input string: \"foo\"",
+  "question": "You are working on a JSP that is intended to inform users about critical errors in the system. The JSP code is attempting to access the exception that represents the cause of the problem, but your IDE is telling you that the variable does not exist. What should you do to address this problem?",
+  "options": {
+    "A": "Add a page directive stating that this page is an error handler",
+    "C": "Add a <jsp:useBean tag to declare the and access the exception>",
+    "B": "Add scriptlet code to create a variable that refer to the exception",
+    "E": "Edit the page that caused the error to ensure that it specifies this page as its error handler",
+    "D": "Perform the error handling in a servlet rather than in the JSP"
+  },
+  "multi": false
+}

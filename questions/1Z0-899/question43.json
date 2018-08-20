@@ -1,0 +1,12 @@
+{
+  "answer": "C",
+  "explanation": "https://www.ibm.com/developerworks/websphere/library/techarticles/0112_deboer/deboer.html(topic: web modules, third paragraph)",
+  "question": "The jquery_1_3_2.jar file contains the JQuery Ajax framework in its META-INF/ resources directory. Where should the jar file be placed inside the web application to ensure the resources it contains are accessible by clients?",
+  "options": {
+    "A": "WEB-INF/classes",
+    "C": "WEB-INF/lib",
+    "B": "WEB-INF/jar",
+    "D": "WEB-INF/resources"
+  },
+  "multi": false
+}

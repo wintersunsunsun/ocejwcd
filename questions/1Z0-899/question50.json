@@ -1,0 +1,14 @@
+{
+  "answer": "AD",
+  "explanation": "",
+  "question": "Your web application requires the ability to load and remove web files dynamically to the web container's file system? Which two HTTP methods are used to perform these actions? (Choose two)",
+  "options": {
+    "A": "PUT",
+    "C": "SEND",
+    "B": "POST",
+    "E": "REMOVE",
+    "D": "DELETE",
+    "F": "DESTROY"
+  },
+  "multi": true
+}

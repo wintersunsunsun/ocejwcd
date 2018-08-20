@@ -1,0 +1,13 @@
+{
+    "question": "Given that www.example.com/SCWCDtestApp is a validly deployed Java EE web application and<br>that all of the JSP files specified in the requests below exist in the locations specified. Which two<br>requests, issued from a browser, will return an HTTP 404 error? (Choose two.)",
+    "options": {
+        "A": "http://www.example.com/SCWCDtestApp/test.jsp",
+        "B": "http://www.example.com/SCWCDtestApp/WEB-INF/test.jsp",
+        "C": "http://www.example.com/SCWCDtestApp/WEB-WAR/test.jsp",
+        "D": "http://www.example.com/SCWCDtestApp/Customer/test.jsp",
+        "E": "http://www.example.com/SCWCDtestApp/META-INF/test.jsp",
+        "F": "http://www.example.com/SCWCDtestApp/Customer/Update/test.jsp"
+    },
+    "answer": "BE",
+    "multi": true
+}

@@ -1,0 +1,11 @@
+{
+    "question": "You need to create a JSP that generates some JavaScript code to populate an array of strings<br>used on the client-side. Which JSP code snippet will create this array?",
+    "options": {
+        "A": "MY_ARRAY = new Array(); <% for ( int i = 0; i < serverArray.length; i++ ) { MY_ARRAY[<%= i %>] = \u2018<%= serverArray[i] %>\u2019; } %>",
+        "B": "MY_ARRAY = new Array(); <% for ( int i = 0; i < serverArray.length; i++ ) { MY_ARRAY[${i}] = \u2018${serverArray[i]}\u2019; } %>",
+        "C": "MY_ARRAY = new Array(); <% for ( int i = 0; i < serverArray.length; i++ ) { %> MY_ARRAY[<%= i %>] = \u2018<%= serverArray[i] %>\u2019; <% } %>",
+        "D": "MY_ARRAY = new Array(); <% for ( int i = 0; i < serverArray.length; i++ ) { %> MY_ARRAY[${i}] = \u2018${serverArray[i]}\u2019; <% } %>"
+    },
+    "answer": "C",
+    "multi": false
+}

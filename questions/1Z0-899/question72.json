@@ -1,0 +1,12 @@
+{
+  "answer": "A",
+  "explanation": "Note:\n* A session is never null. The session is always present in JSP EL, unless you add\n<%@page session=\"false\" %>\n* If you'd like to check if the session is new or has already been created, use HttpSession#isNew() instead.\n\n<c:if test=\"${not pageContext.session['new']}\">\n<p>You've already visited this site before.</p>\n</c:if>\n<c:if test=\"${pageContext.session['new']}\">\n<p>You've just started the session with this request!</p>\n</c:if>",
+  "question": "Which EL expression returns true if no session has been established with current client?",
+  "options": {
+    "A": "${not(pageContext.session)}",
+    "C": "${requestScope.sessions.this}",
+    "B": "${not(requestScope.session)}",
+    "D": "${sessionScope.empty}"
+  },
+  "multi": false
+}

@@ -1,0 +1,14 @@
+{
+  "answer": "ABCE",
+  "explanation": "GET和PUT僅允許Admin使用，其餘method則是沒被限制，所以答案應剔除掉不被允許的狀況。",
+  "question": "Given:\n3. class MyServlet extends HttpServlet {\n4.  public void doPut(HttpServletRequest req,HttpServletResponse resp) throws ServletException, IOException {\n5.   // servlet code here\n\u2026\n26.  }\n27. }\n\nIf the DD contains a single security constraint associated with MyServlet and its only <http-method> tags and <auth-constraint> tags are:\n\n<http-method>GET</http-method>\n<http-method>PUT</http-method>\n<auth-constrain>Admin</auth-constrain>\n\nWhich four requests would be allowed by the container? (Choose four)",
+  "options": {
+    "A": "A user whose role is Admin can perform a PUT.",
+    "C": "A user whose role is Admin can perform a POST.",
+    "B": "A user whose role is Admin can perform a GET.",
+    "E": "A user whose role is Member can perform a POST.",
+    "D": "A user whose role is Member can perform a PUT.",
+    "F": "A user whose role is Member can perform a GET."
+  },
+  "multi": true
+}

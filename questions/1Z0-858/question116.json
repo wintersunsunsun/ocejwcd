@@ -1,0 +1,13 @@
+{
+    "question": "Click the Exhibit button.<br>The h:highlight tag renders its body, highlighting an arbitrary number of words, each of which is<br>passed as an attribute (word1, word2, \u2026). For example, a JSP page can invoke the h:highlight tag\nas follows:\n11. <h:highlight color=\u201dyellow\u201d word1=\u201dhigh\u201d word2=\u201dlow\u201d>\n12. high medium low\n13. </h:highlight>\nGiven that HighlightTag extends SimpleTagSupport, which three steps are necessary to\nimplement the tag handler for the highlight tag? (Choose three).\n<a href=\"//cdn.briefmenow.org/wp-content/uploads/1z0-858/18.jpg\"><img alt=\"\" class=\"aligncenter size-full\" src=\"//cdn.briefmenow.org/wp-content/uploads/1z0-858/18.jpg\"/></a>",
+    "options": {
+        "A": "add a doTag method",
+        "B": "add a doStartTag method",
+        "C": "add a getter and setter for the color attribute",
+        "D": "create and implement a TagExtraInfo class",
+        "E": "implement the DynamicAttributes interface",
+        "F": "add a getter and setter for the word1 and word2 attributes"
+    },
+    "answer": "A",
+    "multi": false
+}

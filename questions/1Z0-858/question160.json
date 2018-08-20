@@ -1,0 +1,12 @@
+{
+    "question": "Which two are valid values for the <transport-guarantee> element inside a <security-constraint><br>element of a web application deployment descriptor? (Choose two.)",
+    "options": {
+        "A": "NULL",
+        "B": "SECURE",
+        "C": "INTEGRAL",
+        "D": "ENCRYPTED",
+        "E": "CONFIDENTIAL"
+    },
+    "answer": "CE",
+    "multi": true
+}

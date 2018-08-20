@@ -1,0 +1,13 @@
+{
+    "question": "Which three are true about servlet filters? (Choose three.)",
+    "options": {
+        "A": "A filter must implement the destroy method.",
+        "B": "A filter must implement the doFilter method.",
+        "C": "A servlet may have multiple filters associated with it.",
+        "D": "A servlet that is to have a filter applied to it must implement the javax.servlet.FilterChain interface.",
+        "E": "A filter that is part of a filter chain passes control to the next filter in the chain by invoking the FilterChain.forward method.",
+        "F": "For each <filter> element in the web application deployment descriptor, multiple instances of a filter may be created by the web container."
+    },
+    "answer": "A",
+    "multi": false
+}

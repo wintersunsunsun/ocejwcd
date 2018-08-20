@@ -1,0 +1,13 @@
+{
+  "answer": "BE",
+  "explanation": "",
+  "question": "Which two statements are true about the security-related tags in a valid Java EE deployment descriptor? (Choose two)",
+  "options": {
+    "A": "Every <security-constraint> tag must have at least one <http-method> tag.",
+    "C": "A given <auth-constraint> tag can apply to only one <web-resource-collection> tag.",
+    "B": "A <security-constraint> tag can have many <web-resource-collection> tags.",
+    "E": "It is possible to construct a valid <security-constraint> tag such that, for a given resource user roles can access that resource.",
+    "D": "A given <web-resource-collection> tag can contain from zero to many <url-pattern> tags."
+  },
+  "multi": true
+}

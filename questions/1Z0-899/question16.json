@@ -1,0 +1,12 @@
+{
+  "answer": "B",
+  "explanation": "",
+  "question": "In ServletContext.getNamedDispatcher(String arg0) arg0 is the",
+  "options": {
+    "A": "url of a servlet relative to the ServletRequest",
+    "C": "name of a servlet",
+    "B": "url of a servlet relative to the Context",
+    "D": "absolute url to any servlet in any Context"
+  },
+  "multi": false
+}

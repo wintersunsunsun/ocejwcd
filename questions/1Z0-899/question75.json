@@ -1,0 +1,14 @@
+{
+  "answer": "ACF",
+  "explanation": "",
+  "question": "For which three events can web application event listeners be registered? (Choose three.)",
+  "options": {
+    "A": "when a session is created",
+    "C": "when a session has timed out",
+    "B": "after a servlet is destroyed",
+    "E": "when a servlet has forwarded a request",
+    "D": "when a cookie has been created",
+    "F": "when a session attribute value is changed"
+  },
+  "multi": true
+}

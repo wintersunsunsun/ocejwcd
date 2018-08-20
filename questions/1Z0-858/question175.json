@@ -1,0 +1,13 @@
+{
+    "question": "Given:<br>String value = getServletContext().getInitParameter(\u201cfoo\u201d);<br>in an HttpServlet and a web application deployment descriptor that contains:\n<context-param>\n<param-name>foo</param-name>\n<param-value>frodo</param-value>\n</context-param>\nWhich two are true? (Choose two.)",
+    "options": {
+        "A": "The foo initialization parameter CANNOT be set programmatically.",
+        "B": "Compilation fails because getInitParameter returns type Object.",
+        "C": "The foo initialization parameter is NOT a servlet initialization parameter.",
+        "D": "Compilation fails because ServletContext does NOT have a getInitParameter method.",
+        "E": "The foo parameter must be defined within the <servlet> element of the deployment descriptor.",
+        "F": "The foo initialization parameter can also be retrieved using getServletConfig().getInitParameter(\u201cfoo\u201d)."
+    },
+    "answer": "A",
+    "multi": false
+}

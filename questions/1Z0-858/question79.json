@@ -1,0 +1,13 @@
+{
+    "question": "Which element of the web application deployment descriptor defines the servlet class associated<br>with a servlet instance?",
+    "options": {
+        "A": "<class>",
+        "B": "<webapp>",
+        "C": "<servlet>",
+        "D": "<codebase>",
+        "E": "<servlet-class>",
+        "F": "<servlet-mapping>"
+    },
+    "answer": "E",
+    "multi": false
+}

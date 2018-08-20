@@ -1,0 +1,11 @@
+{
+    "question": "A developer for the company web site has been told that users may turn off cookie support in their<br>browsers. What must the developer do to ensure that these customers can still use the web<br>application?",
+    "options": {
+        "A": "The developer must ensure that every URL is properly encoded using the appropriate URL rewriting APIs.",
+        "B": "The developer must provide an alternate mechanism for managing sessions and abandon the HttpSession mechanism entirely.",
+        "C": "The developer can ignore this issue. Web containers are required to support automatic URL rewriting when cookies are not supported.",
+        "D": "The developer must add the string id=<sessionid> to the end of every URL to ensure that the conversation with the browser can continue."
+    },
+    "answer": "A",
+    "multi": false
+}

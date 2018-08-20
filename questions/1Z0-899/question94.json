@@ -1,0 +1,12 @@
+{
+  "answer": "D",
+  "explanation": "Code example:\nString sessionID = null;\nif (request.getServletContext().getEffectiveSessionTrackingModes().contains(SessionTrackingMode.URL)) {\n  // Get the session ID if there was one\n  sessionID = request.getPathParameter(SessionConfig.getSessionUriParamName(request.getContext()));\n  if (sessionID != null) {\n    request.setRequestedSessionId(sessionID);\n    request.setRequestedSessionURL(true);\n  }\n}\n\ngetDefaultSessionTrackingModes:\njava.util.Set<SessionTrackingMode> getDefaultSessionTrackingModes() Gets the session tracking modes that are supported by default for this ServletContext.",
+  "question": "Which Java expression can be used to check whether the web container is currently configured to track sessions via URL rewriting?",
+  "options": {
+    "A": "servletContext.getSessionCookiesConfiq().isHttpOnly()",
+    "C": "servletContext.getDefaultSessionTrackingModes().contains(SessionTrackingMode.URL)",
+    "B": "servletContext.getSessionCookiesConfiq().isSecure()",
+    "D": "servletContext.getEffectiveSessionTrackingModes().contains(SessionTrackingMode.URL)"
+  },
+  "multi": false
+}

@@ -1,0 +1,11 @@
+{
+    "question": "You web application uses a lot of Java enumerated types in the domain model of the application.<br>Built into each enum type is a method, getDisplay(), which returns a localized, user-oriented string.<br>There are many uses for presenting enums within the web application, so your manager has\nasked you to create a custom tag that iterates over the set of enum values and processes the\nbody of the tag once for each value; setting the value into a page-scoped attribute called,\nenumValue. Here is an example of how this tag is used:\n10. <select name=\u2019season\u2019>\n11. <t:everyEnum type=\u2019com.example.Season\u2019>\n12. <option value=\u2019${enumValue}\u2019>${enumValue.display}</option>\n13. </t:everyEnum>\n14. </select>\nYou have decided to use the Simple tag model to create this tag handler.\nWhich tag handler method will accomplish this goal?",
+    "options": {
+        "A": "public void doTag() throw JspException { try { for ( Enum value : getEnumValues() ) { pageContext.setAttribute(\u201cenumValue\u201d, value); getJspBody().invoke(getOut()); } } (Exception e) { throw new JspException(e); } }",
+        "B": "public void doTag() throw JspException { try { for ( Enum value : getEnumValues() ) { getJspContext().setAttribute(\u201cenumValue\u201d, value); getJspBody().invoke(null); } } (Exception e) { throw new JspException(e); } }",
+        "C": "public void doTag() throw JspException { try { for ( Enum value : getEnumValues() ) { getJspContext().setAttribute(\u201cenumValue\u201d, value); getJspBody().invoke(getJspContext().getWriter()); } } (Exception e) { throw new JspException(e); } }",
+        "D": "public void doTag() throw JspException { try { for ( Enum value : getEnumValues() ) { pageContext.setAttribute(\u201cenumValue\u201d, value); getJspBody().invoke(getJspContext().getWriter()); } } (Exception e) { throw new JspException(e); } }"
+    },
+    "answer": "B",
+    "multi": false
+}

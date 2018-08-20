@@ -1,0 +1,12 @@
+{
+  "answer": "A",
+  "explanation": "",
+  "question": "View the Exhibit.\n// Source Servlet : Source.java\n10.  public class Source extends HttpServlet {\n11.    public void service(HttpServletRequest request,\n12.                        HttpServletResponse response)\n13.                throws ServletException, IOException {\n14.      RequestDispatcher rd =\n15.        request.getRequestDispatcher(\"/dest/Destination\");\n16.      rd.forward(request, response);\n17.    }\n18.  }\n\n// Filter : ParamAdder.java\n12.  public class ParamAdder implements Filter {\n       // ...\n23.    public void doFilter(ServletRequest request,\n24.                         ServletResponse response,\n25.                         FilterChain chain)\n26.          throws ServletException, IOException {\n27.      request.setAttribute(\"filterAdded\", \"addedByFilter\");\n28.      chain.doFilter(request, response);\n29.    }\n       // ...\n50.  }\n\n// Destination Servlet Destination.java\n10.  public class Destination extends HttpServlet {\n11.    public void service(HttpServletRequest request,\n12.                        HttpServletResponse response)\n13.                throws ServletException, IOException {\n14.      String filterParam =\n15.         (String) request.getAttribute(\"filterAdded\");\n16.      response.getWriter().println(\"filterAdded = \"\n17.                                   + filterParam);\n18.    }\n19.  }\n\nGiven the web application deployment descriptor elements:\n11.  <filter>\n12.  <filter-name>ParamAdder</filter-name>\n13.  <filter-class>com.example.ParamAdder</filter-class>\n14.  </filter>\n\u2026\n31.  <filter-mapping>\n32.  <filter-name>ParamAdder</filter-name>\n33.  <servlet-name>Destination</servlet-name>\n34.  </filter-mapping>\n\u2026\n55.  <servlet-mapping>\n56.  <servlet-name>Destination</servlet-name>\n57.  <url-pattern>/dest/Destination</url-pattern>\n58.  </servlet-mapping>\n\nWhat is the result of a client request of the Source servlet with no query string?",
+  "options": {
+    "A": "The output \"filterAdded = null\" is written to the response stream.",
+    "C": "An exception is thrown at runtime within the service method of the Source servlet.",
+    "B": "The output \"filterAdded = addedByFilter\" is written to the response stream.",
+    "D": "An exception is thrown at runtime within the service method of the Destination servlet."
+  },
+  "multi": false
+}

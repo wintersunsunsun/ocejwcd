@@ -1,0 +1,12 @@
+{
+    "question": "Which two statements are true about using the isUserInRole method to implement security in a<br>Java EE application? (Choose two.)",
+    "options": {
+        "A": "It can be invoked only from the doGet or doPost methods.",
+        "B": "It can be used independently of the getRemoteUser method.",
+        "C": "Can return \u201ctrue\u201d even when its argument is NOT defined as a valid role name in the deployment descriptor.",
+        "D": "Using the isUserInRole method overrides any declarative authentication related to the method in which it is invoked.",
+        "E": "Using the isUserInRole method overrides any declarative authorization related to the method in which it is invoked."
+    },
+    "answer": "BC",
+    "multi": true
+}

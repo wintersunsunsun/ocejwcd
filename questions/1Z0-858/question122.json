@@ -1,0 +1,13 @@
+{
+    "question": "A developer has created a special servlet that is responsible for generating XML content that is<br>sent to a data warehousing subsystem. This subsystem uses HTTP to request these large data<br>files, which are compressed by the servlet to save internal network bandwidth. The developer has\nreceived a request from management to create several more of these data warehousing servlets.\nThe developer is about to copy and paste the compression code into each new servlet. Which\ndesign pattern can consolidate this compression code to be used by all of the data warehousing",
+    "options": {
+        "A": "servlets?",
+        "B": "Facade",
+        "C": "View Helper",
+        "D": "Transfer Object",
+        "E": "Intercepting Filter",
+        "F": "Composite Facade"
+    },
+    "answer": "D",
+    "multi": false
+}

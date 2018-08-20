@@ -1,0 +1,11 @@
+{
+    "question": "Which activity supports the data integrity requirements of an application?",
+    "options": {
+        "A": "using HTTPS as a protocol",
+        "B": "using an LDAP security realm",
+        "C": "using HTTP Basic authentication",
+        "D": "using forms-based authentication"
+    },
+    "answer": "A",
+    "multi": false
+}

@@ -1,0 +1,14 @@
+{
+  "answer": "DF",
+  "explanation": "",
+  "question": "A developer wants to make a name attribute available to all servlets associated with a particular user, across multiple requests from that user, from the same browser instance.\nWhich two provide this capability from within a tag handler? (Choose two)",
+  "options": {
+    "A": "pageContext.setAttribute(\"name\", theValue);",
+    "C": "pageContext.getRequest().setAttribute(\"name\", theValue);",
+    "B": "pageContext.setAttribute(\"name\", getSession());",
+    "E": "pageContext.setAttribute(\"name\", theValue, PageContext.PAGE_SCOPE);",
+    "D": "pageContext.getSession().setAttribute(\"name\", theValue);",
+    "F": "pageContext.setAttribute(\"name\", theValue, PageContext.SESSION_SCOPE);"
+  },
+  "multi": true
+}

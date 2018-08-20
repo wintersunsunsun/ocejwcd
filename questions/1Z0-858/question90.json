@@ -1,0 +1,13 @@
+{
+    "question": "You are writing a JSP that includes scriptlet code to declare a List variable and initializes that<br>variable to an ArrayList object. Which two JSP code snippets can you use to import these list<br>types? (Choose two.)",
+    "options": {
+        "A": "<%! import java.util.*; %>",
+        "B": "<%! import java.util.List; import java.util.ArrayList; %>",
+        "C": "<%@ page import=\u2019java.util.List\u2019 import=\u2019java.util.ArrayList\u2019 %>",
+        "D": "<%@ import types=\u2019java.util.List\u2019 types=\u2019java.util.ArrayList\u2019 %>",
+        "E": "<%@ page import=\u2019java.util.List,java.util.ArrayList\u2019 %>",
+        "F": "<%@ import types=\u2019java.util.List,java.util.ArrayList\u2019 %>"
+    },
+    "answer": "CE",
+    "multi": true
+}

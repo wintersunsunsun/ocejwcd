@@ -1,0 +1,15 @@
+{
+  "answer": "BE",
+  "explanation": "Servlet Context\u521d\u59cb\u53c3\u6578\u5b9a\u7fa9\u5728web.xml\u6a94\u4e2d\u7684<context-param>\u6a19\u7c64\u5167\u3002\n${initParam.titleStr}\u8207${initParam['titleStr']}\u7686\u70ba\u5408\u6cd5\u53d6\u5f97Servlet Context\u521d\u59cb\u53c3\u6578\u4e4bEL\u7a0b\u5f0f\u8a9e\u6cd5",
+  "question": "A web application allows the HTML title banner to be set using a context initialization parameter called titlestr.\n\nWhich two properly set the title in the scenario? (Choose two)",
+  "options": {
+    "A": "<title>${titlestr}</title>",
+    "C": "<title>${param[0].titlestr}</title>",
+    "B": "<title>${initparam.titlestr}</title>",
+    "E": "<title>${initParam['titleStr']}</title>",
+    "D": "<title>${paramValues.titleStr}</title>",
+    "G": "<title>${request.get(\"titleStr\")}</title>",
+    "F": "<title>${servletParams.titleStr}</title>"
+  },
+  "multi": true
+}

@@ -1,0 +1,13 @@
+{
+  "answer": "C",
+  "explanation": "",
+  "question": "Which of the following annotations relate to security in a servlet?\n(i)   @WebSecurity\n(ii)  @RolesAllowed\n(iii) @WebConstraint\n(iv)  @HttpConstraint\n(v)   @Servletsecurity",
+  "options": {
+    "A": "(i) only",
+    "C": "(iv) and (v)",
+    "B": "(i) and (iii)",
+    "E": "(ii) and (iv)",
+    "D": "(iii) and (v)"
+  },
+  "multi": false
+}

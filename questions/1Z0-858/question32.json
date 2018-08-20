@@ -1,0 +1,11 @@
+{
+    "question": "Your management has required that all JSPs be created to generate XHTML-compliant content<br>and to facilitate that decision, you are required to create all JSPs using the JSP Document format.<br>In the reviewOrder.jspx page, you need to use several core JSTL tags to process the collection of\norder items in the customer\u2019s shopping cart. Which JSP code snippets must you use in the\nreviewOrder.jspx page?",
+    "options": {
+        "A": "<html xmlns:jsp=\u201dhttp://java.sun.com/JSP/Page\u201d version=\u201d2.0\u2033> <jsp:directive.taglib prefix=\u201dc\u201d uri=\u201dhttp://java.sun.com/jsp/jstl/core\u201d /> <!\u2013 page content \u2013> </html>",
+        "B": "<html xmlns:jsp=\u201dhttp://java.sun.com/JSP/Page\u201d version=\u201d2.0\u2033 xmlns:c=\u201dhttp://java.sun.com/jsp/jstl/core\u201d> <!\u2013 page content \u2013> </html>",
+        "C": "<jsp:root xmlns:jsp=\u201dhttp://java.sun.com/JSP/Page\u201d version=\u201d2.0\u2033> <jsp:directive.taglib prefix=\u201dc\u201d uri=\u201dhttp://java.sun.com/jsp/jstl/core\u201d /> <!\u2013 page content \u2013> </jsp:root>",
+        "D": "<jsp:root xmlns:jsp=\u201dhttp://java.sun.com/JSP/Page\u201d version=\u201d2.0\u2033 xmlns:c=\u201dhttp://java.sun.com/jsp/jstl/core\u201d> <!\u2013 page content \u2013> </jsp:root>"
+    },
+    "answer": "D",
+    "multi": false
+}

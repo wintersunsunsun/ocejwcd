@@ -1,0 +1,12 @@
+{
+    "question": "Given the two security constraints in a deployment descriptor:<br>101. <security-constraint><br>102. <!\u2013a correct url-pattern and http-method goes here\u2013>\n103. <auth-constraint><role-name>SALES</role-name></auth-\n103. <auth-constraint>\n104. <role-name>SALES</role-name>\n105. </auth-constraint>\n106. </security-constraint>\n107. <security-constraint>\n108. <!\u2013a correct url-pattern and http-method goes here\u2013>\n109. <!\u2013 Insert an auth-constraint here \u2013>\n110. </security-constraint>\nIf the two security constraints have the same url-pattern and http-method, which two, inserted",
+    "options": {
+        "A": "independently at line 109, will allow users with role names of either SALES or MARKETING toaccess this resource? (Choose two.)",
+        "B": "<auth-constraint/>",
+        "C": "<auth-constraint> <role-name>*</role-name> </auth-constraint>",
+        "D": "<auth-constraint> <role-name>ANY</role-name> </auth-constraint>",
+        "E": "<auth-constraint> <role-name>MARKETING</role-name> </auth-constraint>"
+    },
+    "answer": "BD",
+    "multi": true
+}

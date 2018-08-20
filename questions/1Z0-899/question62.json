@@ -1,0 +1,13 @@
+{
+  "multi": false,
+  "answer": "E",
+  "explanation": "",
+  "question": "Assume a JavaBean com.example.GradedTestBean exists and has two attributes. The attribute name of type java.lang.string and the attribute score is of type jave.lang.Integer. An array of com.example.GradedTestBean objects is exposed to the page in a request-scoped attribute called results. Additionally, an empty java.util.HashMap called resultMap is placed in the page scope.\nA JSP page needs to add the first entry in results to resultMap, storing the name attribute of the bean as the key and the score attribute of the bean as the value.\nWhich code snippet of JSTL code satisfies this requirement?",
+  "options": {
+    "A": "${resultMap[results[0].name] = results[0].score}",
+    "C": "<c:set var=\"resultMap\" property=\"${results[0].name}\">${results[0].value}</c:set>",
+    "B": "<c:set var=\"${resultMap}\" key=\"{results[0].name}\" value=\"${results[0].score}\" />",
+    "E": "<c:set target=\"${resultMap}\" property=\"${results[0].name}\" value=\"${results[0].score}\" />",
+    "D": "<c:set var=\"resultMap\" property=\"${results[0].name}\" value=\"${results[0].score}\" />"
+  }
+}

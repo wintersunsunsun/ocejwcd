@@ -1,0 +1,13 @@
+{
+  "answer": "E",
+  "explanation": "",
+  "question": "A servlet wishes to indicate that it is unable to initialize at the present time, but that the initialization might succeed at some future time. Which is true?",
+  "options": {
+    "A": "This cannot be expressed. A servlet either initializes correctly or fails.",
+    "C": "The servlet should delay until it is ready to complete initialization successfully.",
+    "B": "This expression is not necessary. If a servlet fails to initialize, the container will try again later each time a request is received that attempts to invoke that servlet.",
+    "E": "The servlet should throw a servletException",
+    "D": "The servlet should throw an UnavailableException"
+  },
+  "multi": false
+}

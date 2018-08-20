@@ -1,0 +1,11 @@
+{
+    "question": "Given an HttpSession session, a ServletRequest request, and a ServletContext context, which<br>retrieves a URL to /WEB-INF/myconfig.xml within a web application?",
+    "options": {
+        "A": "session.getResource(\u201c/WEB-INF/myconfig.xml\u201d)",
+        "B": "request.getResource(\u201c/WEB-INF/myconfig.xml\u201d)",
+        "C": "context.getResource(\u201c/WEB-INF/myconfig.xml\u201d)",
+        "D": "getClass().getResource(\u201c/WEB-INF/myconfig.xml\u201d)"
+    },
+    "answer": "C",
+    "multi": false
+}

@@ -1,0 +1,11 @@
+{
+    "question": "Which is a benefit of precompiling a JSP page?",
+    "options": {
+        "A": "It avoids initialization on the first request.",
+        "B": "It provides the ability to debug runtime errors in the application.",
+        "C": "It provides better performance on the first request for the JSP page.",
+        "D": "It avoids execution of the _jspService method on the first request."
+    },
+    "answer": "C",
+    "multi": false
+}

@@ -1,0 +1,13 @@
+{
+    "question": "Click the Exhibit button.<br>The attribute \u201cname\u201d has a value of \u201cFoo,\u201d<br>What is the result if this tag handler\u2019s tag is invoked?\n<a href=\"//cdn.briefmenow.org/wp-content/uploads/1z0-858/5.jpg\"><img alt=\"\" class=\"aligncenter size-full\" src=\"//cdn.briefmenow.org/wp-content/uploads/1z0-858/5.jpg\"/></a>",
+    "options": {
+        "A": "Foo",
+        "B": "done",
+        "C": "Foodone",
+        "D": "An exception is thrown at runtime.",
+        "E": "No output is produced from this code.",
+        "F": "Compilation fails because of an error in this code."
+    },
+    "answer": "A",
+    "multi": false
+}

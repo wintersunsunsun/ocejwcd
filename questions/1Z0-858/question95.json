@@ -1,0 +1,12 @@
+{
+    "question": "Assume a JavaBean com.example.GradedTestBean exists and has two attributes. The attribute<br>name is of type java.lang.String and the attribute score is of type java.lang.Integer.<br>An array of com.example.GradedTestBean objects is exposed to the page in a request-scoped\nattribute called results. Additionally, an empty java.util.HashMap called resultMap is placed in the\npage scope.\nA JSP page needs to add the first entry in results to resultMap, storing the name attribute of the\nbean as the key and the score attribute of the bean as the value.\nWhich code snippet of JSTL code satisfies this requirement?",
+    "options": {
+        "A": "${resultMap[results[0].name] = results[0].score}",
+        "B": "<c:set var=\u201d${resultMap}\u201d key=\u201d${results[0].name}\u201d value=\u201d${results[0].score}\u201d />",
+        "C": "<c:set var=\u201dresultMap\u201d property=\u201d${results[0].name}\u201d> ${results[0].value} </c:set>",
+        "D": "<c:set var=\u201dresultMap\u201d property=\u201d${results[0].name}\u201d value=\u201d${results[0].score}\u201d />",
+        "E": "<c:set target=\u201d${resultMap}\u201d property=\u201d${results[0].name}\u201d value=\u201d${results[0].score}\u201d />"
+    },
+    "answer": "E",
+    "multi": false
+}

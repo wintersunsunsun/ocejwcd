@@ -1,0 +1,25 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <title>OCEJWCD</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" th:href="@{/css/bootstrap.min.css}" />
+    <link rel="stylesheet" th:href="@{/css/leo.css}" />
+    <script th:src="@{/js/jquery.js}"></script>
+    <script th:src="@{/js/bootstrap.bundle.min.js}"></script>
+    <script th:src="@{/js/vue.js}"></script>
+    <script th:src="@{/js/http-vue-loader.js}"></script>
+</head>
+
+<body>
+    <div th:replace="fragments/header" />
+    <br />
+    <article class="container">
+        <div th:replace="content/questions" />
+    </article>
+    
+    <script th:src="@{/js/src/questions.js}"></script>
+</body>
+
+</html>

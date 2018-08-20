@@ -1,0 +1,14 @@
+{
+  "multi": false,
+  "answer": "D",
+  "explanation": "",
+  "question": "A web browser need NOT always perform a complete request for a particular page that it suspects might NOT have changed. The HTTP specification provides a mechanism for the browser to retrieve only a partial response from the web server; this response includes information, such as the Last-Modified date but NOT the body of the page.\nWhich HTTP method will the browser use to retrieve such a partial response?",
+  "options": {
+    "A": "GET",
+    "C": "SEND",
+    "B": "ASK",
+    "E": "TRACE",
+    "D": "HEAD",
+    "F": "OPTIONS"
+  }
+}

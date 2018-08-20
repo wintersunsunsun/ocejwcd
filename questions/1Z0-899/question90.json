@@ -1,0 +1,14 @@
+{
+  "answer": "F",
+  "explanation": "",
+  "question": "As a convenience feature, your web pages include an Ajax request every five minutes to a special servlet that monitors the age of the user's session. The client-side JavaScript that handles the Ajax callback displays a message on the screen as the session ages. The Ajax call does NOT pass any cookies, but it passes the session ID in a request parameter called sessionID. In addition, assume that your webapp keeps a hasmap of session objects by the ID. Here is a partial implementation of this servlet:\n\n10. public class SessionAgeServlet extends HttpServlet {\n11.  public void service(HttpServletRequest request, HttpServletResponse) throws IOException {\n12.  String sessionID = request.getParameter(\"sessionID\");\n13.  HttpSession session = getSession(sessionID);\n14.  long age = // your code here\n15.  response.getWriter().print(age);\n16.  }\n\u2026  // more code here\n47. }\n\nWhich code snippet on line 14, will determine the age of the session?",
+  "options": {
+    "A": "session.getMaxInactiveInterval();",
+    "C": "session.getLastAccessedTime().getTime() \u2013 session.getCreationTime().getTime();",
+    "B": "session.getLastAccessed().getTime() \u2013 session.getCreationTime().getTime();",
+    "E": "session.getMaxInactiveInterval() \u2013 session.getCreationTime();",
+    "D": "session.getLastAccessed() \u2013 session.getCreationTime();",
+    "F": "session.getLastAccessedTime() \u2013 session.getCreationTime();"
+  },
+  "multi": false
+}

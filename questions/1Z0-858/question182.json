@@ -1,0 +1,14 @@
+{
+    "question": "Which path is required to be present within a WAR file?",
+    "options": {
+        "A": "/classes",
+        "B": "/index.html",
+        "C": "/MANIFEST-INF",
+        "D": "/WEB-INF/web.xml",
+        "E": "/WEB-INF/classes",
+        "F": "/WEB-INF/index.html",
+        "G": "/META-INF/index.xml"
+    },
+    "answer": "D",
+    "multi": false
+}

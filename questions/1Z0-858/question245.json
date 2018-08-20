@@ -1,0 +1,12 @@
+{
+    "question": "Your company has a corporate policy that prohibits storing a customer\u2019s credit card number in any<br>corporate database. However, users have complained that they do NOT want to re-enter their<br>credit card number for each transaction. Your management has decided to use client-side cookies\nto record the user\u2019s credit card number for 120 days. Furthermore, they also want to protect this\ninformation during transit from the web browser to the web container; so the cookie must only be\ntransmitted over HTTPS. Which code snippet creates the \u201ccreditCard\u201d cookie and adds it to the\nout going response to be stored on the user\u2019s web browser?",
+    "options": {
+        "A": "10. Cookie c = new Cookie(\u201ccreditCard\u201d, usersCard); 11. c.setSecure(true); 12. c.setAge(10368000); 13. response.addCookie(c);",
+        "B": "10. Cookie c = new Cookie(\u201ccreditCard\u201d, usersCard); 11. c.setHttps(true); 12. c.setMaxAge(10368000); 13. response.setCookie(c);",
+        "C": "10. Cookie c = new Cookie(\u201ccreditCard\u201d, usersCard); 11. c.setSecure(true); 12. c.setMaxAge(10368000); 13. response.addCookie(c);",
+        "D": "10. Cookie c = new Cookie(\u201ccreditCard\u201d, usersCard); 11. c.setHttps(true); 12. c.setAge(10368000); 13. response.addCookie(c);",
+        "E": "10. Cookie c = new Cookie(\u201ccreditCard\u201d, usersCard); 11. c.setSecure(true); 12. c.setAge(10368000); 13. response.setCookie(c);"
+    },
+    "answer": "C",
+    "multi": false
+}

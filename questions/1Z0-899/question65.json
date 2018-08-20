@@ -1,0 +1,12 @@
+{
+  "answer": "A",
+  "explanation": "",
+  "question": "You are building your own layout mechanism by including dynamic content for the page's header and footer sections. The footer is always static, but the header generates the <title> tag that requests the page name to be specified dynamically when the header is imported.\nWhich JSP code snippet performs the import of the header content?",
+  "options": {
+    "A": "<jsp:include page='/WEB-INF/jsp/header.jsp'>\n  <jsp:param name='pageName' value='Welcome Page' />\n  </jsp:include>",
+    "C": "<jsp:include page='/WEB-INF/jsp/header.jsp'>\n  <jsp:attribute name='pageName' value='Welcome Page' />\n  </jsp:include>",
+    "B": "<jsp:import page='/WEB-INF/jsp/header.jsp'>\n  <jsp:param name='pageName' value='Welcome Page' />\n  </jsp:import>",
+    "D": "<jsp:import page='/WEB-INF/jsp/header.jsp'>\n  <jsp:attribute name='pageName' value='Welcome Page' />\n  </jsp:import>"
+  },
+  "multi": false
+}

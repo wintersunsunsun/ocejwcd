@@ -1,0 +1,12 @@
+{
+  "answer": "D",
+  "explanation": "",
+  "question": "Which security mechanism uses the concept of a realm?",
+  "options": {
+    "A": "authorization",
+    "C": "confidentiality",
+    "B": "data integrity",
+    "D": "authentication"
+  },
+  "multi": false
+}

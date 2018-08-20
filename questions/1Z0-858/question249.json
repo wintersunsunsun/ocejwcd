@@ -1,0 +1,12 @@
+{
+    "question": "Which two prevent a servlet from handling requests? (Choose two.)",
+    "options": {
+        "A": "The servlet\u2019s init method returns a non-zero status.",
+        "B": "The servlet\u2019s init method throws a ServletException.",
+        "C": "The servlet\u2019s init method sets the ServletResponse\u2019s content length to 0.",
+        "D": "The servlet\u2019s init method sets the ServletResponse\u2019s content type to null.",
+        "E": "The servlet\u2019s init method does NOT return within a time period defined by the servlet container."
+    },
+    "answer": "BE",
+    "multi": true
+}

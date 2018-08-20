@@ -1,0 +1,12 @@
+{
+    "question": "Which two are required elements for the <web-resource-collection> element of a web application<br>deployment descriptor? (Choose two.)",
+    "options": {
+        "A": "<realm-name>",
+        "B": "<url-pattern>",
+        "C": "<description>",
+        "D": "<web-resource-name>",
+        "E": "<transport-guarantee>"
+    },
+    "answer": "BD",
+    "multi": true
+}

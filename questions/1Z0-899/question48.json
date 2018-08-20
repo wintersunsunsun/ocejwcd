@@ -1,0 +1,13 @@
+{
+  "answer": "BDE",
+  "explanation": "",
+  "question": "You are creating a new JSP page and you need to execute some code that acts when the page is first executed, but only once. Which three are possible mechanisms for performing this initialization code? (Choose three)",
+  "options": {
+    "A": "In the init method.",
+    "C": "In the constructor of the JSP\u2019s Java code.",
+    "B": "In the jspInit method.",
+    "E": "In a JSP declaration, which includes a static initializer block.",
+    "D": "In a JSP declaration, which includes an initializer block."
+  },
+  "multi": true
+}

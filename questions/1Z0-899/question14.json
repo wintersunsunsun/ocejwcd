@@ -1,0 +1,13 @@
+{
+  "answer": "AD",
+  "explanation": "",
+  "question": "You want to create a filter for your web application and your filter will implement\n\njavax.servlet.Filter.\n\nWhich two statements are true? (Choose two)",
+  "options": {
+    "A": "Your filter class must implement an init method and a destroy method.",
+    "C": "When your filter chains to the next filter, it should pass the same arguments it received in its doFilter method.",
+    "B": "Your filter class must also implement javax.sarvlat.FilterChain.",
+    "E": "Your filter class must implement a doFilter method that takes, among other things, an HttpServletRequest object and an HttpServletResponse object.",
+    "D": "The method that your filter invokes on the object it received that implements javax.servlet.FilterChain can invoke either another filter or a servlet."
+  },
+  "multi": true
+}

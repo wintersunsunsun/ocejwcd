@@ -1,0 +1,12 @@
+{
+    "question": "Given an HttpServletRequest request:<br>22. String id = request.getParameter(\u201cjsessionid\u201d);<br>23. // insert code here\n24. String name = (String) session.getAttribute(\u201cname\u201d);\nWhich three can be placed at line 23 to retrieve an existing HttpSession object? (Choose three.)",
+    "options": {
+        "A": "HttpSession session = request.getSession();",
+        "B": "HttpSession session = request.getSession(id);",
+        "C": "HttpSession session = request.getSession(true);",
+        "D": "HttpSession session = request.getSession(false);",
+        "E": "HttpSession session = request.getSession(\u201cjsessionid\u201d);"
+    },
+    "answer": "A",
+    "multi": false
+}

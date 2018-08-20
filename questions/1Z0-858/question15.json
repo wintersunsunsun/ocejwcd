@@ -1,0 +1,14 @@
+{
+    "question": "A developer wants a web application to be notified when the application is about to be shut down.<br>Which two actions are necessary to accomplish this goal? (Choose two.)",
+    "options": {
+        "A": "include a listener directive in a JSP page",
+        "B": "configure a listener in the TLD file using the <listener> element",
+        "C": "include a <servlet-destroy> element in the web application deployment descriptor",
+        "D": "configure a listener in the application deployment descriptor, using the <listener> element",
+        "E": "include a class implementing ServletContextListener as part of the web application deployment",
+        "F": "include a class implementing ContextDestroyedListener as part of the web application deployment",
+        "G": "include a class implementing HttpSessionAttributeListener as part of the web application deployment"
+    },
+    "answer": "DE",
+    "multi": true
+}

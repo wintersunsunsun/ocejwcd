@@ -1,0 +1,13 @@
+{
+    "question": "A custom JSP tag must be able to support an arbitrary number of attributes whose names are<br>unknown when the tag class is designed. Which two are true? (Choose two.)",
+    "options": {
+        "A": "The <body-content> element in the echo tag TLD must have the value JS",
+        "B": "The echo tag handler must define the setAttribute(String key, String value) method.",
+        "C": "The <dynamic-attributes>true</dynamic-attributes> element must appear in the echo tag TL",
+        "D": "",
+        "E": "The class implementing the echo tag handler must implement the javax.servlet.jsp.tagext.IterationTag interface.",
+        "F": "The class implementing the echo tag handler must implement the javax.servlet.jsp.tagext.DynamicAttributes interface."
+    },
+    "answer": "CE",
+    "multi": true
+}

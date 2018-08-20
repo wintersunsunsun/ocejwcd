@@ -1,0 +1,15 @@
+{
+  "answer": "BDG",
+  "explanation": "${vals[\"2\"]} = ${vals[2]} = 3\n${vals[index]} = ${vals[\"2\"]} = 3\n${vals[vals[index-1]]} = ${vals[vals[2-1]]} -> ${vals[2]} = 3",
+  "question": "Given:\n11. <%\n12. request.setAttribute(\"vals\", new String[] {\"1\", \"2\", \"3\", \"4\"});\n13. request.setAttribute(\"index\", \"2\");\n14. %>\n15. <%\u2013\u2013 insert code here \u2013\u2013%>\n\nWhich three EL expressions, inserted at line 15, are valid and evaluate to \"3\"? (Choose three)",
+  "options": {
+    "A": "${vals.2}",
+    "C": "${vals.index}",
+    "B": "${vals[\"2\"]}",
+    "E": "${vals}[index]",
+    "D": "${vals[index]}",
+    "G": "${vals[vals[index-1]]}",
+    "F": "${vals.(vals.index)}"
+  },
+  "multi": true
+}

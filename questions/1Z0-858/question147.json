@@ -1,0 +1,13 @@
+{
+    "question": "You are creating an error page that provides a user-friendly screen whenever a server exception<br>occurs. You want to hide the stack trace, but you do want to provide the exception\u2019s error<br>message to the user so the user can provide it to the customer service agent at your company.\nWhich EL code snippet inserts this error message into the error page?",
+    "options": {
+        "A": "Message: <b>${exception.message}</b>",
+        "B": "Message: <b>${exception.errorMessage}</b>",
+        "C": "Message: <b>${request.exception.message}</b>",
+        "D": "Message: <b>${pageContext.exception.message}</b>",
+        "E": "Message: <b>${request.exception.errorMessage}</b>",
+        "F": "Message: <b>${pageContext.exception.errorMessage}</b>"
+    },
+    "answer": "D",
+    "multi": false
+}

@@ -1,0 +1,12 @@
+{
+    "question": "Which two are true about authentication? (Choose two.)",
+    "options": {
+        "A": "Form-based logins should NOT be used with HTTP",
+        "B": "When using Basic Authentication the target server is NOT authenticated.",
+        "C": "J2EE compliant web containers are NOT required to support the HTTPS protocol.",
+        "D": "Web containers are required to support unauthenticated access to unprotected web resources.",
+        "E": "Form-based logins should NOT be used when sessions are maintained by cookies or SSL session information."
+    },
+    "answer": "BD",
+    "multi": true
+}

@@ -1,0 +1,12 @@
+{
+    "question": "Given:<br>6. <myTag:foo bar=\u201942\u2019><br>7. <%=\u201dprocessing\u201d %>\n8. </myTag:foo>\nand a custom tag handler for foo which extends TagSupport.\nWhich two are true about the tag handler referenced by foo? (Choose two.)",
+    "options": {
+        "A": "The doStartTag method is called once.",
+        "B": "The doAfterBody method is NOT called.",
+        "C": "The EVAL_PAGE constant is a valid return value for the doEndTag method.",
+        "D": "The SKIP_PAGE constant is a valid return value for the doStartTag method.",
+        "E": "The EVAL_BODY_BUFFERED constant is a valid return value for the doStartTag method."
+    },
+    "answer": "A",
+    "multi": false
+}

@@ -1,0 +1,11 @@
+{
+    "question": "Click the Exhibit button.<br>Assume the tag library in the exhibit is placed in a web application in the path /WEBINF/tld/example.tld.<br>1.\n2. <ex:hello />\nWhich JSP code, inserted at line 1, completes the JSP code to invoke the hello tag?\n<a href=\"//cdn.briefmenow.org/wp-content/uploads/1z0-858/30.jpg\"><img alt=\"\" class=\"aligncenter size-full\" src=\"//cdn.briefmenow.org/wp-content/uploads/1z0-858/30.jpg\"/></a>",
+    "options": {
+        "A": "<%@ taglib prefix=\u201dex\u201d uri=\u201d/WEB-INF/tld\u201d %>",
+        "B": "<%@ taglib uri=\u201d/WEB-INF/tld/example.tld\u201d %>",
+        "C": "<%@ taglib prefix=\u201dex\u201d uri=\u201dhttp://localhost:8080/tld/example.tld\u201d %>",
+        "D": "<%@ taglib prefix=\u201dex\u201d uri=\u201dhttp://example.com/tld/example\u201d %>"
+    },
+    "answer": "D",
+    "multi": false
+}

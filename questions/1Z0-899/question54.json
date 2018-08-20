@@ -1,0 +1,14 @@
+{
+  "multi": true,
+  "answer": "BE",
+  "explanation": "",
+  "question": "In a jsp-centric shopping cart application cart application to move a client's home address of Customer object into the shipping address of the order object. The address data is stored in a value object class called Address with properties for: street address, city, province, country, and postal code.\n\nWhich two code snippets can be used to accomplish this goal?",
+  "options": {
+    "A": "<c:set var='order' property='shipAddress' value='${client.homeAddress}' />",
+    "C": "<jsp:setProperty name='${order}' property='shipAddress' value='${client.homeAddress}' />",
+    "B": "<c:set target='${order}' property='shipAddress' value='${client.homeAddress}' />",
+    "E": "<c:set target='${order}' property='shipAddress'> <jsp:getProperty name='client' property='homeAddress' /> </c:set>",
+    "D": "<c:set var='order' property='shipAddress'> <jsp:getProperty name='client' property='homeAddress' /> </c:store>",
+    "F": "<c:setProperty name='${order}' property='shipAddress'> <jsp:getProperty name='client' property='homeAddress' /> </c:setProperty>"
+  }
+}

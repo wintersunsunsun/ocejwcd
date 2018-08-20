@@ -1,0 +1,14 @@
+{
+  "answer": "ABF",
+  "explanation": "",
+  "question": "Which three are true about the HttpServletRequestWrapper class? (Choose three.)",
+  "options": {
+    "A": "The HttpServletRequestWrapper is an example of the Decorator pattern.",
+    "C": "A subclass of HttpServletRequestWrapper CANNOT modify the behavior of the getReader method.",
+    "B": "The HttpServletRequestWrapper can be used to extend the functionality of a servlet request.",
+    "E": "An HttpServletRequestWrapper CANNOT be used on the request passed to the RequestDispatcher.interface.",
+    "D": "An HttpServletRequestWrapper may be used only by a class implement the javax.servlet.Filter interface.",
+    "F": "An HttpServletRequestWrapper may modify the header of a request within an object implementing the javax.servlet.Filter interface."
+  },
+  "multi": true
+}

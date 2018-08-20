@@ -1,0 +1,15 @@
+{
+  "answer": "F",
+  "explanation": "",
+  "question": "Which EL expression evaluates to the request URI?",
+  "options": {
+    "A": "${requestURI}",
+    "C": "${request.getURI}",
+    "B": "${request.URI}",
+    "E": "${requestScope.requestURI}",
+    "D": "${request.requestURI}",
+    "G": "${requestScope.request.requestDRI}",
+    "F": "${pageContext.request.requestURI}"
+  },
+  "multi": false
+}

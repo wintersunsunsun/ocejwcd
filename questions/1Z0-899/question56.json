@@ -1,0 +1,14 @@
+{
+  "multi": false,
+  "answer": "C",
+  "explanation": "\u6ca1\u6709jsp:import\u8fd9\u4e2a\u6807\u7b7e\n<jsp:include page=\"\">\u8bf7\u6c42\u65f6\u52a0\u8f7dpage\u9875\u9762\n<%@include file=\"\">\u7f16\u8bd1\u65f6\u4e0e\u8be5\u9875\u9762\u7f16\u8bd1\u4e3a\u4e00\u4e2a\u6587\u4ef6",
+  "question": "Which JSP standard action can be used to import content from a resource called foo.jsp?",
+  "options": {
+    "A": "<jsp:import file='foo.jsp' />",
+    "C": "<jsp:include page='foo.jsp' />",
+    "B": "<jsp:import page='foo.jsp' />",
+    "E": "<jsp:import>foo.jsp</jsp:import>",
+    "D": "<jsp:include file='foo.jsp' />",
+    "F": "<jsp:include>foo.jsp</jsp:include>"
+  }
+}

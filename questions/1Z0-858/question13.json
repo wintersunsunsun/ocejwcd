@@ -1,0 +1,12 @@
+{
+    "question": "Servlet A receives a request that it forwards to servlet B within another web application in the<br>same web container. Servlet A needs to share data with servlet B and that data must not be visible<br>to other servlets in A\u2019s web application. In which object can the data that A shares with B be\nstored?",
+    "options": {
+        "A": "HttpSession",
+        "B": "ServletConfig",
+        "C": "ServletContext",
+        "D": "HttpServletRequest",
+        "E": "HttpServletResponse"
+    },
+    "answer": "D",
+    "multi": false
+}

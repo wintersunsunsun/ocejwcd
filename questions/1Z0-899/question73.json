@@ -1,0 +1,13 @@
+{
+  "answer": "BE",
+  "explanation": "",
+  "question": "Your web application uses a simple architecture in which servlets handle requests and then forward to a JSP using a request dispatcher. You need to pass information calculated in the servlet to the JSP for view generation. This information must NOT be accessible to any other servlet, JSP or session in the webapp. Which two techniques can you use to accomplish this goal?(Choose two)",
+  "options": {
+    "A": "Add attributes to the session object.",
+    "C": "Add parameters on the request object.",
+    "B": "Add attributes on the request object.",
+    "E": "Add parameters to the JSP's URL when generating the request dispatcher.",
+    "D": "Use the pageContext object to add request attributes."
+  },
+  "multi": true
+}

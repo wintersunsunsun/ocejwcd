@@ -1,0 +1,14 @@
+{
+    "question": "Click the Exhibit button.<br>Given:<br>10. <form action=\u2019create_product.jsp\u2019>\n11. Product Name: <input type=\u2019text\u2019 name=\u2019prodName\u2019/>\n\n12. Product Price: <input type=\u2019text\u2019 name=\u2019prodPrice\u2019/>\n\n13. </form>\nFor a given product instance, which three jsp:setProperty attributes must be used to initialize its\nproperties from the HTML form? (Choose three.)\n<a href=\"//cdn.briefmenow.org/wp-content/uploads/1z0-858/27.jpg\"><img alt=\"\" class=\"aligncenter size-full\" src=\"//cdn.briefmenow.org/wp-content/uploads/1z0-858/27.jpg\"/></a>",
+    "options": {
+        "A": "id",
+        "B": "name",
+        "C": "type",
+        "D": "param",
+        "E": "property",
+        "F": "reqParam",
+        "G": "attribute"
+    },
+    "answer": "BDE",
+    "multi": true
+}

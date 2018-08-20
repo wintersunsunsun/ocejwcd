@@ -1,0 +1,12 @@
+{
+    "question": "You have built a web application that you license to small businesses. The webapp uses a context<br>parameter, called licenseExtension, which enables certain advanced features based on your<br>client\u2019s license package. When a client pays for a specific service, you provide them with a license\nextension key that they insert into the <context-param> of the deployment descriptor. Not every\nclient will have this context parameter so you need to create a context listener to set up a default\nvalue in the licenseExtension parameter. Which code snippet will accomplish this goal?",
+    "options": {
+        "A": "You cannot do this because context parameters CANNOT be altered programmatically.",
+        "B": "String ext = context.getParameter(\u2018licenseExtension\u2019); if ( ext == null ) { context.setParameter(\u2018licenseExtension\u2019, DEFAULT); }",
+        "C": "String ext = context.getAttribute(\u2018licenseExtension\u2019); if ( ext == null ) { context.setAttribute(\u2018licenseExtension\u2019, DEFAULT); }",
+        "D": "String ext = context.getInitParameter(\u2018licenseExtension\u2019); if ( ext == null ) { context.resetInitParameter(\u2018licenseExtension\u2019, DEFAULT); }",
+        "E": "String ext = context.getInitParameter(\u2018licenseExtension\u2019); if ( ext == null ) { context.setInitParameter(\u2018licenseExtension\u2019, DEFAULT); }"
+    },
+    "answer": "A",
+    "multi": false
+}

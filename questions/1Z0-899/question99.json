@@ -1,0 +1,13 @@
+{
+  "answer": "D",
+  "explanation": "<role-link>會關聯到<security-role>的子元素<role-name>，因此假設第24行被執行，則該使用者角色將會是Administrator。",
+  "question": "Given this fragment in a servlet:\n\n23.  if(reg.isUserInRole(\"Admin\")) {\n24.  // do stuff\n25.  }\n\nAnd the following fragment from the related Java EE deployment descriptor:\n\n812.  <security-role-ref>\n813.  <role-name>Admin</role-name>\n814.  <role-link>Administrator</role-link>\n815.  </security-role-ref>\n900.  <security-role>\n901.  <role-name>Admin</role-name>\n902.  <role-name>Administrator</role-name>\n903.  </security-role>\n\nWhat is the result?",
+  "options": {
+    "A": "Line 24 can never be reached.",
+    "C": "If line 24 executes, the user's role will be Admin.",
+    "B": "The deployment descriptor is NOT valid.",
+    "E": "If line 24 executes, the user's role will NOT be predictable.",
+    "D": "If line 24 executes, the user's role will be Administrator."
+  },
+  "multi": false
+}

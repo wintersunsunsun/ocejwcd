@@ -1,0 +1,12 @@
+{
+  "answer": "A",
+  "explanation": "",
+  "question": "You have a use in your web application that adds several session-scoped attributes. At the end of the use case, one of these objects, the manage attribute, is removed and then it needs to decide which of the other session-scoped attributes to remove.\n\nHow can this goal be accomplished?",
+  "options": {
+    "A": "The object of the manager attribute should implement the HttpSessionBindingListener and it should call the removeAttribute method on the appropriate session attributes.",
+    "C": "The object of the manager attribute should implement the HttpSessionBindingListener rind it should call the deleteAttribute method on the appropriate session attributes.",
+    "B": "The object of the manager attribute should implement the HttpSessionListenar and it should call the removeAttribute method on the appropriate session attributes.",
+    "D": "The object of the manager attribute should implement the HttpSessionListener and it should call the deleteAttribute method on the appropriate session attributes."
+  },
+  "multi": false
+}

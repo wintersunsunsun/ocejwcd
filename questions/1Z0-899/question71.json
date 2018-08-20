@@ -1,0 +1,14 @@
+{
+  "answer": "EF",
+  "explanation": "",
+  "question": "Given an EL function declared with:\n\n11. <function>\n12.   <name>spin</name>\n13.  <function-class>com.example.Spinner</function-class>\n14.  <function-signature>\n15.      java.lang.String.spinIt()\n16.  </function-signature>\n17. </function>\n\nWhich two are true? (Choose two)",
+  "options": {
+    "A": "The function method must have the signature:\n  public String spin().",
+    "C": "The function method must have the signature: \n  public String spinIt().",
+    "B": "The method must be mapped to the logical name \"pin\" in the web.xml file.",
+    "E": "The function method must have the signature: \n  public static String spinIt().",
+    "D": "The function method must have the signature: \n  public static String spin().",
+    "F": "The function class must be named Spinner, and must be in the package com.example."
+  },
+  "multi": true
+}

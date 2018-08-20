@@ -1,0 +1,13 @@
+{
+  "answer": "D",
+  "explanation": "",
+  "question": "Given an HttpServletRequest request and an httpServletResponse response:\n\n41. HttpSession session = null;\n42. // insert code here\n43. if (session == null) {\n44.  // do something if session does not exist\n45. } else {\n46.  // do something if session exists\n47. }\n\nTo implement the design intent, which statement must be inserted at line 42?",
+  "options": {
+    "A": "session = response.getSession();",
+    "C": "session = request.getSession(true);",
+    "B": "session = request.getSession();",
+    "E": "session = request.getSession(\"jsessionid\");",
+    "D": "session = request.getSession(false);"
+  },
+  "multi": false
+}

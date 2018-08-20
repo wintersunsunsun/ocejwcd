@@ -1,0 +1,14 @@
+{
+    "question": "Given an EL function declared with:<br>11. <function><br>12. <name>spin</name>\n13. <function-class>com.example.Spinner</function-class>",
+    "options": {
+        "A": "14. <function-signature>15. java.lang.String spinIt()16. </function-signature>17. </function>Which two are true? (Choose two.)",
+        "B": "The function method must have the signature: public String spin().",
+        "C": "The method must be mapped to the logical name \u201cspin\u201d in the web.xml file.",
+        "D": "The function method must have the signature: public String spinIt().",
+        "E": "The function method must have the signature public static String spin().",
+        "F": "The function method must have the signature: public static String spinIt().",
+        "G": "The function class must be named Spinner, and must be in the package com.example."
+    },
+    "answer": "EF",
+    "multi": true
+}
