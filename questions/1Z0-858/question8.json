@@ -1,5 +1,5 @@
 {
-    "question": "Click the Exhibit button.<br>The attribute \u201cname\u201d has a value of \u201cFoo,\u201d<br>What is the result if this tag handler\u2019s tag is invoked?\n<a href=\"//cdn.briefmenow.org/wp-content/uploads/1z0-858/5.jpg\"><img alt=\"\" class=\"aligncenter size-full\" src=\"//cdn.briefmenow.org/wp-content/uploads/1z0-858/5.jpg\"/></a>",
+    "question": "Click the Exhibit button.\nThe attribute \"name\" has a value of \"Foo,\"\nWhat is the result if this tag handler's tag is invoked?\n<img src=\"//cdn.briefmenow.org/wp-content/uploads/1z0-858/5.jpg\"/>",
     "options": {
         "A": "Foo",
         "B": "done",

@@ -1,5 +1,5 @@
 {
-    "question": "Given the JSP code:<br><% request.setAttribute(\u201cfoo\u201d, \u201cbar\u201d); %><br>and the Classic tag handler code:\n5. public int doStartTag() throws JspException {\n6. // insert code here\n7. // return int\n8. }\nAssume there are no other \u201cfoo\u201d attributes in the web application.\nWhich invocation on the pageContext object, inserted at line 6, assigns \u201cbar\u201d to the variable x?",
+    "question": "Given the JSP code:\n<% request.setAttribute(\u201cfoo\u201d, \u201cbar\u201d); %>\nand the Classic tag handler code:\n5. public int doStartTag() throws JspException {\n6. // insert code here\n7. // return int\n8. }\nAssume there are no other \u201cfoo\u201d attributes in the web application.\nWhich invocation on the pageContext object, inserted at line 6, assigns \u201cbar\u201d to the variable x?",
     "options": {
         "A": "String x = (String) pageContext.getAttribute(\u201cfoo\u201d);",
         "B": "String x = (String) pageContext.getRequestScope(\u201cfoo\u201d);",

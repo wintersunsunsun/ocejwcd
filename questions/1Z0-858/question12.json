@@ -1,12 +1,11 @@
 {
-    "question": "The sl:shoppingList and sl:item tags output a shopping list to the response and are used as<br>follows:<br>11. <sl:shoppingList>\n12. <sl:item name=\u201dBread\u201d />\n13. <sl:item name=\u201dMilk\u201d />\n14. <sl:item name=\u201dEggs\u201d />\n15. </sl:shoppingList>",
+    "question": "The sl:shoppingList and sl:item tags output a shopping list to the response and are used as\nfollows:\n11. <sl:shoppingList>\n12. <sl:item name=\u201dBread\u201d />\n13. <sl:item name=\u201dMilk\u201d />\n14. <sl:item name=\u201dEggs\u201d />\n15. </sl:shoppingList>\nThe tag handler for sl:shoppingList is ShoppingListTag and the tag handler for sl:item isItemSimpleTag.ShoppingListTag extends BodyTagSupport and ItemSimpleTag extends SimpleTagSupport.\nWhich is true?",
     "options": {
-        "A": "The tag handler for sl:shoppingList is ShoppingListTag and the tag handler for sl:item isItemSimpleTag.ShoppingListTag extends BodyTagSupport and ItemSimpleTag extends SimpleTagSupport.Which is true?",
-        "B": "ItemSimpleTag can find the enclosing instance of ShoppingListTag by calling getParent() and casting the result to ShoppingListTag.",
-        "C": "ShoppingListTag can find the child instances of ItemSimpleTag by calling super.getChildren() and casting each to an ItemSimpleTag.",
-        "D": "It is impossible for ItemSimpleTag and ShoppingListTag to find each other in a tag hierarchy because one is a Simple tag and the other is a Classic tag.",
-        "E": "ShoppingListTag can find the child instances of ItemSimpleTag by calling getChildren() on the PageContext and casting each to an ItemSimpleTag.",
-        "F": "ItemSimpleTag can find the enclosing instance of ShoppingListTag by calling findAncestorWithClass() on the PageContext and casting the result to ShoppingListTag."
+        "A": "ItemSimpleTag can find the enclosing instance of ShoppingListTag by calling getParent() and casting the result to ShoppingListTag.",
+        "B": "ShoppingListTag can find the child instances of ItemSimpleTag by calling super.getChildren() and casting each to an ItemSimpleTag.",
+        "C": "It is impossible for ItemSimpleTag and ShoppingListTag to find each other in a tag hierarchy because one is a Simple tag and the other is a Classic tag.",
+        "D": "ShoppingListTag can find the child instances of ItemSimpleTag by calling getChildren() on the PageContext and casting each to an ItemSimpleTag.",
+        "E": "ItemSimpleTag can find the enclosing instance of ShoppingListTag by calling findAncestorWithClass() on the PageContext and casting the result to ShoppingListTag."
     },
     "answer": "A",
     "multi": false

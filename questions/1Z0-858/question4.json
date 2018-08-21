@@ -1,5 +1,5 @@
 {
-    "question": "Which implicit object is used in a JSP page to retrieve values associated with <context-param><br>entries in the deployment descriptor?",
+    "question": "Which implicit object is used in a JSP page to retrieve values associated with <context-param> entries in the deployment descriptor?",
     "options": {
         "A": "config",
         "B": "request",

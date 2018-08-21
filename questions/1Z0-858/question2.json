@@ -1,5 +1,5 @@
 {
-    "question": "Given the JSP code:<br>10. <html><br>11. <body>\n12. <jsp:useBean id=\u2019customer\u2019 class=\u2019com.example.Customer\u2019 />\n13. Hello, ${customer.title} ${customer.lastName}, welcome\n14. to Squeaky Beans, Inc.\n15. </body>\n16. </html>\nWhich three types of JSP code are used? (Choose three.)",
+    "question": "Given the JSP code:\n10. <html>\n11. <body>\n12. <jsp:useBean id='customer' class='com.example.Customer' />\n13. Hello, ${customer.title} ${customer.lastName}, welcome\n14. to Squeaky Beans, Inc.\n15. </body>\n16. </html>\nWhich three types of JSP code are used? (Choose three.)",
     "options": {
         "A": "Java code",
         "B": "template text",

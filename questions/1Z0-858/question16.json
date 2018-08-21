@@ -1,5 +1,5 @@
 {
-    "question": "You want to create a filter for your web application and your filter will implement<br>javax.servlet.Filter.<br>Which two statements are true? (Choose two.)",
+    "question": "You want to create a filter for your web application and your filter will implement javax.servlet.Filter. Which two statements are true? (Choose two.)",
     "options": {
         "A": "Your filter class must implement an init method and a destroy method.",
         "B": "Your filter class must also implement javax.servlet.FilterChain.",

@@ -1,5 +1,5 @@
 {
-    "question": "A developer has used this code within a servlet:<br>62. if(request.isUserInRole(\u201cvip\u201d)) {<br>63. // VIP-related logic here\n64. }\nWhat else must the developer do to ensure that the intended security goal is achieved?",
+    "question": "A developer has used this code within a servlet:\n62. if(request.isUserInRole(\u201cvip\u201d)) {\n63. // VIP-related logic here\n64. }\nWhat else must the developer do to ensure that the intended security goal is achieved?",
     "options": {
         "A": "create a user called vip in the security realm",
         "B": "define a group within the security realm and call it vip",

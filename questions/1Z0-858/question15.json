@@ -1,5 +1,5 @@
 {
-    "question": "A developer wants a web application to be notified when the application is about to be shut down.<br>Which two actions are necessary to accomplish this goal? (Choose two.)",
+    "question": "A developer wants a web application to be notified when the application is about to be shut down. Which two actions are necessary to accomplish this goal? (Choose two.)",
     "options": {
         "A": "include a listener directive in a JSP page",
         "B": "configure a listener in the TLD file using the <listener> element",

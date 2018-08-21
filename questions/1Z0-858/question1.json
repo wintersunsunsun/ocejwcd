@@ -1,10 +1,10 @@
 {
-    "question": "To take advantage of the capabilities of modern browsers that use web standards, such as<br>XHTML and CSS, your web application is being converted from simple JSP pages to JSP<br>Document format. However, one of your JSPs, /scripts/screenFunctions.jsp, generates a\nJavaScript file. This file is included in several web forms to create screen-specific validation\nfunctions and are included in these pages with the following statement:\n10. <head>\n11. <script src=\u2019/scripts/screenFunctions.jsp\u2019\n12. language=\u2019javascript\u2019\n13. type=\u2019application/javascript\u2019> </script>\n14. </head>\n15. <!\u2013 body of the web form \u2013>\nWhich JSP code snippet declares that this JSP Document is a JavaScript file?",
+    "question": "To take advantage of the capabilities of modern browsers that use web standards, such as XHTML and CSS, your web application is being converted from simple JSP pages to JSP Document format. However, one of your JSPs, /scripts/screenFunctions.jsp, generates a\nJavaScript file. This file is included in several web forms to create screen-specific validation\nfunctions and are included in these pages with the following statement:\n10. <head>\n11. <script src='/scripts/screenFunctions.jsp'\n12. language='javascript'\n13. type='application/javascript'> </script>\n14. </head>\n15. <!\u2013 body of the web form \u2013>\nWhich JSP code snippet declares that this JSP Document is a JavaScript file?",
     "options": {
-        "A": "<%@ page contentType=\u2019application/javascript\u2019 %>",
-        "B": "<jsp:page contentType=\u2019application/javascript\u2019 />",
-        "C": "<jsp:document contentType=\u2019application/javascript\u2019 />",
-        "D": "<jsp:directive.page contentType=\u2019application/javascript\u2019 />",
+        "A": "<%@page contentType='application/javascript' %>",
+        "B": "<jsp:page contentType='application/javascript' />",
+        "C": "<jsp:document contentType='application/javascript' />",
+        "D": "<jsp:directive.page contentType='application/javascript' />",
         "E": "No declaration is needed because the web form XHTML page already declares the MIME type of the /scripts/screenFunctions.jsp file in the <script> tag."
     },
     "answer": "D",
