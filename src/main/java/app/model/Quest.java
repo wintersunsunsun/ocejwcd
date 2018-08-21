@@ -6,9 +6,9 @@ import java.util.Map;
 
 import javax.persistence.CascadeType;
 import javax.persistence.Column;
+import javax.persistence.EmbeddedId;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
-import javax.persistence.Id;
 import javax.persistence.OneToMany;
 
 import org.json.JSONObject;
@@ -16,139 +16,87 @@ import org.json.JSONObject;
 @Entity
 public class Quest {
 
-    /** 題號 */
-    @Id
-    private Integer id;
+	@EmbeddedId
+	private QuestId questId;
 
-    private String tag;
+	@Column(columnDefinition = "TEXT")
+	private String content;
 
-    @Column(columnDefinition = "TEXT")
-    private String content;
+	private String answer;
 
-    private String answer;
+	@Column(columnDefinition = "TEXT")
+	private String explanation;
 
-    @Column(columnDefinition = "TEXT")
-    private String explanation;
+	/** 是否為多選題 */
+	private boolean multi;
 
-    /** 是否為多選題 */
-    private boolean multi;
+	@OneToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER, mappedBy = "quest")
+	private List<Opt> options;
 
-    @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER, mappedBy = "quest")
-    private List<Opt> options;
+	public QuestId getQuestId() {
+		return questId;
+	}
 
-    /**
-     * @return the id
-     */
-    public Integer getId() {
-        return id;
-    }
+	public void setQuestId(QuestId questId) {
+		this.questId = questId;
+	}
 
-    /**
-     * @return the tag
-     */
-    public Integer getTag() {
-        return tag;
-    }
+	public String getContent() {
+		return content;
+	}
 
-    /**
-     * @return the content
-     */
-    public String getContent() {
-        return content;
-    }
+	public void setContent(String content) {
+		this.content = content;
+	}
 
-    /**
-     * @return the answer
-     */
-    public String getAnswer() {
-        return answer;
-    }
+	public String getAnswer() {
+		return answer;
+	}
 
-    /**
-     * @return the explanation
-     */
-    public String getExplanation() {
-        return explanation;
-    }
+	public void setAnswer(String answer) {
+		this.answer = answer;
+	}
 
-    /**
-     * @param id the id to set
-     */
-    public void setId(Integer id) {
-        this.id = id;
-    }
+	public String getExplanation() {
+		return explanation;
+	}
 
-    /**
-     * @param tag the tag to set
-     */
-    public void setTag(String tag) {
-        this.tag = tag;
-    }
+	public void setExplanation(String explanation) {
+		this.explanation = explanation;
+	}
 
-    /**
-     * @param content the content to set
-     */
-    public void setContent(String content) {
-        this.content = content;
-    }
+	public boolean isMulti() {
+		return multi;
+	}
 
-    /**
-     * @param answer the answer to set
-     */
-    public void setAnswer(String answer) {
-        this.answer = answer;
-    }
+	public void setMulti(boolean multi) {
+		this.multi = multi;
+	}
 
-    /**
-     * @param explanation the explanation to set
-     */
-    public void setExplanation(String explanation) {
-        this.explanation = explanation;
-    }
+	public List<Opt> getOptions() {
+		return options;
+	}
 
-    /**
-     * @return the options
-     */
-    public List<Opt> getOptions() {
-        return options;
-    }
+	public void setOptions(List<Opt> options) {
+		this.options = options;
+	}
 
-    /**
-     * @param options the options to set
-     */
-    public void setOptions(List<Opt> options) {
-        this.options = options;
-    }
-    
-    /**
-     * @return the multi
-     */
-    public boolean isMulti() {
-        return multi;
-    }
+	@Override
+	public String toString() {
+		Map<String, Object> quest = new HashMap<>();
+		quest.put("num", questId.getNum());
+		quest.put("tag", questId.getTag());
+		quest.put("question", content);
+		quest.put("answer", answer);
+		quest.put("explanation", explanation);
+		quest.put("multi", multi);
 
-    /**
-     * @param multi the multi to set
-     */
-    public void setMulti(boolean multi) {
-        this.multi = multi;
-    }
+		Map<String, String> optMap = new HashMap<>();
+		for (Opt option : options) {
+			optMap.put(String.valueOf(option.getoption()), option.getContent());
+		}
+		quest.put("options", optMap);
 
-    @Override
-    public String toString() {
-        Map<String, Object> quest = new HashMap<>();
-        quest.put("id", id);
-        quest.put("question", content);
-        quest.put("answer", answer);
-        quest.put("explanation", explanation);
-        quest.put("multi", multi);
-
-        Map<String, String> optMap = new HashMap<>();
-        for (Opt option : options) {
-            optMap.put(String.valueOf(option.getoption()), option.getContent());
-        }
-        quest.put("options", optMap);
-
-        return new JSONObject(quest).toString();
-    }
+		return new JSONObject(quest).toString();
+	}
 }

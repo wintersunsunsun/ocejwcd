@@ -16,55 +16,52 @@ import org.springframework.web.bind.annotation.RestController;
 
 import app.model.Opt;
 import app.model.Quest;
+import app.model.QuestId;
 import app.repository.OptRepo;
 import app.repository.QuestRepo;
 
 @RestController
 public class MainController {
 
-    @Autowired
-    private QuestRepo questRepo;
+	@Autowired
+	private QuestRepo questRepo;
 
-    @Autowired
-    private OptRepo optRepo;
+	@Autowired
+	private OptRepo optRepo;
 
-    @GetMapping(path = "/quest/{id}")
-    public @ResponseBody String getQuest(@PathVariable("id") int id) {
-        Optional<Quest> row = questRepo.findById(id);
-        return row.get().toString();
-    }
+	@GetMapping(path = "/quest/{tag}/{num}")
+	public @ResponseBody String getQuest(@PathVariable("tag") String tag, @PathVariable("num") int num) {
+		Optional<Quest> row = questRepo.findById(new QuestId(tag, num));
+		return row.get().toString();
+	}
 
-    //    @GetMapping(path = "/quest/all")
-    //    public @ResponseBody List<Quest> getAllQuest() {
-    //        return questRepo.findAll();
-    //    }
+	@Transactional
+	@PostMapping(path = "/addQuest")
+	public void addNewUser(@RequestBody Map<String, Object> reqMap) {
+		QuestId questId = new QuestId();
+		questId.setNum((int) reqMap.get("num"));
+		questId.setTag((String) reqMap.get("tag"));
+		Quest quest = new Quest();
+		quest.setQuestId(questId);
+		quest.setContent((String) reqMap.get("question"));
+		quest.setAnswer((String) reqMap.get("answer"));
+		quest.setExplanation((String) reqMap.get("explanation"));
+		quest.setMulti((boolean) reqMap.get("multi"));
+		quest = questRepo.saveAndFlush(quest);
 
-    @Transactional
-    @PostMapping(path = "/addQuest")
-    public void addNewUser(@RequestBody Map<String, Object> reqMap) {
-        Quest quest = new Quest();
-        quest.setId((int) reqMap.get("num"));
-        quest.setContent((String) reqMap.get("question"));
-        quest.setAnswer((String) reqMap.get("answer"));
-        quest.setExplanation((String) reqMap.get("explanation"));
-        quest.setMulti((boolean) reqMap.get("multi"));
-        quest = questRepo.saveAndFlush(quest);
+		Map<String, String> options = (Map) reqMap.get("options");
+		for (Entry<String, String> entry : options.entrySet()) {
+			Opt opt = new Opt();
+			opt.setoption(entry.getKey().charAt(0));
+			opt.setContent(entry.getValue());
+			opt.setQuest(quest);
+			optRepo.saveAndFlush(opt);
+		}
+	}
 
-        Map<String, String> options = (Map) reqMap.get("options");
-        for (Entry<String, String> entry : options.entrySet()) {
-            Opt opt = new Opt();
-            opt.setoption(entry.getKey().charAt(0));
-            opt.setContent(entry.getValue());
-            opt.setQuest(quest);
-            optRepo.saveAndFlush(opt);
-        }
-
-        questRepo.findById(1);
-    }
-
-    @DeleteMapping(path = "/removeAll")
-    public void removeAll() {
-        questRepo.deleteAll();
-        optRepo.deleteAll();
-    }
+	@DeleteMapping(path = "/removeAll")
+	public void removeAll() {
+		questRepo.deleteAll();
+		optRepo.deleteAll();
+	}
 }
