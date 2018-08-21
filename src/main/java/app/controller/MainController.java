@@ -34,16 +34,12 @@ public class MainController {
         return row.get().toString();
     }
 
-    //    @GetMapping(path = "/quest/all")
-    //    public @ResponseBody List<Quest> getAllQuest() {
-    //        return questRepo.findAll();
-    //    }
-
     @Transactional
-    @PostMapping(path = "/addQuest")
-    public void addNewUser(@RequestBody Map<String, Object> reqMap) {
+    @PostMapping(path = "/addQuest/{tag}")
+    public void addNewUser(@RequestBody Map<String, Object> reqMap, @PathVariable("tag") String tag) {
         Quest quest = new Quest();
         quest.setId((int) reqMap.get("num"));
+        quest.setTag(tag);
         quest.setContent((String) reqMap.get("question"));
         quest.setAnswer((String) reqMap.get("answer"));
         quest.setExplanation((String) reqMap.get("explanation"));
@@ -58,8 +54,6 @@ public class MainController {
             opt.setQuest(quest);
             optRepo.saveAndFlush(opt);
         }
-
-        questRepo.findById(1);
     }
 
     @DeleteMapping(path = "/removeAll")

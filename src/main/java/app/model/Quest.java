@@ -18,8 +18,9 @@ public class Quest {
 
     /** 題號 */
     @Id
-    private Integer id;
+    private Integer num;
 
+    @Id
     private String tag;
 
     @Column(columnDefinition = "TEXT")
@@ -37,16 +38,16 @@ public class Quest {
     private List<Opt> options;
 
     /**
-     * @return the id
+     * @return the num
      */
-    public Integer getId() {
-        return id;
+    public Integer getNum() {
+        return num;
     }
 
     /**
      * @return the tag
      */
-    public Integer getTag() {
+    public String getTag() {
         return tag;
     }
 
@@ -72,10 +73,10 @@ public class Quest {
     }
 
     /**
-     * @param id the id to set
+     * @param num the num to set
      */
-    public void setId(Integer id) {
-        this.id = id;
+    public void setNum(Integer num) {
+        this.num = num;
     }
 
     /**
@@ -137,7 +138,7 @@ public class Quest {
     @Override
     public String toString() {
         Map<String, Object> quest = new HashMap<>();
-        quest.put("id", id);
+        quest.put("num", num);
         quest.put("question", content);
         quest.put("answer", answer);
         quest.put("explanation", explanation);
