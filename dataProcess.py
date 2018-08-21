@@ -4,13 +4,14 @@ from urllib import request
 import json
 
 def post(tag, fileName, num):
-    req = request.Request('http://localhost:7799/addQuest/' + tag)
+    req = request.Request('http://localhost:7799/addQuest')
     req.add_header('Content-Type', 'application/json; charset=utf-8')
 
     quest = open('questions/' + tag + '/' + fileName, 'r', encoding='utf8')
     jsondata = json.loads(quest.read())
     jsondata['num'] = int(num)
-    print(num)
+    jsondata['tag'] = tag
+    print(tag, num)
     jsondata = json.dumps(jsondata).encode('utf-8')
     req.add_header('Content-Length', len(jsondata))
 
