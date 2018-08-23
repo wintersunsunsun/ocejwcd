@@ -1,186 +1,171 @@
 <style>
-pre {
-	white-space: pre-wrap;
-}
+    pre {
+        white-space: pre-wrap;
+    }
 </style>
 <div id="questions-area">
-	<div class="row" v-if="isBegin">
-		<div class="col-sm"></div>
-		<div class="col-sm">
-			<select class="form-control" v-model="tag">
-				<option value="1Z0-899">1Z0-899</option>
-				<option value="1Z0-858">1Z0-858</option>
-			</select>
-		</div>
-		<div class="col-sm input-group">
-			<input type="number" class="form-control" value="108" min="10"
-				max="108" v-model="numQ">
-			<div class="input-group-append">
-				<span class="input-group-text" id="basic-addon2">題</span>
-			</div>
-		</div>
-		<div class="col-sm">
-			<button type="button" class="btn btn-primary btn-lg btn-block"
-				v-on:click="buildQuestions">Start</button>
-		</div>
-		<div class="col-sm"></div>
-	</div>
+    <div class="row" v-if="isBegin">
+        <div class="col-sm"></div>
+        <div class="col-sm">
+            <select class="form-control" v-model="tag">
+                <option value="1Z0-899">1Z0-899</option>
+                <option value="1Z0-858">1Z0-858</option>
+            </select>
+        </div>
+        <div class="col-sm input-group">
+            <input type="number" class="form-control" value="108" min="10" max="108" v-model="numQ">
+            <div class="input-group-append">
+                <span class="input-group-text" id="basic-addon2">題</span>
+            </div>
+        </div>
+        <div class="col-sm">
+            <button type="button" class="btn btn-primary btn-lg btn-block" v-on:click="buildQuestions">Start</button>
+        </div>
+        <div class="col-sm"></div>
+    </div>
 
-	<div class="row" v-else>
-		<div class="col-sm">
-			<div class="card">
-				<div class="card-header">第{{qNum}}題，{{tag}}，Q{{qNum}}</div>
-				<div class="card-body">
-					<pre class="card-text">{{question}}</pre>
-					<ol type="A" v-if="multi">
-						<li v-for="item in options">
-						<pre><input type="checkbox" name="optCheck" v-bind:value="item.key" /> {{item.value}}</pre>
-						</li>
-					</ol>
-					<ol type="A" v-else>
-						<li v-for="item in options">
-						<pre><input type="radio" name="optRadio" v-bind:value="item.key" /> {{item.value}}</pre>
-						</li>
-					</ol>
-					<pre class="card-text" v-if="showExplan">{{explanation}}</pre>
-					<a class="btn btn-primary active" v-on:click="getLastQuest"
-						v-if="hasLast">上一題</a> <a class="btn btn-info active"
-						v-on:click="showAnsEvent">Ans</a> <a
-						class="btn btn-primary active" v-on:click="getNextQuest"
-						v-if="hasNext">下一題</a>
-				</div>
-			</div>
-		</div>
-	</div>
+    <div class="row" v-else>
+        <div class="col-sm">
+            <div class="card">
+                <div class="card-header">{{qNum}}/{{numQ}}，{{tag}}:{{num}}</div>
+                <div class="card-body">
+                    <pre class="card-text">{{question}}</pre>
+                    <ol type="A" v-if="multi">
+                        <li v-for="item in options">
+                            <pre><input type="checkbox" name="optCheck" v-bind:value="item.key" /> {{item.value}}</pre>
+                        </li>
+                    </ol>
+                    <ol type="A" v-else>
+                        <li v-for="item in options">
+                            <pre><input type="radio" name="optRadio" v-bind:value="item.key" /> {{item.value}}</pre>
+                        </li>
+                    </ol>
+                    <pre class="card-text" v-if="showExplan">{{explanation}}</pre>
+                    <a class="btn btn-primary active" v-on:click="getLastQuest" v-if="hasLast">上一題</a> <a class="btn btn-info active"
+                        v-on:click="showAnsEvent">Ans</a> <a class="btn btn-primary active" v-on:click="getNextQuest" v-if="hasNext">下一題</a>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 <script>
-var questionArea = new Vue({
-    el: '#questions-area',
-    data: {
-    	tag: '1Z0-899',
-    	numQ: 108,
-        hasLast: false,
-        hasNext: true,
-        isBegin: true,
-        showExplan: false,
-        id: 0,
-        question: null,
-        questions: null,
-        exQuestions: null,// 已答題過的
-        options: [],
-        answer: null,
-        explanation: null,
-        multi: false,
-        qNum: 0// 題號
-    },
-    watch:{
-    	tag: function (newTag, oldTag) {
-    		if (this.tag === '1Z0-899') {
-    			this.numQ = 108;
-    		} else {
-    			this.numQ = 254;
-    		}
-    	}
-    },
-    methods: {
-        buildQuestions: function() {
-            /* this.questions = new Array();
-            this.exQuestions = new Set(); */
-
-            // 產生隨機題目
-            /* for (var i=1; i<=this.numQ; i++) {
-                var qq;
-                do {
-                    qq = Math.floor(Math.random()*108+1);
-                } while (this.exQuestions.has(qq));
-                this.exQuestions.add(qq);
-                this.questions.push(qq);
-            } */
-
-            this.getNextQuest();
+    var questionArea = new Vue({
+        el: '#questions-area',
+        data: {
+            tag: '1Z0-899',
+            num: 0,// 題號
+            qNum: 0,// 題數
+            numQ: 108,// 總題數
+            hasLast: false,
+            hasNext: true,
+            isBegin: true,
+            showExplan: false,
+            question: null,
+            questions: null,
+            options: [],
+            answer: null,
+            explanation: null,
+            multi: false
         },
-        cleanOptColor: function() {// 清除選項的顏色
-            $('input[name=optCheck]').each(function() {
-                var inputObj = $(this);
-                inputObj.prop('checked', false);
-                inputObj.parent().css('background-color', 'white');
-            });
-
-            $('input[name=optRadio]').each(function() {
-                var inputObj = $(this);
-                inputObj.prop('checked', false);
-                inputObj.parent().css('background-color', 'white');
-            });
-
-            this.showExplan = false;
-        },
-        getQuest: function(num) {
-            this.hasLast = (num>1) ? true : false;
-            this.hasNext = (num<this.numQ) ? true : false;
-
-            /* this.qNum = this.questions[id];
-            this.showQuest(this.qNum); */
-            return this.showQuest(num);
-        },
-        showQuest: function(qNum) {
-        	var result = false;
-            this.cleanOptColor();
-            var obj = this;
-
-            $.ajaxSetup({async:false});
-            $.getJSON('http://localhost:7799/quest/' + obj.tag + '/' + qNum, function(data) {
-                obj.isBegin = false;
-                obj.question = data.question;
-                obj.multi = data.multi;
-                obj.options = [];
-                Object.keys(data.options).map(function(key, index) {
-                    var map = {};
-                    map.key = key;
-                    map.value = data.options[key];
-                    obj.options.push(map);
-                });
-                obj.options.sort(function (a, b) {
-                    return Math.random() > 0.5 ? -1 : 1;
-                });
-
-                obj.answer = data.answer;
-                if (obj.explanation) {
-                	obj.explanation = data.explanation.trim();
-                }
-                
-                result = true;
-            });
-
-            return result;
-        },
-        getLastQuest: function() {
-        	var test;
-        	do {
-        		test = this.getQuest(--this.qNum);
-        	} while(!test);
-        },
-        getNextQuest: function() {
-        	var test;
-        	do {
-        		test = this.getQuest(++this.qNum);
-        	} while(!test);
-        },
-        showAnsEvent: function() {
-            var obj = this;
-            this.answer.split('').forEach(function(item, index, arr) {
-                if (obj.multi) {
-                    $(':checkbox[value=' + item + ']').parent().css('background-color', '#00b0ff59');
+        watch: {
+            tag: function (newTag, oldTag) {
+                if (this.tag === '1Z0-899') {
+                    this.numQ = 108;
                 } else {
-                    $(':radio[value=' + item + ']').parent().css('background-color', '#00b0ff59');
+                    this.numQ = 254;
                 }
-            });
+            }
+        },
+        methods: {
+            buildQuestions: function () {
+                this.questions = new Array();
+                var exQuestions = new Set();
 
-            if (this.explanation) {
-                this.showExplan = true;
+                // 產生隨機題目
+                for (var i=1; i<=this.numQ; i++) {
+                    var qq;
+                    do {
+                        qq = Math.floor(Math.random()*108+1);
+                    } while (exQuestions.has(qq));
+                    exQuestions.add(qq);
+                    this.questions.push(qq);
+                }
+
+                this.getNextQuest();
+            },
+            cleanOptColor: function () {// 清除選項的顏色
+                $('input[name=optCheck]').each(function () {
+                    var inputObj = $(this);
+                    inputObj.prop('checked', false);
+                    inputObj.parent().css('background-color', 'white');
+                });
+
+                $('input[name=optRadio]').each(function () {
+                    var inputObj = $(this);
+                    inputObj.prop('checked', false);
+                    inputObj.parent().css('background-color', 'white');
+                });
+
+                this.showExplan = false;
+            },
+            getQuest: function () {
+                var num = this.qNum;
+                this.hasLast = (num > 1) ? true : false;
+                this.hasNext = (num < this.numQ) ? true : false;
+
+                this.showQuest();
+            },
+            showQuest: function () {
+                this.cleanOptColor();
+                this.num = this.questions[this.qNum];
+                var obj = this;
+
+                $.ajaxSetup({ async: false });
+                $.getJSON('http://localhost:7799/quest/' + obj.tag + '/' + obj.num, function (data) {
+                    obj.isBegin = false;
+                    obj.question = data.question;
+                    obj.multi = data.multi;
+                    obj.options = [];
+                    Object.keys(data.options).map(function (key, index) {
+                        var map = {};
+                        map.key = key;
+                        map.value = data.options[key];
+                        obj.options.push(map);
+                    });
+                    obj.options.sort(function (a, b) {
+                        return Math.random() > 0.5 ? -1 : 1;
+                    });
+
+                    obj.answer = data.answer;
+                    if (obj.explanation) {
+                        obj.explanation = data.explanation.trim();
+                    }
+                });
+            },
+            getLastQuest: function () {
+                this.qNum--;
+                test = this.getQuest();
+            },
+            getNextQuest: function () {
+                this.qNum++;
+                this.getQuest();
+            },
+            showAnsEvent: function () {
+                var obj = this;
+                this.answer.split('').forEach(function (item, index, arr) {
+                    if (obj.multi) {
+                        $(':checkbox[value=' + item + ']').parent().css('background-color', '#00b0ff59');
+                    } else {
+                        $(':radio[value=' + item + ']').parent().css('background-color', '#00b0ff59');
+                    }
+                });
+
+                if (this.explanation) {
+                    this.showExplan = true;
+                }
             }
         }
-    }
-});
+    });
 
 /* $('#searchQ').click(function(event) {
     var id = $('#inputQ').val();
