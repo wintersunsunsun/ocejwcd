@@ -1,0 +1,14 @@
+{
+  "answer": "ACD",
+  "explanation": "web-resource-collection：指定受限制的Web資源與HTTP方法的組合\nauth-constraint：允許存取web-resource-collection所指定資源的角色\nuser-data-constraint：設定資料完整性與機密性",
+  "question": "A web-application defines its security constraint using the<security-constraint> element in its deployment descriptor. What are the valid tags that could be used under this element to define the security constraint?",
+  "options": {
+    "A": "web-resource-collection",
+    "B": "user-constraint",
+    "C": "auth-constraint",
+    "D": "user-data-constraint",
+    "E": "role-constraint",
+    "F": "login-constraint"
+  },
+  "multi": true
+}

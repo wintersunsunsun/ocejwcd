@@ -1,0 +1,13 @@
+{
+  "answer": "C",
+  "explanation": "@ServletSecurity是與Servlet的安全設定相關的Annotation ",
+  "question": "Which annotation can be used on a servlet implementation to specify security constraints?",
+  "options": {
+    "A": "WebServlet",
+    "B": "Security",
+    "C": "ServletSecurity",
+    "D": "WebSecurity",
+    "E": "Security constraints can be specified only in web.xml"
+  },
+  "multi": false
+}

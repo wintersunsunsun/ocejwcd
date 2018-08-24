@@ -1,12 +1,12 @@
 {
   "multi": false,
   "answer": "B",
-  "explanation": "http://www.w3.org/International/questions/qa-lang-priorities.en.php (Check the answer, first paragraph)",
+  "explanation": "客戶端的偏好語言相關資訊是使用請求標頭當中的Accept-Language告訴伺服端",
   "question": "A Client wants to retrieve a representation of a resource, e.g. an XML document, localized according to the preferences of the user. Each user is allowed to specify one or more languages, in order of preference. Such preferences are application independent. How can the Client send language preference Information to the Server using a standard HTTP facility?",
   "options": {
     "A": "In the request body",
-    "C": "In the request line",
     "B": "In a request header",
+    "C": "In the request line",
     "D": "In the request URL"
   }
 }

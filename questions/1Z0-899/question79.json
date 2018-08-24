@@ -1,13 +1,13 @@
 {
   "answer": "AB",
-  "explanation": "",
+  "explanation": "Front Controller並不限於只能用Servlet來統一處理請求，其實也可以用JSP(但比較不好)",
   "question": "View the Exhibit.\n\nhttps://cdn.briefmenow.org/wp-content/uploads/1z0-899-v1/8.jpg\n\nWhich two technologies would be suitable for use as Front Controller elements? (Choose two)",
   "options": {
     "A": "JSP",
-    "C": "Filter",
     "B": "Servlet",
-    "E": "Custom Tag",
-    "D": "POJO"
+    "C": "Filter",
+    "D": "POJO",
+    "E": "Custom Tag"
   },
   "multi": true
 }

@@ -1,6 +1,6 @@
 {
   "answer": "B",
-  "explanation": "* (i) The javax.annotation.Resource annotation is used to declare a reference to a resource. @Resource can decorate a class, a field, or a method.\n\n* (v) javax.servlet.annotation\nAnnotation Type WebServlet\n\nAnnotation used to declare a servlet.\n\nThis annotation is processed by the container at deployment time, and the corresponding servlet made available at the specified URL patterns.\n\nIncorrect:\n* Not (II) : javax.annotation.PreDestroy\nTarget: Method",
+  "explanation": "@Resource：用來定義資源參照，與@Autowired功能類似，可寫在TYPE,FIELD,METHOD上面\n@PreDestroy：被@PreDestroy標註的方法會在Servlet的destroy方法執行後跟Servlet被徹底卸載前的這段時間執行，只會被執行一次，類似Servlet的destroy方法，可寫在METHOD上面\n@RunAs：指定執行時期要使用的角色名稱，可寫在TYPE上面\n@RolesAllowed：指定可以存取的角色名稱，可寫在TYPE,METHOD上面\n@WebServlet：將類別標註為Servlet，可寫在TYPE上面\n綜合上列所述，因為@PreDestroy無法在類別上標註，所以(ii)不能選",
   "question": "Which of following annotations can be used in a servlet class?\n(i)@javax.annotation.Resource\n(ii)@javax.annotation.PreDestroy\n(iii)@javax.annotation.security.RunAs\n(iv)@javax.annotation.security.RolesAllowed\n(v)@javax.servlet.annotation.WebServlet",
   "options": {
     "A": "(v) only",

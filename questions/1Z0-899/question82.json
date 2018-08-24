@@ -1,11 +1,11 @@
 {
   "answer": "C",
-  "explanation": "",
+  "explanation": "因為在web-fragment.xml有出現metadata-complete=\"true\"，所以只會掃描在web-fragment.xml中的設定，Java類別上的@WebServlet、@WebFilter、@WebListener標註會被忽略，因此只有MyFilter2會執行",
   "question": "Given a war file with the following structure\n\n| \u2013 WEB-INF/classes/Myservlet.class\n| \u2013 WEB-INF/lib/wf.jaf\n\nWhere wf.jar contains a valid web-fragment.xml and the following two classes: MyFilter1.class and MyFiler2.class.\nThe web-fragment.xml is as follows:\n<web-fragment metadata-complete=\"true\">\n    <filter>\n        <filter-name>MyFilter2</filter-name>\n        <filter-class>MyFilter2</filter-class>\n    </filter>\n    <filter-mapping>\n        <filter-name>MyFilter2</filter-name>\n        <url-pattern>/</url-pattern>\n    </filter-mapping>\n</web-fragment>\n\nThe following are some code snippets:\n(i) @WebServlet(\"/\")\n    public class MyServlet extends HttpServlet {}\n(ii) @WebFilter(urlPatterns={\"/\"})\n     public class MyFilter1 implements Filter {}\n(iii) @WebFilter(urlPatterns={\"/abc\"})\n      public class MyFilter2 implements Filter {}\n\nWhen one access \"/\" of the above web application, which filters will be executed?",
   "options": {
     "A": "No filters will be executed.",
-    "C": "MyFilter2",
     "B": "MyFilter1",
+    "C": "MyFilter2",
     "D": "MyFilter1 and MyFilter2"
   },
   "multi": false

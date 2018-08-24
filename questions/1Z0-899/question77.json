@@ -1,11 +1,11 @@
 {
   "answer": "C",
-  "explanation": "public interface ServletContextListener extends java.util.EventListener\nInterface for receiving notification events about ServletContext lifecycle changes.\n\nIn order to receive these notification events, the implementation class must be either declared inthe deployment descriptor of the web application, annotated with WebListener, or registered via one of the addListener methods defined on ServletContext.\n\nImplementations of this interface are invoked at their contextInitialized(javax.servlet.ServletContextEvent) method in the order in which they have been declared, and at their contextDestroyed(javax.servlet.ServletContextEvent) method in reverse order.",
+  "explanation": "每個ServletContextListener的contextInitialized以其在部署描述檔中宣告的順序執行，contextDestroyed則是以相反順序執行",
   "question": "ServletContextListeners are invoked in",
   "options": {
     "A": "Random order",
-    "C": "contextInitialized method are invoked in the order in which they are declared in the web.xml and the contextDestroyed method is invoked in the reverse order in which they are declared in the web.xml",
     "B": "contextInitialized and contextDestroyed are invoked in the order in which they are declared in the web.xml",
+    "C": "contextInitialized method are invoked in the order in which they are declared in the web.xml and the contextDestroyed method is invoked in the reverse order in which they are declared in the web.xml",
     "D": "contextInitialized and contextDestroyed are invoked in the reverse order of which they are declared in the web.xml"
   },
   "multi": false

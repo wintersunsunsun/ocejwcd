@@ -1,11 +1,11 @@
 {
-  "answer": "C",
-  "explanation": "http://blogs.oracle.com/swchan/entry/servlet_3_0_web_fragment",
+  "answer": "D",
+  "explanation": "<others/>是代表未在<absolute-ordering>明確以<name>指定的web fragments，所以也沒有規定說一定要寫在<absolute-ordering>當中的哪個位置，但只能出現0或1次",
   "question": "Given a jar file packaged with three web fragments with names X, Y and Z respectively.\nWhich of the following deployment descriptor, web.xml, snippets correspond to the web fragment processing orders of X, Y, Z?\n\n(i) <absolute-ordering>\n      <name>X</name>\n      <name>Y</name>\n      <name>Z</name>\n    </absolute-ordering>\n(ii) <absolute-ordering>\n      <name>X</name>\n      <name>Y</name>\n     </absolute-ordering>\n(iii) <absolute-ordering>\n        </others>\n        <name>Y</name>\n        <name>Z</name>\n      </absolute-ordering>\n(iv) <absolute-ordering>\n      <name>X</name>\n      </others>\n      <name>Z</name>\n     </absolute-ordering>\n(v) <absolute-ordering>\n      <name>X</name>\n      <name>Y</name>\n      </others>\n    </absolute-ordering>",
   "options": {
     "A": "(i) only",
-    "C": "(i) and (iv)",
     "B": "(i) and (ii)",
+    "C": "(i) and (iv)",
     "D": "(i), (iii), (iv) and (v)"
   },
   "multi": false

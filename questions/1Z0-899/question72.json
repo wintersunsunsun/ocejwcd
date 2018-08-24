@@ -4,8 +4,8 @@
   "question": "Which EL expression returns true if no session has been established with current client?",
   "options": {
     "A": "${not(pageContext.session)}",
-    "C": "${requestScope.sessions.this}",
     "B": "${not(requestScope.session)}",
+    "C": "${requestScope.sessions.this}",
     "D": "${sessionScope.empty}"
   },
   "multi": false

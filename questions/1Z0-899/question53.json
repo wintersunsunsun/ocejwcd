@@ -5,9 +5,9 @@
   "question": "Which JSTL code snippet can be used to import content from another web resource?",
   "options": {
     "A": "<c:import url=\"foo.jsp\"/>",
-    "C": "<c:include url=\"foo.jsp\"/>",
     "B": "<c:import page=\"foo.jsp\"/>",
-    "E": "Importing cannot be done in JSTL. A standard action must be used instead.",
-    "D": "<c:include page=\"foo.jsp\"/>"
+    "C": "<c:include url=\"foo.jsp\"/>",
+    "D": "<c:include page=\"foo.jsp\"/>",
+    "E": "Importing cannot be done in JSTL. A standard action must be used instead."
   }
 }

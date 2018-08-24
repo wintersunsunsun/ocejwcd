@@ -1,11 +1,11 @@
 {
-  "answer": "A",
+  "answer": "B",
   "explanation": "http://docs.oracle.com/cd/E12840_01/wls/docs103/webapp/annotateservlet.html (table8-1, third row)",
   "question": "Which annotation specifies the metadata as a javax.servlet.http.HttpSessionListener?",
   "options": {
     "A": "@Listener",
-    "C": "@WebSessionListener",
     "B": "@WebListener",
+    "C": "@WebSessionListener",
     "D": "@HttpSessionListener"
   },
   "multi": false

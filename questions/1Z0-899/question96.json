@@ -1,6 +1,6 @@
 {
   "answer": "A",
-  "explanation": "* The syntax for declaring more than one role is as shown in the following example:\n@DeclareRoles({\"Administrator\", \"Manager\", \"Employee\"})\n\n* @DeclareRoles\nThis annotation declares the security roles defined by the application.\n\n* javax.annotation.security\nAnnotation Type DeclareRoles\n\n@Documented\n@Retention(value=RUNTIME)\n@Target(value=TYPE)\npublic @interface DeclareRoles\nUsed by application to declare roles. It can be specified on a class.",
+  "explanation": "@DeclareRoles用來定義被其標註的類別會使用到的角色名稱，其屬性值若有多個時需以字串陣列方式呈現。",
   "question": "Which java code snippet roles \"MANAGER\" and \"EMPLOYEE\" in a given application?\n\n@DeclareRole(\"EMPLOYEE\")\npublic class MyServlet extends HttpServlet {}",
   "options": {
     "A": "@DeclareRoles({ \"MANAGER\", \"EMPLOYEE\" })\n  public class MyServlet extends HttpServlet {}",

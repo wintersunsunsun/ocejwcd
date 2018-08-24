@@ -1,11 +1,11 @@
 {
   "answer": "A",
-  "explanation": "public boolean isUserInRole(java.lang.String role)\nReturns a boolean indicating whether the authenticated user is included in the specified logical \"role\". Roles and role membership can be defined using deployment descriptors. If the user hasnot been authenticated, the method returns false.\nParameters:\nrole \u2013 a String specifying the name of the role\nReturns:\na boolean indicating whether the user making this request belongs to a given role; false if the userhas not been authenticated",
+  "explanation": "要判斷登入的使用者是否為指定角色，則要使用isUserInRole方法。\nisCallerInRole、isPrincipalInRole及isAuthnticatedUserInRole不是HttpServletRequest的方法。",
   "question": "Which java code snippet checks whether the user is of the role \"MANAGER\" for a given HttpServRequest, httpServletRequest?",
   "options": {
     "A": "httpServletRequest.isUserInRole(\"MANAGER\");",
-    "C": "httpServletRequest.isPrincipalInRole(\"MANAGER\");",
     "B": "httpServletRequest.isCallerInRole(\"MANAGER\");",
+    "C": "httpServletRequest.isPrincipalInRole(\"MANAGER\");",
     "D": "httpServletRequest.isAuthnticatedUserInRole(\"MANAGER\");"
   },
   "multi": false

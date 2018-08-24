@@ -1,13 +1,13 @@
 {
   "answer": "ADE",
-  "explanation": "ServletRegistration.Dynamic addServlet(java.lang.String servletName,java.lang.Class<? extends Servlet> servletClass)\nAdds the servlet with the given name and class type to this servlet context.The registered servlet may be further configured via the returned ServletRegistration object.\n\nParameters:\nservletName \u2013 the name of the servlet\nservletClass \u2013 the class object from which the servlet will be instantiated",
+  "explanation": "根據API，addServlet方法有三種版本\n1.addServlet(String servletName, Class<? extends Servlet> servletClass)\n2.addServlet(String servletName, Servlet servlet)\n3.addServlet(String servletName, String className)",
   "question": "To add a servlet to a context that has not been declared either via annotation or via the descriptor, during context initialization time the following API can be used (Choose three.)",
   "options": {
     "A": "servletContext.addServlet(\"myServletName\", \"MyServlet\");",
-    "C": "servletContext.addServlet(myServlet);",
     "B": "servletContext.addServlet((<Class extends Servlet>) getClass().getClassLoader().getClassLoader().loaderClass(\"MyServlet\"));",
-    "E": "servletContext.addServlet(\"myServletName\", MyServlet);",
-    "D": "servletContext.addServlet((\"myServletName\", <Class extends Servlet>) gerClass().getClassLoader().loaderClass(\"myServlet\"));"
+    "C": "servletContext.addServlet(myServlet);",
+    "D": "servletContext.addServlet(\"myServletName\", (<Class extends Servlet>) gerClass().getClassLoader().loaderClass(\"myServlet\"));",
+    "E": "servletContext.addServlet(\"myServletName\", MyServlet);"
   },
   "multi": true
 }

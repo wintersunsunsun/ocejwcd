@@ -1,11 +1,11 @@
 {
   "answer": "D",
-  "explanation": "Code example:\nString sessionID = null;\nif (request.getServletContext().getEffectiveSessionTrackingModes().contains(SessionTrackingMode.URL)) {\n  // Get the session ID if there was one\n  sessionID = request.getPathParameter(SessionConfig.getSessionUriParamName(request.getContext()));\n  if (sessionID != null) {\n    request.setRequestedSessionId(sessionID);\n    request.setRequestedSessionURL(true);\n  }\n}\n\ngetDefaultSessionTrackingModes:\njava.util.Set<SessionTrackingMode> getDefaultSessionTrackingModes() Gets the session tracking modes that are supported by default for this ServletContext.",
+  "explanation": "本題要選能夠判斷目前是否設定成用URL重寫來進行Session Tracking的方法，根據API，可以先用ServletContext的getEffectiveSessionTrackingModes()取得Set<SessionTrackingMode>後再去看裡面是否包含SessionTrackingMode.URL(SessionTrackingMode的列舉值有COOKIE、URL、SSL)",
   "question": "Which Java expression can be used to check whether the web container is currently configured to track sessions via URL rewriting?",
   "options": {
     "A": "servletContext.getSessionCookiesConfiq().isHttpOnly()",
-    "C": "servletContext.getDefaultSessionTrackingModes().contains(SessionTrackingMode.URL)",
     "B": "servletContext.getSessionCookiesConfiq().isSecure()",
+    "C": "servletContext.getDefaultSessionTrackingModes().contains(SessionTrackingMode.URL)",
     "D": "servletContext.getEffectiveSessionTrackingModes().contains(SessionTrackingMode.URL)"
   },
   "multi": false
