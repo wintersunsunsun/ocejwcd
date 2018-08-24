@@ -1,14 +1,14 @@
 {
   "multi": true,
   "answer": "BE",
-  "explanation": "",
+  "explanation": "本題的Order是要用target來設定，屬性值可以用value指定，也可以在標籤主體中指定",
   "question": "In a jsp-centric shopping cart application cart application to move a client's home address of Customer object into the shipping address of the order object. The address data is stored in a value object class called Address with properties for: street address, city, province, country, and postal code.\n\nWhich two code snippets can be used to accomplish this goal?",
   "options": {
     "A": "<c:set var='order' property='shipAddress' value='${client.homeAddress}' />",
     "C": "<jsp:setProperty name='${order}' property='shipAddress' value='${client.homeAddress}' />",
     "B": "<c:set target='${order}' property='shipAddress' value='${client.homeAddress}' />",
-    "E": "<c:set target='${order}' property='shipAddress'> <jsp:getProperty name='client' property='homeAddress' /> </c:set>",
-    "D": "<c:set var='order' property='shipAddress'> <jsp:getProperty name='client' property='homeAddress' /> </c:store>",
-    "F": "<c:setProperty name='${order}' property='shipAddress'> <jsp:getProperty name='client' property='homeAddress' /> </c:setProperty>"
+    "E": "<c:set target='${order}' property='shipAddress'>\n  <jsp:getProperty name='client' property='homeAddress' />\n </c:set>",
+    "D": "<c:set var='order' property='shipAddress'>\n  <jsp:getProperty name='client' property='homeAddress' />\n </c:store>",
+    "F": "<c:setProperty name='${order}' property='shipAddress'>\n  <jsp:getProperty name='client' property='homeAddress' />\n </c:setProperty>"
   }
 }

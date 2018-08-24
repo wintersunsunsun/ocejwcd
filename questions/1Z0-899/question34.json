@@ -1,6 +1,6 @@
 {
   "answer": "B",
-  "explanation": "http://tomcat.apache.org/tomcat-7.0-doc/servletapi/javax/servlet/annotation/ServletSecurity.EmptyRoleSemantic.html",
+  "explanation": "根據API，ServletSecurity.EmptyRoleSemantic有DENY及PERMIT兩個列舉值",
   "question": "Which is a valid value for the enum EmptyRoleSemantic in Javax.servlet.annotation.ServletSecurity?",
   "options": {
     "A": "ADMIT",

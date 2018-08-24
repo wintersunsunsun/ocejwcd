@@ -1,13 +1,13 @@
 {
-  "answer": "BC",
-  "explanation": "",
+  "answer": "AE",
+  "explanation": "(第300題)https://github.com/Carrie-Lai/Test/blob/master/296~300.md",
   "question": "Given the annotation for MyServlet:\n\n@WebServlet{\"/abc\")\n@ServletSecurity(value=@HttpConstraint)\npublic class Myservlet extends Httpservlet {\n\nWhich two are true? (Choose two)",
   "options": {
     "A": "No protection of user data must be performed by the transport.",
-    "C": "Access is to be denied independent of authentication state and identity.",
     "B": "All user data must be encrypted by the transport.",
-    "E": "Access is to be permitted independent of authentication state and identity.",
-    "D": "Only authenticated users are to be permitted."
+    "C": "Access is to be denied independent of authentication state and identity.",
+    "D": "Only authenticated users are to be permitted.",
+    "E": "Access is to be permitted independent of authentication state and identity."
   },
   "multi": true
 }

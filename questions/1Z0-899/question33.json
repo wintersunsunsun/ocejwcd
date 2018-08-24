@@ -1,6 +1,6 @@
 {
-  "answer": "C",
-  "explanation": "http://www.ibm.com/developerworks/java/library/j-jstl0318/ (topic: exception handling)",
+  "answer": "D",
+  "explanation": "這題網路上很多人都說是C...但題目說是在實作model component時可能會拋出IOException，而C是在展示層(JSP)才能使用，所以應該是要使用try-catch區塊來處理例外錯誤",
   "question": "You are implementing a model component. You realize that an IOException might arise if you lose connection to the database. How should you address this?",
   "options": {
     "A": "Implement multipathing to provide redundant connectivity to the database, thereby avoiding that risk of connection failure.",
