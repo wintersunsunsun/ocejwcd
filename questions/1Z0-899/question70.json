@@ -1,7 +1,7 @@
 {
   "answer": "DE",
   "explanation": "",
-  "question": "You are building a dating web site. The client's date of birth is collected along with lots of other information. The Person class has a derived method, getAge() :int, which returns the person's age calculated from the date of birth and today's date. In one of your JSPs you need to print a special message to clients within the age group of 25 through 35.\n\nWhich two EL code snippets will return true for this condition? (Choose two.)",
+  "question": "You are building a dating web site. The client's date of birth is collected along with lots of other information. The Person class has a derived method, getAge():int, which returns the person's age calculated from the date of birth and today's date. In one of your JSPs you need to print a special message to clients within the age group of 25 through 35.\n\nWhich two EL code snippets will return true for this condition? (Choose two.)",
   "options": {
     "A": "${client.age in [25,35]}",
     "C": "${client.age between 25,35}",

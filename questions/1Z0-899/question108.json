@@ -1,7 +1,7 @@
 {
   "answer": "CD",
   "explanation": "被標註成監聽器的類別必須實作至少一個下列的監聽器介面\nServletContextListener\nServletContextAttributeListener\nServletRequestListener\nServletRequestAttributeListener\nHttpSessionListener\nHttpSessionAttributeListener",
-  "question": "When using the @WebListener annotation, the class on which the annotation is applied to must also implement at least one o the following interfaces (Choose two):",
+  "question": "When using the @WebListener annotation, the class on which the annotation is applied to must also implement at least one of the following interfaces (Choose two):",
   "options": {
     "A": "RequestListener",
     "B": "AttributeListener",

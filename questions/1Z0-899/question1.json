@@ -1,6 +1,6 @@
 {
   "answer": "C",
-  "explanation": "",
+  "explanation": "一旦在部署描述檔設定<scripting-invalid>true</scripting-invalid>，在url-pattern對應的jsp內就不能使用script元素(<%...%>、<%=...%>跟<%!...%>)",
   "question": "Given the element from the web application deployment descriptor:\n\n<jsp-property-group>\n<url-pattern>/main/page1.jsp</url-pattern>\n<scripting\u2013invalid>true</scripting\u2013invalid>\n</jsp--property--group>\n\nAnd given that /main/page1.jsp contains:\n\n<% int i = 12; %>\n<b><%=i %></b>\n\nWhat is the result?",
   "options": {
     "A": "<b><b>",

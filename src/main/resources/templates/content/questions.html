@@ -9,11 +9,10 @@
         <div class="col-sm">
             <select class="form-control" v-model="tag">
                 <option value="1Z0-899">1Z0-899</option>
-                <option value="1Z0-858">1Z0-858</option>
             </select>
         </div>
         <div class="col-sm input-group">
-            <input type="number" class="form-control" value="110" min="10" max="110" v-model="numQ">
+            <input type="number" class="form-control" value="108" min="10" v-model="numQ">
             <div class="input-group-append">
                 <span class="input-group-text" id="basic-addon2">題</span>
             </div>
@@ -55,7 +54,7 @@
             tag: '1Z0-899',
             num: 0,// 題號
             qNum: 0,// 題數
-            numQ: 110,// 總題數
+            numQ: 108,// 總題數
             hasLast: false,
             hasNext: true,
             isBegin: true,
@@ -70,7 +69,7 @@
         watch: {
             tag: function (newTag, oldTag) {
                 if (this.tag === '1Z0-899') {
-                    this.numQ = 110;
+                    this.numQ = 108;
                 } else {
                     this.numQ = 254;
                 }
@@ -85,7 +84,7 @@
                 for (var i=1; i<=this.numQ; i++) {
                     var qq;
                     do {
-                        qq = Math.floor(Math.random()*110+1);
+                        qq = Math.floor(Math.random()*108+1);
                     } while (exQuestions.has(qq));
                     exQuestions.add(qq);
                     this.questions.push(qq);
@@ -116,7 +115,7 @@
             },
             showQuest: function () {
                 this.cleanOptColor();
-                this.num = this.questions[this.qNum];
+                this.num = this.questions[this.qNum - 1];
                 var obj = this;
 
                 $.ajaxSetup({ async: false });
@@ -169,8 +168,8 @@
     if (!id) {
         alert('請輸入欲查詢的題號');
         return;
-    } else if (id < 1 || id > 110) {
-        alert('請輸入1~110的數字');
+    } else if (id < 1 || id > 108) {
+        alert('請輸入1~108的數字');
         return;
     }
 
