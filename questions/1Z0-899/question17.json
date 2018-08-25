@@ -1,6 +1,6 @@
 {
-  "answer": "C",
-  "explanation": "http://blogs.oracle.com/enterprisetechtips/entry/asynchronous_support_in_servlet_3\n(Topic: AsyncContext Class, third paragraph)",
+  "answer": "B",
+  "explanation": "(292題) https://github.com/Carrie-Lai/Test/blob/master/291~295.md",
   "question": "When using Servlet asynchronous API if you want to dispatch the request back to a particular url -\"/url\" within the same Servlet Context which of the following API would you use?",
   "options": {
     "A": "ASyncContext.dispatch();",

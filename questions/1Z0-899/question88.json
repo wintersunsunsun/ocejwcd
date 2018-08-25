@@ -1,6 +1,6 @@
 {
   "answer": "CE",
-  "explanation": "",
+  "explanation": "將service方法或宣告成synchronized或將Servlet進行鎖定表示該Servlet同時只有一個執行緒在執行，但不能避免其他Servlet或JSP的執行緒去存取Session的屬性，比較好的方式是針對Session進行鎖定，將存取Session屬性的程式碼包在裡面，但需要其他有操作該屬性的程式碼也被寫在synchronized區塊才有用",
   "question": "Given that a web application consists of two HttpServlet classes, ServletA and ServletB, and the ServerletA.service method:\n\n20. String key = \"com.example.data\";\n21. session.setAttribute(key, \"Hello\");\n22. object value = session.getAttribute(key);\n23.\n\nAssume session is an HttpSession, and is not referenced anywhere else in ServletA.\nWhich two changes, taken together, ensure that value is equal to \"Hello\" on line 23? (Choose two)",
   "options": {
     "A": "ensure that the ServletB.service method is synchronized",

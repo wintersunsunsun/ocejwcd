@@ -1,12 +1,12 @@
 {
   "answer": "C",
   "explanation": "",
-  "question": "You have a simple wpb application that has a single Front Controller servlet that dispatches to JSPs generate a variety of views. Several of these views require further database processing to retrieve the necessary order object using the orderID request parameter. To do this additional processing, you pass the request first to a servlet that is mapped to the URL pattern /WEB\u2013INF/retrieveOrder.do. in the deployment descriptor. This servlet takes two request parameters, the ordered and the jspID and the jspURL. It handles the database calls to retrieve and build the complex order objects and then it dispatches to the jspURL.\n\nWhich code snippet in the Front Controller servlet dispatches the request to the order retrieval servlet?",
+  "question": "You have a simple web application that has a single Front Controller servlet that dispatches to JSPs to generate a variety of views. Several of these views require further database processing to retrieve the necessary order object using the orderID request parameter. To do this additional processing, you pass the request first to a servlet that is mapped to the URL pattern /WEB-INF/retreiveOrder.do in the deployment descriptor. This servlet takes two request parameters, the orderID and the jspURL. It handles the database calls to retrieve and build the complex order objects and then it dispatches to the jspURL.\nWhich code snippet in the Front Controller servlet dispatches the request to the order retrieval servlet?",
   "options": {
-    "A": "reques.setAttribute(\"orderID\", orderIS);\n  request.setAttribute(\"jspURL\", jspURL);\n  = context.getRequestDispathcher(\"/WEB\u2013INF/retrieveOrder.do\"); view.forward(request, response)",
-    "C": "String T=\"/WEB\u2013INF/retrieveOrder.do?orderID=%d&jspURl=%s\";\n  String url = String.format(T, ordered, jspURL);\n  = context.getRequestDispatcher(url); View.forward(request, response);",
-    "B": "reques.setAttribute(\"orderID\", orderIS);\n  request.setAttribute(\"jspURL\", jspURL);\n  Dispatcher view = request.getDispatcher(\".WEB\u2013INF/retrieveOrder.do\"); View.forwardRequest(request, response);",
-    "D": "String T=\"/WEB\u2013INF/retrieveOrder.do?orderID=%d&jspURl=%s\";\n  String url = String.format(T, ordered, jspURL);\n  = context.getRequestDispatcher(url); View.forwardRequest(request, response);"
+    "A": "request.setAttribute(\"orderID\", orderID);\nrequest.setAttribute(\"jspURL\", jspURL);\nRequestDispatcher view = context.getRequestDispatcher(\"/WEB-INF/retreiveOrder.do\");\nview.forward(request, response);",
+    "C": "String T=\"/WEB-INF/retreiveOrder.do?orderID=%d&jspURL=%s\";\nString url = String.format(T, orderID, jspURL);\nRequestDispatcher view = context.getRequestDispatcher(url);\nview.forward(request, response);",
+    "B": "request.setParameter(\"orderID\", orderID);\nrequest.setParameter(\"jspURL\", jspURL);\nDispatcher view = request.getDispatcher(\"/WEB-INF/retreiveOrder.do\");\nview.forwardRequest(request, response);",
+    "D": "String T=\"/WEB-INF/retreiveOrder.do?orderID=%d&jspURL=%s\";\nString url = String.format(T, orderID, jspURL);\nDispatcher view = context.getDispatcher(url);\nview.forwardRequest(request, response);"
   },
   "multi": false
 }

@@ -1,7 +1,7 @@
 {
   "answer": "A",
   "explanation": "@DeclareRoles用來定義被其標註的類別會使用到的角色名稱，其屬性值若有多個時需以字串陣列方式呈現。",
-  "question": "Which java code snippet roles \"MANAGER\" and \"EMPLOYEE\" in a given application?\n\n@DeclareRole(\"EMPLOYEE\")\npublic class MyServlet extends HttpServlet {}",
+  "question": "Which java code snippet roles \"MANAGER\" and \"EMPLOYEE\" in a given application?",
   "options": {
     "A": "@DeclareRoles({ \"MANAGER\", \"EMPLOYEE\" })\n  public class MyServlet extends HttpServlet {}",
     "C": "@DeclareRoles(\"MANAGER\")\n  @DeclareRoles(\"EMPLOYEE\")\n  public class MyServlet extends HttpServlet {}",

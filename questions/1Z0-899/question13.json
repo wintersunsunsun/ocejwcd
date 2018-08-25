@@ -1,6 +1,6 @@
 {
   "answer": "C",
-  "explanation": "",
+  "explanation": "動態加入Servlet和Filter的方法只有在ServletContextListener的contexInitialized方法或ServletContainerInitializer的onStartup方法才能使用(即應用程式進行初始化的過程中)",
   "question": "A web application wants to register a new servlet at runtime using one of the servletContext.addServlet methods.\nIn the implementation of which method is it legal to perform this operation?",
   "options": {
     "A": "AsyncListner.oncomplete",

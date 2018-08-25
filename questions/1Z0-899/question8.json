@@ -3,7 +3,7 @@
   "explanation": "",
   "question": "Given a header in an HI IP request:\nX-Retries: 4\n\nA Which two retrieve the value of the header from a given HttpServletRequest request? (Choose two)",
   "options": {
-    "A": "request-getHeader(\"X-Retries\")",
+    "A": "request.getHeader(\"X-Retries\")",
     "C": "request.getRequestHeader(\"X-Retries\")",
     "B": "request.getlntHeader(\"X-Retries\")",
     "E": "request.getRequestHeaders(\"X-Retries\").get(0)",

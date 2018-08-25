@@ -1,12 +1,12 @@
 {
   "answer": "D",
   "explanation": "在jsp中使用標籤函式庫時，uri屬性要和tld檔中<uri>標籤的設定相同",
-  "question": "View the exhibit.\n\n 1. <?xml version=\"1.0\" encoding=\"UTF-8\" ?>\n 2.\n 3. <taglib xmlns=\"http://java.sun.com/xml/ns/j2ee\"\n 4.    xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"\n 5.    xsi:schemaLocation=\"http://java.sun.com/xml/ns/j2ee web-jsptaglibrary_2_0.xsd\"\n 6.    version=\"2.0\">\n 7.    <tlib-version>1.0</tlib-version>\n 8.    <short-name>ex</short-name>\n 9.    <uri>http://example.com/tld/example</uri>\n10.    <tag>\n11.      <name>hello</name>\n12.      <tag-class>com.example.HelloTag</tag-class>\n13.      <body-content>scriptless</body-content>\n14.    </tag>\n15. </taglib>\n\nAssume the tag library in the exhibit is placed in a web application in the path /WEBINF/tld/example.tld.\n\n1.\n2. <ex:hello />\n\nWhich JSP code, inserted at line 1, completes the JSP code to invoke the hello tag?",
+  "question": "View the exhibit.\n 1. <?xml version=\"1.0\" encoding=\"UTF-8\" ?>\n 2.\n 3. <taglib xmlns=\"http://java.sun.com/xml/ns/j2ee\"\n 4.    xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"\n 5.    xsi:schemaLocation=\"http://java.sun.com/xml/ns/j2ee web-jsptaglibrary_2_0.xsd\"\n 6.    version=\"2.0\">\n 7.    <tlib-version>1.0</tlib-version>\n 8.    <short-name>ex</short-name>\n 9.    <uri>http://example.com/tld/example</uri>\n10.    <tag>\n11.      <name>hello</name>\n12.      <tag-class>com.example.HelloTag</tag-class>\n13.      <body-content>scriptless</body-content>\n14.    </tag>\n15. </taglib>\n\nAssume the tag library in the exhibit is placed in a web application in the path /WEBINF/tld/example.tld.\n\n1.\n2. <ex:hello />\n\nWhich JSP code, inserted at line 1, completes the JSP code to invoke the hello tag?",
   "options": {
     "A": "<%@taglib prefix=\"ex\" uri=\"/WEB-INF/tld\" %>",
-    "C": "<%@taglib prefix=\"ex\" uri:=\"http://localhost:8080/tld/example.tld\" %>",
+    "C": "<%@taglib prefix=\"ex\" uri=\"http://localhost:8080/tld/example.tld\" %>",
     "B": "<%@taglib uri=\"/WEB-INF/tld/example.tld\" %>",
-    "D": "<%@taglib prefix=\"ex\" uri:=\"http://example.com/tld/example\" %>"
+    "D": "<%@taglib prefix=\"ex\" uri=\"http://example.com/tld/example\" %>"
   },
   "multi": false
 }

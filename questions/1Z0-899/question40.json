@@ -1,6 +1,6 @@
 {
   "answer": "B",
-  "explanation": "",
+  "explanation": "JAR檔當中的靜態資源(如.js、.html...)應該放在META-INF/resources底下",
   "question": "A popular Ajax framework and its companion widget library contain several hundreds of files of different types (.js, .ess, .html). Your company has mandated that all its web applications use only specific versions of this framework approved by IT and repackaged internally as jar files. Furthermore, web applications should only include the entire jar, without subsetting or modification.\nWhere should the framework's files be placed inside a jar file to enable this kind of reuse?",
   "options": {
     "A": "under resources",

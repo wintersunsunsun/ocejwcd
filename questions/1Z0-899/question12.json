@@ -1,11 +1,11 @@
 {
-  "answer": "AB",
+  "answer": "BC",
   "explanation": "",
   "question": "ServletRegistration.Dynamic can be used to configure (Choose two)",
   "options": {
     "A": "Filter mappings",
-    "C": "set asyncSupported to true",
     "B": "add init params",
+    "C": "set asyncSupported to true",
     "D": "add Listeners"
   },
   "multi": true

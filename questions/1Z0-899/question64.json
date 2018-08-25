@@ -2,7 +2,7 @@
   "multi": false,
   "answer": "D",
   "explanation": "",
-  "question": "To take advantage of the capabilities of modern browsers that use web standards, such as XHTML and CSS, your web application is being converted from simple JSP pages to JSP Document format. However, one of your JSPs, /scripts/screenFunctions.jsp, generates a JavaScript file. This file is included in several web forms to create screen-specific validation functions and are included in these pages with the following statement:\n\n10.<head>\n11.  <script> src='/scripts/screenFunctions.jsp'\n12.      lanaguage='javascript'\n13.      type='appliction/javascript'></script>\n14.</head>\n15.<!--body of the web form -->\n\nWhich JSP code snippet declares that this JSP Document is a JavaScript file?",
+  "question": "To take advantage of the capabilities of modern browsers that use web standards, such as XHTML and CSS, your web application is being converted from simple JSP pages to JSP Document format. However, one of your JSPs, /scripts/screenFunctions.jsp, generates a JavaScript file. This file is included in several web forms to create screen-specific validation functions and are included in these pages with the following statement:\n\n10.<head>\n11.  <script src='/scripts/screenFunctions.jsp'\n12.      lanaguage='javascript'\n13.      type='appliction/javascript'></script>\n14.</head>\n15.<!--body of the web form -->\n\nWhich JSP code snippet declares that this JSP Document is a JavaScript file?",
   "options": {
     "A": "<%@ page contentType='application/javascript' %>",
     "C": "<jsp:document contentType='application/javascript' />",

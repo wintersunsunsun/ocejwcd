@@ -1,8 +1,8 @@
 {
   "multi": false,
   "answer": "A",
-  "explanation": "",
-  "question": "For manage ability purposes, you have been told to add a \"count\" instance variable to a critical JSP Document so that a JMX MBean can track how frequent this JSP is being invoked.\nWhich JSP code snippet must you use to declare this instance variable in the JSP Document?",
+  "explanation": "在JSP Document中宣告實體變數是使用<jsp:declaration>標籤，<jsp:declaration>和<jsp:scriptlet>都是單獨出現，不會再\".\"下去",
+  "question": "For manage ability purposes, you have been told to add a \"count\" instance variable to a critical JSP Document so that a JMX MBean can track how frequent this JSP is being invoked. Which JSP code snippet must you use to declare this instance variable in the JSP Document?",
   "options": {
     "A": "<jsp:declaration>\n  int count = 0;\n  <jsp:declaration>",
     "C": "<jsp:declaration.instance>\n  int count = 0;\n  <jsp:declaration.instance>",

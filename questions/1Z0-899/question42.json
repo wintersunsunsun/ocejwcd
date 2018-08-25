@@ -1,6 +1,6 @@
 {
   "answer": "CD",
-  "explanation": "",
+  "explanation": "程式庫的相依性是在META-INF底下的MANIFEST.MF做設定，可以在部署期間檢查Container是否能找到應用程式所依賴的套件與類別",
   "question": "In which two locations can library dependencies be defined for a web application? (Choose two)",
   "options": {
     "A": "the web application deployment descriptor",

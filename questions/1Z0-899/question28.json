@@ -1,6 +1,6 @@
 {
   "answer": "D",
-  "explanation": "",
+  "explanation": "要在屬性被加進Session時被通知，可以實作HttpSessionAttributeListener，並override attributeAdded方法",
   "question": "Which interface must a class implement so that instances of the class are notified after any object added to a session?",
   "options": {
     "A": "javax.servlet.http.HttpSessionListener",
