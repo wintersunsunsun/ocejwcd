@@ -10,11 +10,13 @@ dataProcess.py 用來將questions裡的題目儲存到資料庫
 [Gradle](https://gradle.org/)或[Maven](https://maven.apache.org/)
 
 [Python3](https://www.python.org)
-### Step 2.建立網站
+### Step 2.建立property
+拿掉src/main/resources/application.properties.example的副檔名[.example]
+### Step 3.建立網站
     gradle bootRun 或 mvn spring-boot:run
-### Step 3.建立題庫資料
+### Step 4.建立題庫資料
     python3 dataProcess.py
-### Step 4.訪問網站(localhost:7799)，開始答題
+### Step 5.訪問網站(localhost:7799)，開始答題
 
 ## 題庫來源
 
