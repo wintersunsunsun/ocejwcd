@@ -1,5 +1,5 @@
 {
-  "answer": "E",
+  "answer": "D",
   "explanation": "",
   "question": "A servlet wishes to indicate that it is unable to initialize at the present time, but that the initialization might succeed at some future time. Which is true?",
   "options": {
